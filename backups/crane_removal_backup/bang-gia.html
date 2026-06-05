@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Bảng Giá Nhập Khẩu Chính Ngạch Trung - Việt | Vạn An Logistics</title>
+<meta name="description" content="Bảng giá vận chuyển chính ngạch tuyến Bằng Tường - Hà Nội. Hàng lẻ từ 4,000đ/kg, nguyên container 900,000đ/khối. Minh bạch, không phát sinh.">
+<meta property="og:title" content="Bảng Giá Vận Chuyển Chính Ngạch | Vạn An Logistics">
+<meta property="og:description" content="Cước vận chuyển tuyến Bằng Tường - Hà Nội. Hàng lẻ từ 4,000đ/kg. Minh bạch, không phát sinh.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/thumbnails/Thumnail-bang-gia.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/thumbnails/Thumnail-bang-gia.png">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+<link rel="icon" href="assets/brand/favicon.ico">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#67dca4", "tertiary-fixed": "#ffdad8",
+          "surface-container-highest": "#dee4dd", "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff", "primary-container": "#008558",
+          "surface": "#f5fbf4", "on-secondary-container": "#446d56",
+          "surface-variant": "#dee4dd", "secondary": "#3e6751",
+          "background": "#f5fbf4", "primary-fixed-dim": "#67dca4",
+          "on-surface": "#171d19", "surface-container-low": "#eff5ee",
+          "secondary-fixed-dim": "#a4d1b6", "outline-variant": "#bccabf",
+          "on-surface-variant": "#3d4a42", "on-primary": "#ffffff",
+          "primary-fixed": "#84f9be", "surface-tint": "#006c47",
+          "surface-dim": "#d5dcd5", "secondary-fixed": "#bfedd1",
+          "surface-container-high": "#e4eae3", "on-primary-fixed": "#002113",
+          "tertiary": "#9c3c3d", "outline": "#6d7a71",
+          "on-primary-container": "#f6fff6", "surface-container": "#e9f0e9",
+          "primary": "#055a42", "secondary-container": "#bfedd1",
+          "error": "#ba1a1a", "error-container": "#ffdad6", "on-error-container": "#93000a"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        fontFamily: { headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"] }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-nav { background: rgba(245, 251, 244, 0.8); backdrop-filter: blur(20px); }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%;
+    width: 20%; height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(30deg); animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+  .animate-pulse-subtle { animation: pulse-subtle 2s infinite; }
+  @keyframes pulse-subtle {
+    0% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(14, 175, 117, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0); }
+  }
+  .animate-ticker { animation: ticker-scroll 35s linear infinite; }
+  @media (max-width: 768px) { .animate-ticker { animation-duration: 15s; } }
+  @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform, opacity; }
+  .reveal-up { transform: translateY(50px); }
+  .reveal-left { transform: translateX(-50px); }
+  .reveal-right { transform: translateX(50px); }
+  .reveal.active { opacity: 1; transform: translate(0, 0); }
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .vietnam-pattern {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(132,249,190,0.02) 0%, transparent 80%);
+  }
+  .drum-center {
+    width: 100vw;
+    height: 100vw;
+    background: url("assets/decor/pattern/9.png") no-repeat center;
+    background-size: contain;
+    mix-blend-mode: multiply; /* Hòa trộn nét vẽ đen vào nền xanh */
+    opacity: 0.1; /* Độ mờ vừa phải để thấy họa tiết sắc nét */
+    animation: rotate-slow 400s linear infinite;
+    pointer-events: none;
+  }
+  .lac-bird-decor {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background: url("assets/decor/chim_hac.jpg") no-repeat center;
+    background-size: contain;
+    filter: blur(0.3px) brightness(1.5);
+    opacity: 0.5; /* Rõ nét hơn để thấy hạc bay */
+    pointer-events: none;
+    z-index: 1;
+  }
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes fly-across {
+    from { transform: translateX(-20vw) translateY(0); opacity: 0; }
+    15% { opacity: 0.5; }
+    85% { opacity: 0.5; }
+    to { transform: translateX(110vw) translateY(-40px); opacity: 0; }
+  }
+  @keyframes flap-subtle {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.7); }
+  }
+  .animate-fly-1 { animation: fly-across 28s linear infinite; }
+  .animate-fly-2 { animation: fly-across 38s linear infinite -12s; }
+  .animate-flap { animation: flap-subtle 1.8s ease-in-out infinite; }
+  .price-card { transition: all 0.3s ease; }
+  .price-card:hover { transform: translateY(-4px); }
+  .table-row-hover tr:hover { background-color: #eff5ee; }
+
+  /* Large Patterns Decor */
+  .large-pattern-container {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .large-pattern-decor {
+    position: absolute;
+    mix-blend-mode: multiply;
+    filter: drop-shadow(0 10px 30px rgba(0,0,0,0.05));
+    opacity: 0.15;
+    pointer-events: none;
+  }
+  .pattern-drum-side {
+    width: 1000px;
+    right: -300px;
+    top: 500px;
+  }
+  .pattern-hac-side {
+    width: 600px;
+    left: -150px;
+    top: 1400px;
+  }
+  .pattern-cloud-bottom {
+    width: 800px;
+    right: -100px;
+    bottom: 0;
+  }
+  
+</style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<div id="navbar-placeholder"></div>
+<div id="exchange-ticker-placeholder"></div>
+
+<!-- HERO -->
+<section class="relative pt-40 pb-24 overflow-hidden hero-gradient">
+  <div class="vietnam-pattern">
+    <div class="drum-center"></div>
+  </div>
+  <div class="absolute inset-0 dot-pattern opacity-20"></div>
+  <div class="absolute inset-0 hero-glow opacity-50"></div>
+
+  <!-- Flying birds -->
+  <div class="lac-bird-decor top-[20%] animate-fly-1"><div class="animate-flap w-full h-full"></div></div>
+  <div class="lac-bird-decor bottom-[25%] animate-fly-2" style="animation-direction: reverse;"><div class="animate-flap w-full h-full"></div></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12 text-center z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Minh bạch — Cập nhật 2026</span>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tighter mb-6 reveal reveal-up delay-100">
+      Bảng Giá Nhập Khẩu<br>
+      <span class="text-primary-fixed">Chính Ngạch Trung – Việt</span>
+    </h1>
+    <p class="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed mb-12 reveal reveal-up delay-200">
+      Tổng hợp chi tiết cước vận chuyển, phí ủy thác, thuế và các chi phí liên quan khi nhập hàng chính ngạch qua tuyến Bằng Tường — Hà Nội
+    </p>
+
+    <!-- Cost Formula -->
+    <div class="max-w-4xl mx-auto bg-white/10 backdrop-blur-md rounded-[2rem] p-8 border border-white/20 reveal reveal-up delay-300">
+      <p class="text-white/70 text-xs font-bold tracking-widest uppercase mb-5">Công thức tổng chi phí</p>
+      <div class="flex flex-wrap items-center justify-center gap-3 text-white">
+        <span class="bg-white/15 backdrop-blur-sm px-4 py-2 rounded-xl font-bold text-sm md:text-base">Cước vận chuyển</span>
+        <span class="text-primary-fixed text-2xl font-extrabold">+</span>
+        <span class="bg-white/15 backdrop-blur-sm px-4 py-2 rounded-xl font-bold text-sm md:text-base">Phí ủy thác XNK</span>
+        <span class="text-primary-fixed text-2xl font-extrabold">+</span>
+        <span class="bg-white/15 backdrop-blur-sm px-4 py-2 rounded-xl font-bold text-sm md:text-base">Thuế</span>
+        <span class="text-primary-fixed text-2xl font-extrabold">+</span>
+        <span class="bg-white/10 backdrop-blur-sm px-4 py-2 rounded-xl font-bold text-sm md:text-base text-white/70">Chi phí khác <span class="text-xs">(nếu có)</span></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTENT WRAPPER WITH SHARED BACKGROUND PATTERNS -->
+<div class="relative">
+  <!-- Large Background Patterns (Shared for all sections) -->
+  <div class="large-pattern-container">
+    <img src="assets/decor/pattern/9.png" alt="" class="large-pattern-decor pattern-drum-side">
+    <img src="assets/decor/pattern/1.png" alt="" class="large-pattern-decor pattern-hac-side">
+    <img src="assets/decor/pattern/6.png" alt="" class="large-pattern-decor pattern-cloud-bottom">
+  </div>
+
+  <!-- SECTION 1: CƯỚC VẬN CHUYỂN -->
+  <section id="bang-gia" class="relative py-24 bg-surface">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Mục 01</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Cước Vận Chuyển Tuyến Bằng Tường — Hà Nội</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Giá đã bao gồm thu gom tại kho Bằng Tường, kiểm đếm, thông quan chính ngạch và vận chuyển về kho Hà Nội</p>
+    </div>
+
+    <div class="grid lg:grid-cols-2 gap-8">
+      <!-- Hàng nặng -->
+      <div class="reveal reveal-left price-card bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg overflow-hidden">
+        <div class="bg-primary p-6 flex items-center gap-4">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-3xl">scale</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold text-white tracking-tight">Hàng Nặng</h3>
+            <p class="text-white/70 text-sm">Tính theo kilogram</p>
+          </div>
+        </div>
+        <div class="overflow-x-auto table-row-hover">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-surface-container">
+                <th class="text-left px-6 py-4 text-xs font-extrabold text-primary uppercase tracking-wider">Số lượng (KG)</th>
+                <th class="text-right px-6 py-4 text-xs font-extrabold text-primary uppercase tracking-wider">Hà Nội (VNĐ)</th>
+                <th class="text-right px-6 py-4 text-xs font-extrabold text-primary uppercase tracking-wider">Hồ Chí Minh (VNĐ)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-outline-variant/40">
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">150 — 300</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">7,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">9,000</td>
+              </tr>
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">300 — 1,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">6,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">8,000</td>
+              </tr>
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">1,000 — 2,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">5,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">7,000</td>
+              </tr>
+              <tr class="bg-secondary-container/40 transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface font-extrabold">2,000 — 5,000</td>
+                <td class="px-6 py-4 text-sm text-right font-extrabold text-primary">4,000</td>
+                <td class="px-6 py-4 text-sm text-right font-extrabold text-primary">6,000</td>
+              </tr>
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">Trên 5,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-tertiary">Liên hệ</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-tertiary">Liên hệ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="px-6 py-3 bg-surface-container-low text-base text-on-surface-variant">* Hàng nặng: cân nặng thực tế lớn hơn quy đổi thể tích</div>
+      </div>
+
+      <!-- Hàng cồng kềnh -->
+      <div class="reveal reveal-right price-card bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg overflow-hidden">
+        <div class="hero-gradient p-6 flex items-center gap-4">
+          <div class="w-14 h-14 bg-white/15 rounded-2xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-3xl">inventory_2</span>
+          </div>
+          <div>
+            <h3 class="text-2xl font-extrabold text-white tracking-tight">Hàng Cồng Kềnh</h3>
+            <p class="text-white/80 text-sm">Tính theo khối (m³)</p>
+          </div>
+        </div>
+        <div class="overflow-x-auto table-row-hover">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-surface-container">
+                <th class="text-left px-6 py-4 text-xs font-extrabold text-primary uppercase tracking-wider">Số lượng (m³)</th>
+                <th class="text-right px-6 py-4 text-xs font-extrabold text-primary uppercase tracking-wider">Hà Nội (VNĐ)</th>
+                <th class="text-right px-6 py-4 text-xs font-extrabold text-primary uppercase tracking-wider">Hồ Chí Minh (VNĐ)</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-outline-variant/40">
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">2 — 5</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">1,200,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">1,700,000</td>
+              </tr>
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">5 — 10</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">1,100,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">1,600,000</td>
+              </tr>
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">10 — 30</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">1,000,000</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-on-surface">1,500,000</td>
+              </tr>
+              <tr class="bg-secondary-container/40 transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface font-extrabold">&gt; 30</td>
+                <td class="px-6 py-4 text-sm text-right font-extrabold text-primary">900,000</td>
+                <td class="px-6 py-4 text-sm text-right font-extrabold text-primary">1,400,000</td>
+              </tr>
+              <tr class="transition-colors">
+                <td class="px-6 py-4 text-sm text-on-surface">Nguyên container</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-tertiary">Liên hệ</td>
+                <td class="px-6 py-4 text-sm text-right font-bold text-tertiary">Liên hệ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="px-6 py-3 bg-surface-container-low text-base text-on-surface-variant">* Hàng cồng kềnh: thể tích quy đổi lớn hơn cân nặng thực tế</div>
+      </div>
+    </div>
+
+    <!-- Note -->
+    <div class="mt-10 reveal reveal-up">
+      <div class="bg-secondary-container rounded-[2rem] p-6 md:p-8 flex items-start gap-4">
+        <span class="material-symbols-outlined text-on-secondary-container text-3xl flex-shrink-0">info</span>
+        <p class="text-base md:text-lg text-on-secondary-container leading-relaxed"><strong>Cách tính:</strong> Hàng hóa sẽ được cân nặng và đo thể tích. Đơn giá áp dụng theo phương pháp nào cho ra giá trị lớn hơn (nặng hoặc cồng kềnh). Thời gian vận chuyển trung bình <strong>3-5 ngày</strong>.</p>
+      </div>
+    </div>
+
+    <!-- Hàng không nhận -->
+    <div class="mt-10 reveal reveal-up">
+      <div class="bg-error-container/60 border border-error/20 rounded-[2rem] p-8">
+        <h3 class="text-lg font-extrabold text-on-error-container mb-5 flex items-center gap-3 tracking-tight">
+          <span class="material-symbols-outlined text-2xl">block</span>
+          Vạn An không nhận vận chuyển các mặt hàng sau:
+        </h3>
+        <ol class="grid md:grid-cols-2 gap-3 list-decimal list-inside text-sm text-on-error-container/90 leading-relaxed">
+          <li>Các chất ma túy và chất kích thích thần kinh. Các loại bột.</li>
+          <li>Thực phẩm chức năng (nước hoa, đồ ăn, thuốc, dung dịch...)</li>
+          <li>Vũ khí, đạn dược, trang thiết bị kỹ thuật quân sự.</li>
+          <li>Văn hóa phẩm đồi trụy, phản động, chống phá Nhà nước.</li>
+          <li>Vật/chất dễ nổ, dễ cháy, gây ô nhiễm môi trường.</li>
+          <li>Hàng hóa nhà nước cấm lưu thông, cấm xuất nhập khẩu.</li>
+          <li>Sinh vật sống.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: PHÍ ỦY THÁC -->
+<section class="relative py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Mục 02</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Phí Dịch Vụ Ủy Thác XNK</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-3xl mx-auto">Chi phí ủy thác cho Vạn An thực hiện dịch vụ thông quan, đứng tên trên tờ khai hải quan và xử lý các thủ tục xuất nhập khẩu</p>
+    </div>
+
+    <div class="max-w-3xl mx-auto reveal reveal-up">
+      <div class="bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] overflow-hidden">
+        <div class="overflow-x-auto">
+          <table class="w-full">
+            <thead>
+              <tr class="bg-primary">
+                <th class="text-left px-8 py-5 text-sm font-extrabold text-white uppercase tracking-wider">Giá trị khai báo</th>
+                <th class="text-right px-8 py-5 text-sm font-extrabold text-white uppercase tracking-wider">Phí dịch vụ</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-outline-variant/40">
+              <tr class="hover:bg-surface-container-low transition-colors">
+                <td class="px-8 py-6 text-base text-on-surface">Dưới 100 triệu VNĐ</td>
+                <td class="px-8 py-6 text-right">
+                  <span class="inline-flex items-center bg-secondary-container text-on-secondary-container font-extrabold px-5 py-2 rounded-xl text-lg">2.0%</span>
+                </td>
+              </tr>
+              <tr class="hover:bg-surface-container-low transition-colors">
+                <td class="px-8 py-6 text-base text-on-surface">100 — 200 triệu VNĐ</td>
+                <td class="px-8 py-6 text-right">
+                  <span class="inline-flex items-center bg-secondary-container text-on-secondary-container font-extrabold px-5 py-2 rounded-xl text-lg">1.5%</span>
+                </td>
+              </tr>
+              <tr class="bg-secondary-container/30 hover:bg-secondary-container/50 transition-colors">
+                <td class="px-8 py-6 text-base text-on-surface font-extrabold">Trên 200 triệu VNĐ</td>
+                <td class="px-8 py-6 text-right">
+                  <span class="inline-flex items-center bg-primary text-on-primary font-extrabold px-5 py-2 rounded-xl text-lg">1.0%</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="px-8 py-5 bg-surface-container-low border-t border-outline-variant/40">
+          <p class="text-sm text-on-surface-variant leading-relaxed">* Phí ủy thác bao gồm: đứng tên tờ khai hải quan, thực hiện thủ tục thông quan, xử lý sau thông quan. Lô hàng giá trị lớn liên hệ để nhận ưu đãi riêng.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: THUẾ NHẬP KHẨU -->
+<section class="relative py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Mục 03</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Thuế Nhập Khẩu</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Các loại thuế khi nhập khẩu hàng hóa chính ngạch vào Việt Nam</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="reveal reveal-up price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-on-surface mb-3 tracking-tight">Thuế VAT</h3>
+        <p class="text-5xl font-extrabold text-primary mb-4 tracking-tight">8 — 10%</p>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Thuế giá trị gia tăng, áp dụng với hầu hết các loại hàng hóa nhập khẩu vào Việt Nam, tính trên giá trị hàng khai báo.</p>
+      </div>
+
+      <div class="reveal reveal-up delay-100 price-card hero-gradient p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(5,90,66,0.2)] text-white">
+        <div class="w-16 h-16 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-white text-3xl">account_balance</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-white mb-3 tracking-tight">Thuế Nhập Khẩu</h3>
+        <p class="text-3xl font-extrabold text-primary-fixed mb-4 tracking-tight">Theo biểu thuế</p>
+        <p class="text-white/90 text-sm leading-relaxed">Khoản thuế nộp vào ngân sách Nhà nước khi nhập hàng từ nước ngoài. Mức thuế suất tùy theo mã HS của từng loại hàng hóa.</p>
+      </div>
+
+      <div class="reveal reveal-up delay-200 price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-3xl">sell</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-on-surface mb-3 tracking-tight">Thuế Khác <span class="text-xs font-normal text-on-surface-variant">(nếu có)</span></h3>
+        <p class="text-3xl font-extrabold text-primary mb-4 tracking-tight">Tùy loại hàng</p>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Một số mặt hàng đặc biệt có thể phát sinh: thuế tiêu thụ đặc biệt, thuế bảo vệ môi trường, thuế tự vệ, thuế chống bán phá giá.</p>
+      </div>
+    </div>
+
+    <div class="mt-10 reveal reveal-up">
+      <div class="bg-secondary-container rounded-[2rem] p-6 md:p-8 flex items-start gap-4">
+        <span class="material-symbols-outlined text-on-secondary-container text-3xl flex-shrink-0">lightbulb</span>
+        <p class="text-base md:text-lg text-on-secondary-container leading-relaxed">Để biết chính xác mức thuế cho từng loại hàng hóa, anh/chị có thể tra cứu <strong>Biểu thuế nhập khẩu</strong> hoặc liên hệ trực tiếp Vạn An để được tư vấn miễn phí.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: CHI PHÍ KHÁC -->
+<section class="relative py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Mục 04</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Các Chi Phí Khác <span class="text-on-surface-variant font-bold text-2xl">(nếu có)</span></h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Các khoản phí phát sinh tùy theo yêu cầu và đặc điểm từng lô hàng</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div class="reveal reveal-up price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-2xl">local_shipping</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Phí ship nội địa Trung Quốc</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Phí vận chuyển từ nhà máy/kho hàng về kho Vạn An tại Bằng Tường. Chỉ phát sinh khi nhà cung cấp không hỗ trợ giao hàng miễn phí.</p>
+      </div>
+
+      <div class="reveal reveal-up delay-100 price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-2xl">inventory</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Phí đóng kiện gỗ</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Dành cho hàng dễ vỡ hoặc giá trị cao cần gia cố thêm khung gỗ bảo vệ. Phí tùy theo kích thước và thể tích kiện hàng.</p>
+      </div>
+
+      <div class="reveal reveal-up delay-200 price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-2xl">search_check</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Phí kiểm định chất lượng</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Chi phí kiểm tra chất lượng sản phẩm bằng <strong>0.05% giá trị lô hàng</strong>, dao động từ 700,000 — 10,000,000 VNĐ (chưa bao gồm VAT).</p>
+      </div>
+
+      <div class="reveal reveal-up price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-2xl">construction</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Phí nâng hạ hàng</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Hàng thông thường: <strong>miễn phí</strong>. Hàng quá khổ, quá tải cần cẩu: phí thuê cẩu tính riêng theo thực tế phát sinh.</p>
+      </div>
+
+      <div class="reveal reveal-up delay-100 price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-2xl">delivery_dining</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Phí giao hàng nội địa</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Nhận tại kho Hà Nội: <strong>miễn phí</strong>. Giao tận nơi trong Hà Nội và các tỉnh lân cận: phát sinh thêm cước ship nội địa.</p>
+      </div>
+
+      <div class="reveal reveal-up delay-200 price-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-2xl">warehouse</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Phí lưu kho</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Vạn An <strong>miễn phí lưu kho tối đa 5 ngày</strong>. Sau 5 ngày sẽ tính phí lưu kho theo quy định, tùy thể tích hàng hóa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: BẢO HIỂM -->
+<section class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="max-w-5xl mx-auto reveal reveal-up">
+      <div class="hero-gradient rounded-[2rem] p-10 md:p-14 relative overflow-hidden shadow-[0px_8px_24px_rgba(5,90,66,0.2)]">
+        <div class="absolute inset-0 dot-pattern opacity-30"></div>
+        <div class="absolute top-0 right-0 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+        <div class="relative">
+          <div class="flex items-center gap-4 mb-8">
+            <div class="w-16 h-16 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-white text-3xl">verified_user</span>
+            </div>
+            <div>
+              <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-2">Bảo hiểm hàng hóa</span>
+              <h2 class="text-3xl md:text-4xl font-extrabold text-white tracking-tight">An Tâm Tuyệt Đối</h2>
+            </div>
+          </div>
+          <div class="grid md:grid-cols-2 gap-6">
+            <div class="bg-white/10 backdrop-blur-sm rounded-[1.5rem] p-7 border border-white/20">
+              <p class="text-6xl font-extrabold text-primary-fixed mb-2 tracking-tighter">3%</p>
+              <p class="text-sm text-white/70 uppercase tracking-wider font-bold mb-3">Giá trị đơn hàng</p>
+              <p class="text-white/90 text-sm leading-relaxed">Phí bảo hiểm chỉ <strong>3% giá trị hàng hóa</strong> — mức phí hợp lý để bảo vệ toàn bộ lô hàng của anh/chị.</p>
+            </div>
+            <div class="bg-white/10 backdrop-blur-sm rounded-[1.5rem] p-7 border border-white/20">
+              <p class="text-6xl font-extrabold text-primary-fixed mb-2 tracking-tighter">100%</p>
+              <p class="text-sm text-white/70 uppercase tracking-wider font-bold mb-3">Bồi thường giá trị</p>
+              <p class="text-white/90 text-sm leading-relaxed">Khi mua bảo hiểm, hàng hóa được <strong>bồi thường 100% giá trị</strong> nếu xảy ra hư hỏng hoặc thất lạc trong quá trình vận chuyển.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-5xl mx-auto px-6 lg:px-12 text-center">
+    <div class="reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-6">Liên hệ ngay</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Cần Báo Giá Chính Xác Cho Lô Hàng?</h2>
+      <p class="text-on-surface-variant text-lg leading-relaxed max-w-2xl mx-auto mb-10">Gửi thông tin hàng hóa, Vạn An phản hồi báo giá chi tiết trong 30 phút (giờ hành chính)</p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
+        <a href="https://zalo.me/0862341318" target="_blank" class="w-full sm:w-auto hero-gradient text-on-primary px-10 py-5 rounded-2xl font-black flex items-center justify-center gap-3 shadow-2xl hover:scale-105 active:scale-95 transition-all btn-shine animate-pulse-subtle">
+          <span class="material-symbols-outlined text-2xl">chat</span>
+          Chat Zalo Ngay
+        </a>
+        <a href="tel:0862341318" class="w-full sm:w-auto bg-surface-container-lowest border-2 border-primary/20 text-primary px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-secondary-container active:scale-95 transition-all">
+          <span class="material-symbols-outlined">call</span>
+          086.234.1318
+        </a>
+      </div>
+
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="components.js"></script>
+</body>
+</html>

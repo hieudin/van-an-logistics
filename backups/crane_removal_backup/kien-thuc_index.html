@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Kiến Thức Logistics &amp; Xuất Nhập Khẩu | Vạn An Logistics</title>
+<meta name="description" content="Tổng hợp kiến thức, kinh nghiệm và hướng dẫn về thủ tục hải quan, vận chuyển quốc tế, chính sách nhập khẩu và thanh toán hộ từ Vạn An Logistics.">
+<link rel="canonical" href="https://vananlogistics.com/kien-thuc/">
+<meta property="og:title" content="Kiến Thức Logistics &amp; Xuất Nhập Khẩu | Vạn An Logistics">
+<meta property="og:description" content="Tổng hợp kiến thức, kinh nghiệm và hướng dẫn về thủ tục hải quan, vận chuyển quốc tế, chính sách nhập khẩu và thanh toán hộ từ Vạn An Logistics.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="../assets/thumbnails/Thumnail-index.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/x-icon" href="../assets/brand/favicon.ico">
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        "colors": {
+          "inverse-primary": "#67dca4",
+          "tertiary-fixed": "#ffdad8",
+          "surface-container-highest": "#dee4dd",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "primary-container": "#008558",
+          "surface": "#f5fbf4",
+          "on-tertiary-fixed-variant": "#80272a",
+          "on-secondary-container": "#446d56",
+          "surface-variant": "#dee4dd",
+          "secondary": "#3e6751",
+          "on-secondary-fixed-variant": "#264f3a",
+          "background": "#f5fbf4",
+          "primary-fixed-dim": "#67dca4",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#171d19",
+          "error": "#ba1a1a",
+          "surface-container-low": "#eff5ee",
+          "secondary-fixed-dim": "#a4d1b6",
+          "inverse-surface": "#2c322d",
+          "surface-bright": "#f5fbf4",
+          "outline-variant": "#bccabf",
+          "on-surface-variant": "#3d4a42",
+          "on-primary": "#ffffff",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#410006",
+          "on-background": "#171d19",
+          "on-primary-fixed-variant": "#005234",
+          "primary-fixed": "#84f9be",
+          "tertiary-fixed-dim": "#ffb3b0",
+          "inverse-on-surface": "#ecf2eb",
+          "surface-tint": "#006c47",
+          "tertiary-container": "#bc5453",
+          "surface-dim": "#d5dcd5",
+          "secondary-fixed": "#bfedd1",
+          "surface-container-high": "#e4eae3",
+          "on-error": "#ffffff",
+          "on-primary-fixed": "#002113",
+          "primary": "#055a42",
+          "tertiary": "#9c3c3d",
+          "outline": "#6d7a71",
+          "on-primary-container": "#f6fff6",
+          "on-secondary-fixed": "#002113",
+          "on-tertiary-container": "#fffbff",
+          "surface-container": "#e9f0e9",
+          "on-error-container": "#93000a",
+          "secondary-container": "#bfedd1"
+        },
+        fontFamily: {
+          manrope: ['Manrope', 'sans-serif'],
+        },
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Manrope', sans-serif; }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform, opacity; }
+  .reveal-up { transform: translateY(50px); }
+  .reveal.active { opacity: 1; transform: translate(0, 0); }
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(132,249,190,0.12) 0%, transparent 60%);
+  }
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%; width: 20%; height: 200%;
+    background: rgba(255, 255, 255, 0.4); transform: rotate(30deg); animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+
+  .vietnam-pattern {
+    position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; pointer-events: none;
+    background: radial-gradient(circle at center, rgba(132,249,190,0.02) 0%, transparent 80%);
+  }
+  .drum-center {
+    width: 100vw; height: 100vw; background: url("../assets/decor/pattern/9.png") no-repeat center; background-size: contain;
+    mix-blend-mode: multiply; opacity: 0.1; animation: rotate-slow 400s linear infinite; pointer-events: none;
+  }
+  .lac-bird-decor {
+    position: absolute; width: 120px; height: 80px; background: url("../assets/decor/chim_hac.jpg") no-repeat center;
+    background-size: contain; filter: blur(0.3px) brightness(1.5); opacity: 0.5; pointer-events: none; z-index: 1;
+  }
+  @keyframes rotate-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+  @keyframes fly-across {
+    from { transform: translateX(-20vw) translateY(0); opacity: 0; }
+    15% { opacity: 0.5; } 85% { opacity: 0.5; }
+    to { transform: translateX(110vw) translateY(-40px); opacity: 0; }
+  }
+  @keyframes flap-subtle { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(0.7); } }
+  .animate-fly-1 { animation: fly-across 28s linear infinite; }
+  .animate-fly-2 { animation: fly-across 38s linear infinite -12s; }
+  .animate-flap { animation: flap-subtle 1.8s ease-in-out infinite; }
+</style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<div id="navbar-placeholder"></div>
+
+<!-- HERO -->
+<section class="relative pt-44 pb-24 overflow-hidden hero-gradient">
+  <div class="vietnam-pattern">
+    <div class="drum-center"></div>
+  </div>
+  <div class="absolute inset-0 dot-pattern opacity-20"></div>
+  <div class="absolute inset-0 hero-glow opacity-50"></div>
+
+  <!-- Flying birds -->
+  <div class="lac-bird-decor top-[20%] animate-fly-1"><div class="animate-flap w-full h-full"></div></div>
+  <div class="lac-bird-decor bottom-[25%] animate-fly-2" style="animation-direction: reverse;"><div class="animate-flap w-full h-full"></div></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12 text-center z-10">
+    <!-- Breadcrumb -->
+    <nav class="flex justify-center gap-2 mb-6 text-xs font-bold uppercase tracking-widest text-white/60">
+      <a href="../index.html" class="hover:text-white transition-colors">Trang chủ</a>
+      <span>/</span>
+      <span class="text-primary-fixed">Kiến thức</span>
+    </nav>
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Cẩm nang chuyên ngành</span>
+    <h1 class="text-4xl md:text-6xl font-extrabold text-white leading-[1.05] tracking-tighter mb-6 reveal reveal-up delay-100">
+      Kiến Thức<br>
+      <span class="text-primary-fixed">Logistics &amp; XNK</span>
+    </h1>
+    <p class="text-white/80 text-lg max-w-2xl mx-auto leading-relaxed reveal reveal-up delay-200">
+      Cập nhật những quy định mới nhất, hướng dẫn chi tiết và kinh nghiệm thực tế về xuất nhập khẩu từ các chuyên gia Vạn An.
+    </p>
+  </div>
+</section>
+
+<!-- BLOG LIST -->
+<section class="pt-32 pb-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+
+      <!-- Article 1: HS Code -->
+      <article class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal reveal-up">
+        <a href="hs-code-la-gi.html" class="block">
+          <div class="relative h-64 overflow-hidden">
+            <img src="../assets/blog/hs_code_guide.webp" alt="HS Code Guide" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Thủ tục hải quan</div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-3 text-on-surface-variant text-[11px] font-bold uppercase tracking-widest mb-4">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 15/04/2026</span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 1.2k views</span>
+            </div>
+            <h2 class="text-2xl font-extrabold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">
+              HS Code Là Gì? Cách Tra Mã HS Code Chính Xác Nhất 2026
+            </h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+              HS Code là mã số phân loại hàng hóa quốc tế. Việc tra mã HS chính xác giúp doanh nghiệp xác định đúng mức thuế và tuân thủ quy định hải quan.
+            </p>
+            <div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2">
+              Xem chi tiết
+              <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 2: Giấy tờ vận chuyển -->
+      <article class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal reveal-up">
+        <a href="giay-to-van-chuyen-trung-viet.html" class="block">
+          <div class="relative h-64 overflow-hidden">
+            <img src="../assets/blog/cac-giay-to-can-co-khi-nhap-hang-trung-quoc.jpeg" alt="Các giấy tờ cần có khi nhập hàng Trung Quốc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Vận chuyển quốc tế</div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-3 text-on-surface-variant text-[11px] font-bold uppercase tracking-widest mb-4">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 15/04/2026</span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> 850 views</span>
+            </div>
+            <h2 class="text-2xl font-extrabold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">
+              Các Giấy Tờ Cần Có Khi Vận Chuyển Hàng Trung Quốc Về Việt Nam
+            </h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+              Tìm hiểu các loại chứng từ bắt buộc như Invoice, Packing List, CO Form E để đảm bảo hàng hóa thông quan chính ngạch nhanh chóng, an toàn.
+            </p>
+            <div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2">
+              Xem chi tiết
+              <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 3: Quy trình vận chuyển -->
+      <article class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal reveal-up">
+        <a href="quy-trinh-van-chuyen.html" class="block">
+          <div class="relative h-64 overflow-hidden">
+            <img src="../assets/photos/van_an_truck_driving.png" alt="Quy trình vận chuyển hàng Trung Quốc về Việt Nam" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Vận chuyển quốc tế</div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-3 text-on-surface-variant text-[11px] font-bold uppercase tracking-widest mb-4">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 23/04/2026</span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> Mới nhất</span>
+            </div>
+            <h2 class="text-2xl font-extrabold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">
+              Quy Trình Vận Chuyển Hàng Trung Quốc Về Việt Nam — 6 Bước Minh Bạch
+            </h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+              Toàn bộ hành trình lô hàng từ kho Trung Quốc đến tay khách hàng tại Hà Nội: nhận hàng, qua cửa khẩu Bằng Tường, thông quan, giao tận nơi.
+            </p>
+            <div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2">
+              Xem chi tiết
+              <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 4: Vận chuyển tiểu ngạch -->
+      <article class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal reveal-up">
+        <a href="van-chuyen-tieu-ngach.html" class="block">
+          <div class="relative h-64 overflow-hidden">
+            <img src="../assets/blog/van-chuyen-tieu-ngach.png" alt="Vận chuyển tiểu ngạch Trung Quốc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Kiến thức xuất nhập khẩu</div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-3 text-on-surface-variant text-[11px] font-bold uppercase tracking-widest mb-4">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 20/04/2026</span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> HOT</span>
+            </div>
+            <h2 class="text-2xl font-extrabold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">
+              Vận Chuyển Tiểu Ngạch Trung Quốc Về Việt Nam 2026: Lưu Ý Gì?
+            </h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+              Những thay đổi quan trọng trong chính sách biên giới năm 2026. Làm sao để vận chuyển hàng tiểu ngạch an toàn, tránh tắc biên và tối ưu chi phí.
+            </p>
+            <div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2">
+              Xem chi tiết
+              <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 5: Quy trình nhập khẩu cho người mới -->
+      <article class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal reveal-up">
+        <a href="quy-trinh-nhap-khau-hang-hoa-trung-quoc.html" class="block">
+          <div class="relative h-64 overflow-hidden">
+            <img src="../assets/photos/van_an_truck_only.png"" alt="Quy trình nhập khẩu hàng hóa từ Trung Quốc" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Xuất nhập khẩu</div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-3 text-on-surface-variant text-[11px] font-bold uppercase tracking-widest mb-4">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 01/05/2026</span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> Mới nhất</span>
+            </div>
+            <h2 class="text-2xl font-extrabold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">
+              Quy Trình Nhập Khẩu Hàng Hóa Từ Trung Quốc: 5 Bước Cơ Bản Cho Người Mới
+            </h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+              Hướng dẫn 5 bước nhập khẩu từ A-Z: kiểm tra điều kiện, tìm supplier, thanh toán, vận chuyển, khai báo hải quan. Có ví dụ thực tế cho người mới bắt đầu.
+            </p>
+            <div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2">
+              Xem chi tiết
+              <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+      <!-- Article 6: Thay đổi chính sách nhập khẩu 2026 -->
+      <article class="bg-white rounded-[2.5rem] overflow-hidden shadow-sm hover:shadow-2xl transition-all duration-500 group reveal reveal-up">
+        <a href="thay-doi-chinh-sach-nhap-khau-2026.html" class="block">
+          <div class="relative h-64 overflow-hidden">
+            <img src="../assets/blog/thay-doi-chinh-sach-nhap-khau.png" alt="Thay đổi chính sách nhập khẩu 2026" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+            <div class="absolute bottom-4 left-4 bg-primary text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-lg">Chính sách &amp; Quy định</div>
+          </div>
+          <div class="p-8">
+            <div class="flex items-center gap-3 text-on-surface-variant text-[11px] font-bold uppercase tracking-widest mb-4">
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">calendar_today</span> 01/05/2026</span>
+              <span class="w-1 h-1 bg-outline-variant rounded-full"></span>
+              <span class="flex items-center gap-1"><span class="material-symbols-outlined text-[14px]">visibility</span> Mới nhất</span>
+            </div>
+            <h2 class="text-2xl font-extrabold text-on-surface mb-4 leading-tight group-hover:text-primary transition-colors">
+              Những Thay Đổi Về Chính Sách Nhập Khẩu Năm 2026
+            </h2>
+            <p class="text-on-surface-variant text-sm leading-relaxed mb-6 line-clamp-3">
+              Tổng hợp những thay đổi quan trọng về chính sách nhập khẩu, thuế, nghị định mới năm 2026 ảnh hưởng đến người nhập hàng Trung Quốc.
+            </p>
+            <div class="flex items-center text-primary font-black text-xs uppercase tracking-widest gap-2">
+              Xem chi tiết
+              <span class="material-symbols-outlined text-lg transition-transform group-hover:translate-x-1">arrow_forward</span>
+            </div>
+          </div>
+        </a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="../components.js"></script>
+</body>
+</html>

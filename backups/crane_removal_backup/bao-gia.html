@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bảng Dự Tính Tổng Chi Phí Nhập Khẩu | Vạn An Logistics</title>
+<meta name="description" content="Công cụ dự tính tổng chi phí nhập khẩu chính ngạch Trung Quốc - Việt Nam. Tính toán chi phí hàng hóa, vận chuyển, thuế và phí ủy thác.">
+<meta property="og:title" content="Bảng Dự Tính Tổng Chi Phí Nhập Khẩu | Vạn An Logistics">
+<meta property="og:description" content="Công cụ dự tính tổng chi phí nhập khẩu chính ngạch Trung Quốc - Việt Nam. Tính toán chi phí hàng hóa, vận chuyển, thuế và phí ủy thác.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/thumbnails/Thumnail-bang-gia.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="assets/thumbnails/Thumnail-bang-gia.png">
+
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+<link rel="icon" href="assets/brand/favicon.ico">
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#67dca4", "tertiary-fixed": "#ffdad8",
+          "surface-container-highest": "#dee4dd", "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff", "primary-container": "#008558",
+          "surface": "#f5fbf4", "on-secondary-container": "#446d56",
+          "surface-variant": "#dee4dd", "secondary": "#3e6751",
+          "background": "#f5fbf4", "primary-fixed-dim": "#67dca4",
+          "on-surface": "#171d19", "surface-container-low": "#eff5ee",
+          "secondary-fixed-dim": "#a4d1b6", "outline-variant": "#bccabf",
+          "on-surface-variant": "#3d4a42", "on-primary": "#ffffff",
+          "primary-fixed": "#84f9be", "surface-tint": "#006c47",
+          "surface-dim": "#d5dcd5", "secondary-fixed": "#bfedd1",
+          "surface-container-high": "#e4eae3", "on-primary-fixed": "#002113",
+          "tertiary": "#9c3c3d", "outline": "#6d7a71",
+          "on-primary-container": "#f6fff6", "surface-container": "#e9f0e9",
+          "primary": "#055a42", "secondary-container": "#bfedd1"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        fontFamily: { headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"] }
+      }
+    }
+  }
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-nav { background: rgba(245, 251, 244, 0.8); backdrop-filter: blur(20px); }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%;
+    width: 20%; height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(30deg); animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+  .animate-pulse-subtle { animation: pulse-subtle 2s infinite; }
+  @keyframes pulse-subtle {
+    0% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(14, 175, 117, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0); }
+  }
+  .reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform, opacity; }
+  .reveal-up { transform: translateY(50px); }
+  .reveal.active { opacity: 1; transform: translate(0, 0); }
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .vietnam-pattern {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(132,249,190,0.02) 0%, transparent 80%);
+  }
+  .drum-center {
+    width: 100vw;
+    height: 100vw;
+    background: url("assets/decor/pattern/9.png") no-repeat center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    animation: rotate-slow 400s linear infinite;
+    pointer-events: none;
+  }
+  .lac-bird-decor {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background: url("assets/decor/chim_hac.jpg") no-repeat center;
+    background-size: contain;
+    filter: blur(0.3px) brightness(1.5);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(132,249,190,0.1) 0%, transparent 60%);
+  }
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes fly-across {
+    from { transform: translateX(-20vw) translateY(0); opacity: 0; }
+    15% { opacity: 0.5; }
+    85% { opacity: 0.5; }
+    to { transform: translateX(110vw) translateY(-40px); opacity: 0; }
+  }
+  @keyframes flap-subtle {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.7); }
+  }
+  .animate-fly-1 { animation: fly-across 28s linear infinite; }
+  .animate-fly-2 { animation: fly-across 38s linear infinite -12s; }
+  .animate-flap { animation: flap-subtle 1.8s ease-in-out infinite; }
+
+  /* ==== QUOTE TABLE STYLES (preserved selectors for JS + layout) ==== */
+  .cell-input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: right;
+    font-weight: 600;
+    color: #171d19;
+    padding: 4px 2px;
+  }
+  .cell-input::placeholder { color: #9ca9a0; font-weight: 400; }
+  .cell-input:focus { color: #055a42; }
+  .cell-input-left { text-align: left; }
+  
+  /* Hide arrows in type=number to save space and avoid cut-offs */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  .table-cell {
+    border: 1px solid #dee4dd;
+    padding: 10px 14px;
+    vertical-align: middle;
+  }
+
+  thead tr { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .table-header {
+    background: transparent;
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    padding: 12px 14px;
+    border: 1px solid rgba(255,255,255,0.15);
+    font-size: 0.85rem;
+    letter-spacing: 0.01em;
+  }
+
+  .subtotal-row { background: #eff5ee; font-weight: 700; }
+  .result-value { color: #055a42; font-weight: 800; }
+
+  /* Keep .fade-in alias so JS observer still works */
+  .fade-in { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+  .fade-in.visible { opacity: 1; transform: translateY(0); }
+
+  @media print {
+    @page { size: A4 landscape; margin: 10mm 12mm 10mm 12mm; }
+    nav, .floating-btns, .no-print, .hero-section, footer, #back-to-top { display: none !important; }
+    body { background: white !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .print-area { padding: 0 !important; background: white !important; }
+    .print-area > .max-w-5xl { max-width: 100% !important; padding: 0 !important; }
+    .fade-in { opacity: 1 !important; transform: none !important; }
+    .reveal { opacity: 1 !important; transform: none !important; }
+    .hidden.print\:block { display: block !important; }
+    .exchange-section { border: 1px solid #dee4dd !important; }
+    thead tr { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%) !important; }
+    .table-header { background: transparent !important; color: white !important; padding: 10px 14px !important; font-size: 0.85rem !important; }
+    .subtotal-row { background: #eff5ee !important; }
+    .section-bar { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%) !important; }
+    .grand-bar { background: linear-gradient(135deg, #0eaf75 0%, #055a42 100%) !important; }
+    tr { page-break-inside: avoid !important; break-inside: avoid !important; }
+    .subtotal-row, #grand-total-section { break-inside: avoid !important; }
+    .mb-6 { margin-bottom: 16px !important; }
+    .mb-8 { margin-bottom: 16px !important; }
+    .py-8 { padding-top: 0 !important; padding-bottom: 0 !important; }
+    .p-4, .sm\:p-5, .p-8 { padding: 14px !important; }
+    .px-5, .sm\:px-6 { padding-left: 16px !important; padding-right: 16px !important; }
+    .py-4, .py-5 { padding-top: 10px !important; padding-bottom: 10px !important; }
+    .table-cell { padding: 10px 6px !important; font-size: 0.9rem !important; }
+    .cell-input { font-size: 0.9rem !important; }
+    .rounded-\[2rem\], .rounded-2xl, .rounded-3xl { border-radius: 12px !important; }
+    #grand-total-section { overflow: visible !important; box-shadow: none !important; border-radius: 12px !important; }
+    #grand-total-section .p-5, #grand-total-section .sm\:p-6, #grand-total-section .p-8 { padding: 16px 20px !important; }
+    #grand-total-section .space-y-3 > * { margin-top: 6px !important; margin-bottom: 6px !important; }
+    #grand-total-section .text-lg, #grand-total-section .sm\:text-xl { font-size: 1.25rem !important; }
+    #grand-total-section .text-xl, #grand-total-section .sm\:text-2xl { font-size: 1.5rem !important; }
+    .print-header-logo { height: 64px !important; }
+    .print-header-title { font-size: 28px !important; letter-spacing: -0.5px; }
+    .print-header-sub { font-size: 13px !important; margin-bottom: 48px !important; }
+    .exchange-section .grid { gap: 16px !important; }
+    .exchange-section input { padding: 8px 10px !important; font-size: 0.9rem !important; }
+    .exchange-section .mb-3 { margin-bottom: 8px !important; }
+    .exchange-section .mt-2 { display: none !important; }
+    .text-sm { font-size: 0.875rem !important; }
+    .text-xs { font-size: 0.8rem !important; }
+  }
+
+  @media (max-width: 768px) {
+    .table-cell, .table-header { padding: 8px 8px; font-size: 0.8rem; }
+    .cell-input { font-size: 0.8rem; }
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<div id="navbar-placeholder"></div>
+<div id="exchange-ticker-placeholder"></div>
+
+<!-- HERO -->
+<section class="relative pt-40 pb-24 overflow-hidden hero-gradient hero-section">
+  <div class="vietnam-pattern">
+    <div class="drum-center"></div>
+  </div>
+  <div class="absolute inset-0 dot-pattern opacity-20"></div>
+  <div class="absolute inset-0 hero-glow opacity-50"></div>
+
+  <!-- Flying birds -->
+  <div class="lac-bird-decor top-[20%] animate-fly-1"><div class="animate-flap w-full h-full"></div></div>
+  <div class="lac-bird-decor bottom-[25%] animate-fly-2" style="animation-direction: reverse;"><div class="animate-flap w-full h-full"></div></div>
+
+  <div class="relative max-w-5xl mx-auto px-6 lg:px-12 text-center z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Công cụ dự toán chi phí</span>
+    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-white leading-[1.05] tracking-tighter mb-6 reveal reveal-up delay-100">
+      Bảng Dự Tính Tổng Chi Phí<br>
+      <span class="text-primary-fixed">Nhập Khẩu Chính Ngạch</span>
+    </h1>
+    <p class="text-white/80 text-base md:text-lg max-w-2xl mx-auto leading-relaxed reveal reveal-up delay-200">
+      Nhập thông tin lô hàng để ước tính toàn bộ chi phí nhập khẩu chính ngạch từ Trung Quốc về Việt Nam
+    </p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="py-16 bg-surface print-area">
+  <div class="max-w-5xl mx-auto px-6 lg:px-8">
+
+    <!-- Print header (only visible when printing) -->
+    <div class="hidden print:block text-center mb-6 print-header-block">
+      <img src="assets/brand/Logo Vạn An - Ngang.png" alt="Vạn An Logistics" class="h-14 mx-auto mb-3 print-header-logo">
+      <h1 class="text-2xl font-extrabold text-primary print-header-title">BẢNG DỰ TÍNH TỔNG CHI PHÍ NHẬP KHẨU</h1>
+      <p class="text-sm text-on-surface-variant mt-1 print-header-sub">Vạn An Logistics — Hotline: 086.234.1318</p>
+    </div>
+
+    <!-- BƯỚC 01 + 02 gộp gọn -->
+    <div class="exchange-section reveal reveal-up bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] p-4 sm:p-5 mb-6">
+      <div class="flex flex-wrap gap-6 items-end">
+        <!-- Tỉ giá USD -->
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-secondary-container rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-primary text-base">currency_exchange</span>
+          </div>
+          <div>
+            <label class="block text-[10px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider">Tỉ giá USD/VND</label>
+            <input type="text" id="rate-usd" value="25.500" inputmode="numeric" class="border border-outline-variant bg-surface-container-low rounded-lg px-2.5 py-1.5 text-sm font-bold outline-none transition focus:border-primary focus:bg-white w-32" oninput="formatThousand(this); calcAll()">
+          </div>
+        </div>
+        <!-- Tỉ giá CNY -->
+        <div class="flex items-center gap-2">
+          <div>
+            <label class="block text-[10px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider">Tỉ giá CNY/VND</label>
+            <input type="text" id="rate-cny" value="3.950" inputmode="numeric" class="border border-outline-variant bg-surface-container-low rounded-lg px-2.5 py-1.5 text-sm font-bold outline-none transition focus:border-primary focus:bg-white w-32" oninput="formatThousand(this); calcAll()">
+          </div>
+        </div>
+        <!-- Divider -->
+        <div class="hidden sm:block w-px h-8 bg-outline-variant self-end mb-1"></div>
+        <!-- Tiền tệ -->
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-secondary-container rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-primary text-base">inventory_2</span>
+          </div>
+          <div>
+            <label class="block text-[10px] font-bold text-on-surface-variant mb-1 uppercase tracking-wider">Đơn vị tiền tệ</label>
+            <select id="currency" class="border border-outline-variant bg-surface-container-low rounded-lg px-2.5 py-1.5 text-sm font-bold outline-none transition focus:border-primary focus:bg-white">
+              <option value="USD">USD ($)</option>
+              <option value="CNY">CNY (¥)</option>
+              <option value="VND">VNĐ (₫)</option>
+            </select>
+          </div>
+        </div>
+        <!-- Note -->
+        <div class="text-[10px] text-primary font-semibold flex items-center gap-1 ml-auto self-end mb-1">
+          <span class="material-symbols-outlined text-xs">info</span>
+          Tỉ giá mang tính chất tham khảo
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================
+         I. CHI PHÍ HÀNG HÓA
+         ============================ -->
+    <div class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] overflow-hidden mb-8">
+      <div class="section-bar hero-gradient px-6 sm:px-8 py-5 flex items-center justify-between">
+        <h3 class="text-white font-extrabold text-base sm:text-lg tracking-tight">I. CHI PHÍ HÀNG HÓA (THANH TOÁN NHÀ MÁY)</h3>
+        <button onclick="addProductRow()" class="no-print flex items-center gap-1 bg-white/20 hover:bg-white/30 text-white text-xs font-bold px-3 py-1.5 rounded-lg transition">
+          <span class="material-symbols-outlined text-sm">add</span>
+          Thêm sản phẩm
+        </button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[820px]">
+          <thead>
+            <tr>
+              <th class="table-header w-10">STT</th>
+              <th class="table-header w-24">Ảnh</th>
+              <th class="table-header text-left w-40">Tên hàng hóa</th>
+              <th class="table-header w-24">Số lượng</th>
+              <th class="table-header w-32">Đơn giá (<span id="currency-label-1">USD</span>)</th>
+              <th class="table-header w-36">Thành tiền (<span id="currency-label-2">USD</span>)</th>
+              <th class="table-header w-40">Thành tiền (VND)</th>
+              <th class="table-header w-10 no-print"></th>
+            </tr>
+          </thead>
+          <tbody id="products-tbody">
+            <tr id="product-row-1" class="product-row">
+              <td class="table-cell text-center text-sm text-on-surface-variant row-num">1</td>
+              <td class="table-cell">
+                <div class="relative w-16 h-16 rounded-lg border border-dashed border-outline-variant cursor-pointer overflow-hidden bg-surface-container-low flex items-center justify-center mx-auto"
+                     onclick="document.getElementById('img-input-1').click()">
+                  <input type="file" id="img-input-1" accept="image/*" class="hidden" onchange="previewRowImg(this, 1)">
+                  <span id="img-icon-1" class="material-symbols-outlined text-xl text-outline-variant">add_photo_alternate</span>
+                  <img id="img-preview-1" src="" alt="" class="absolute inset-0 w-full h-full object-cover hidden">
+                </div>
+              </td>
+              <td class="table-cell">
+                <input type="text" id="name-1" placeholder="Tên hàng hóa" class="cell-input cell-input-left" style="min-width:120px">
+              </td>
+              <td class="table-cell">
+                <input type="text" id="qty-1" placeholder="0" inputmode="numeric" class="cell-input" oninput="formatThousand(this); calcAll()">
+              </td>
+              <td class="table-cell">
+                <input type="text" id="uprice-1" placeholder="0" inputmode="decimal" class="cell-input" oninput="formatDecimalPrice(this)">
+              </td>
+              <td class="table-cell text-right font-semibold text-primary" id="total-fx-1">0</td>
+              <td class="table-cell text-right font-semibold text-primary" id="total-vnd-1">0</td>
+              <td class="table-cell text-center no-print">
+                <button onclick="removeProductRow(1)" class="text-tertiary hover:opacity-70 transition">
+                  <span class="material-symbols-outlined text-base">delete</span>
+                </button>
+              </td>
+            </tr>
+            <tr id="tt-row">
+              <td class="table-cell text-center text-sm text-on-surface-variant" id="tt-stt">2</td>
+              <td class="table-cell"></td>
+              <td class="table-cell text-sm">Phí chuyển tiền quốc tế (T/T)</td>
+              <td class="table-cell"></td>
+              <td class="table-cell">
+                <input type="text" id="s1-tt-fee" placeholder="0" inputmode="numeric" class="cell-input" oninput="formatThousand(this); calcAll()">
+              </td>
+              <td class="table-cell text-right font-semibold text-primary" id="s1-tt-fx">0</td>
+              <td class="table-cell text-right font-semibold text-primary" id="s1-tt-vnd">0</td>
+              <td class="table-cell no-print"></td>
+            </tr>
+            <tr class="subtotal-row">
+              <td class="table-cell text-center font-bold text-sm text-primary">Cộng I</td>
+              <td class="table-cell"></td>
+              <td class="table-cell font-bold text-sm">Tạm tính tiền hàng trước VAT</td>
+              <td class="table-cell"></td>
+              <td class="table-cell"></td>
+              <td class="table-cell text-right font-extrabold text-primary" id="s1-sub-fx">0</td>
+              <td class="table-cell text-right font-extrabold text-primary" id="s1-sub-vnd">0</td>
+              <td class="table-cell no-print"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============================
+         II. CHI PHÍ VẬN TẢI & LOGISTICS
+         ============================ -->
+    <div class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] overflow-hidden mb-8">
+      <div class="section-bar hero-gradient px-6 sm:px-8 py-5">
+        <h3 class="text-white font-extrabold text-base sm:text-lg tracking-tight">II. CHI PHÍ VẬN CHUYỂN (TỚI KHO HÀ NỘI)</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[700px]">
+          <thead>
+            <tr>
+              <th class="table-header w-12">STT</th>
+              <th class="table-header text-left w-44">Hạng mục</th>
+              <th class="table-header w-32">Số KG</th>
+              <th class="table-header w-32">Số khối (m³)</th>
+              <th class="table-header w-32">Đơn giá/KG (VNĐ)</th>
+              <th class="table-header w-32">Đơn giá/Khối (VNĐ)</th>
+              <th class="table-header w-40">Thành tiền (VND)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-cell text-center text-sm text-on-surface-variant">1</td>
+              <td class="table-cell text-sm">Cước vận chuyển (Bằng Tường - HN)</td>
+              <td class="table-cell">
+                <input type="number" id="s2-kg" placeholder="0" step="0.1" class="cell-input text-center" oninput="calcAll()">
+              </td>
+              <td class="table-cell">
+                <input type="number" id="s2-cbm" placeholder="0" step="0.01" class="cell-input text-center" oninput="calcAll()">
+              </td>
+              <td class="table-cell">
+                <input type="text" id="s2-price-kg" placeholder="—" inputmode="numeric" class="cell-input text-center text-sm" oninput="formatThousand(this); calcAll(true)">
+              </td>
+              <td class="table-cell">
+                <input type="text" id="s2-price-cbm" placeholder="—" inputmode="numeric" class="cell-input text-center text-sm" oninput="formatThousand(this); calcAll(true)">
+              </td>
+              <td class="table-cell text-right font-semibold text-primary" id="s2-freight-vnd">0 đ</td>
+            </tr>
+            <tr class="subtotal-row">
+              <td class="table-cell text-center font-bold text-sm text-primary">Cộng II</td>
+              <td class="table-cell font-bold text-sm">Tổng chi phí vận chuyển</td>
+              <td class="table-cell"></td>
+              <td class="table-cell"></td>
+              <td class="table-cell"></td>
+              <td class="table-cell"></td>
+              <td class="table-cell text-right font-extrabold text-primary" id="s2-sub-vnd">0 đ</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- ============================
+         III. THUẾ & PHÍ DỊCH VỤ ỦY THÁC
+         ============================ -->
+    <div class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] overflow-hidden mb-8">
+      <div class="section-bar hero-gradient px-6 sm:px-8 py-5">
+        <h3 class="text-white font-extrabold text-base sm:text-lg tracking-tight">III. THUẾ &amp; PHÍ DỊCH VỤ ỦY THÁC</h3>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full min-w-[500px]">
+          <thead>
+            <tr>
+              <th class="table-header w-12">STT</th>
+              <th class="table-header text-left w-52">Hạng mục</th>
+              <th class="table-header w-28">Thuế suất</th>
+              <th class="table-header w-44">Thành tiền (VND)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="table-cell text-center text-sm text-on-surface-variant">1</td>
+              <td class="table-cell text-sm">Thuế NK (Nhập khẩu)</td>
+              <td class="table-cell">
+                <div class="flex items-center justify-center gap-1">
+                  <input type="number" id="s3-tax-nk" value="5" step="0.5" min="0" max="100" class="cell-input w-16" oninput="calcAll()">
+                  <span class="text-on-surface-variant text-sm">%</span>
+                </div>
+              </td>
+              <td class="table-cell text-right font-semibold text-primary" id="s3-tax-nk-vnd">0</td>
+            </tr>
+            <tr>
+              <td class="table-cell text-center text-sm text-on-surface-variant">2</td>
+              <td class="table-cell text-sm">Thuế VAT</td>
+              <td class="table-cell">
+                <div class="flex items-center justify-center gap-1">
+                  <input type="number" id="s3-tax-vat" value="8" step="0.5" min="0" max="100" class="cell-input w-16" oninput="calcAll()">
+                  <span class="text-on-surface-variant text-sm">%</span>
+                </div>
+              </td>
+              <td class="table-cell text-right font-semibold text-primary" id="s3-tax-vat-vnd">0</td>
+            </tr>
+            <tr>
+              <td class="table-cell text-center text-sm text-on-surface-variant">3</td>
+              <td class="table-cell text-sm">Phí dịch vụ ủy thác</td>
+              <td class="table-cell">
+                <div class="flex items-center justify-center gap-1">
+                  <input type="number" id="s3-fee-ut" value="1" step="0.1" min="0" max="100" class="cell-input w-16" oninput="calcAll()">
+                  <span class="text-on-surface-variant text-sm">%</span>
+                </div>
+              </td>
+              <td class="table-cell text-right font-semibold text-primary" id="s3-fee-ut-vnd">0</td>
+            </tr>
+            <tr class="subtotal-row">
+              <td class="table-cell text-center font-bold text-sm text-primary">Cộng III</td>
+              <td class="table-cell font-bold text-sm">Tổng thuế &amp; phí dịch vụ</td>
+              <td class="table-cell"></td>
+              <td class="table-cell text-right font-extrabold text-primary" id="s3-sub-vnd">0</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- GRAND TOTAL -->
+    <div id="grand-total-section" class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] shadow-[0px_12px_32px_rgba(5,90,66,0.15)] overflow-hidden mb-8 border border-primary-fixed/30">
+      <div class="grand-bar hero-gradient px-6 sm:px-8 py-6">
+        <h3 class="text-white font-extrabold text-lg sm:text-xl tracking-tight">TỔNG KẾT DỰ TOÁN LÔ HÀNG</h3>
+      </div>
+      <div class="p-6 sm:p-8 space-y-3">
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-3 border-b border-outline-variant">
+          <span class="font-bold text-on-surface text-base">Tổng chi phí vận chuyển + Thuế Phí (II + III):</span>
+          <div class="text-right">
+            <span class="text-lg sm:text-xl font-extrabold text-primary" id="shipping-total-vnd">0 VND</span>
+          </div>
+        </div>
+        <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+          <span class="font-bold text-on-surface text-base">Tổng tiền cần thanh toán (I + II + III):</span>
+          <div class="text-right">
+            <span class="text-xl sm:text-2xl font-extrabold text-primary ml-2" id="grand-total-vnd">0 VND</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- GHI CHÚ -->
+    <p class="text-lg text-on-surface-variant italic mt-2 mb-8">
+      <span class="font-bold text-on-surface not-italic">Lưu ý:</span><br>
+      - Báo giá có hiệu lực 24 giờ kể từ thời điểm gửi báo giá.<br>
+      - Tỉ giá quy đổi mang tính chất tham khảo, tỉ giá sẽ được cập nhật lại tại thời điểm khách hàng tiến hành thanh toán.
+    </p>
+
+    <!-- ACTIONS -->
+    <div class="flex flex-col sm:flex-row gap-3 justify-center no-print">
+      <button onclick="exportPDF()" class="inline-flex items-center justify-center gap-2 bg-primary hover:scale-105 active:scale-95 text-on-primary px-7 py-3.5 rounded-xl font-black text-xs uppercase tracking-wider transition shadow-lg btn-shine">
+        <span class="material-symbols-outlined text-base">print</span>
+        In / Xuất PDF
+      </button>
+      <a href="https://zalo.me/0862341318" target="_blank" class="inline-flex items-center justify-center gap-2 bg-secondary-container hover:bg-primary-fixed text-on-secondary-container hover:text-on-primary-fixed px-7 py-3.5 rounded-xl font-black text-xs uppercase tracking-wider transition shadow-lg">
+        <img src="https://page.widget.zalo.me/static/images/2.0/Logo.svg" alt="Zalo" class="w-5 h-5">
+        Gửi Zalo nhận báo giá chính xác
+      </a>
+    </div>
+
+    <p class="text-center text-lg text-on-surface-variant mt-6 no-print">
+      * Bảng dự tính mang tính tham khảo. Thuế suất và phí có thể thay đổi tùy loại hàng hóa. Liên hệ <a href="tel:0862341318" class="text-primary font-bold hover:underline">086.234.1318</a> để được báo giá chính xác.
+    </p>
+
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="components.js"></script>
+
+<!-- JAVASCRIPT -->
+<script>
+  // ===== FREIGHT PRICING =====
+  const priceWeight = [
+    { min: 0, max: 150, price: 7000 },
+    { min: 150, max: 300, price: 7000 },
+    { min: 300, max: 1000, price: 6000 },
+    { min: 1000, max: 2000, price: 5000 },
+    { min: 2000, max: 5000, price: 4000 },
+  ];
+  const priceVolume = [
+    { min: 0, max: 2, price: 1200000 },
+    { min: 2, max: 5, price: 1200000 },
+    { min: 5, max: 10, price: 1100000 },
+    { min: 10, max: 30, price: 1000000 },
+    { min: 30, max: Infinity, price: 900000 },
+  ];
+
+  function getWeightPrice(kg) {
+    if (kg >= 5000) return 4000;
+    for (const t of priceWeight) { if (kg >= t.min && kg < t.max) return t.price; }
+    return 7000;
+  }
+  function getVolumePrice(cbm) {
+    for (const t of priceVolume) { if (cbm >= t.min && cbm < t.max) return t.price; }
+    return 900000;
+  }
+
+  function fmt(n) { return Math.round(n).toLocaleString('vi-VN'); }
+
+  // ===== MULTI-PRODUCT ROWS =====
+  let rowCounter = 1;
+
+  function productRowHTML(id) {
+    return `
+      <td class="table-cell text-center text-sm text-on-surface-variant row-num">1</td>
+      <td class="table-cell">
+        <div class="relative w-16 h-16 rounded-lg border border-dashed border-outline-variant cursor-pointer overflow-hidden bg-surface-container-low flex items-center justify-center mx-auto"
+             onclick="document.getElementById('img-input-${id}').click()">
+          <input type="file" id="img-input-${id}" accept="image/*" class="hidden" onchange="previewRowImg(this, ${id})">
+          <span id="img-icon-${id}" class="material-symbols-outlined text-xl text-outline-variant">add_photo_alternate</span>
+          <img id="img-preview-${id}" src="" alt="" class="absolute inset-0 w-full h-full object-cover hidden">
+        </div>
+      </td>
+      <td class="table-cell">
+        <input type="text" id="name-${id}" placeholder="Tên hàng hóa" class="cell-input cell-input-left" style="min-width:120px">
+      </td>
+      <td class="table-cell">
+        <input type="text" id="qty-${id}" placeholder="0" inputmode="numeric" class="cell-input" oninput="formatThousand(this); calcAll()">
+      </td>
+      <td class="table-cell">
+        <input type="text" id="uprice-${id}" placeholder="0" inputmode="decimal" class="cell-input" oninput="formatDecimalPrice(this)">
+      </td>
+      <td class="table-cell text-right font-semibold text-primary" id="total-fx-${id}">0</td>
+      <td class="table-cell text-right font-semibold text-primary" id="total-vnd-${id}">0</td>
+      <td class="table-cell text-center no-print">
+        <button onclick="removeProductRow(${id})" class="text-tertiary hover:opacity-70 transition">
+          <span class="material-symbols-outlined text-base">delete</span>
+        </button>
+      </td>
+    `;
+  }
+
+  function addProductRow() {
+    rowCounter++;
+    const id = rowCounter;
+    const tbody = document.getElementById('products-tbody');
+    const ttRow = document.getElementById('tt-row');
+    const tr = document.createElement('tr');
+    tr.id = `product-row-${id}`;
+    tr.className = 'product-row';
+    tr.innerHTML = productRowHTML(id);
+    tbody.insertBefore(tr, ttRow);
+    updateRowNumbers();
+    calcAll();
+  }
+
+  function removeProductRow(id) {
+    const rows = document.querySelectorAll('#products-tbody tr.product-row');
+    if (rows.length <= 1) return;
+    document.getElementById(`product-row-${id}`).remove();
+    updateRowNumbers();
+    calcAll();
+  }
+
+  function updateRowNumbers() {
+    const rows = document.querySelectorAll('#products-tbody tr.product-row');
+    rows.forEach((row, i) => { row.querySelector('.row-num').textContent = i + 1; });
+    document.getElementById('tt-stt').textContent = rows.length + 1;
+  }
+
+  function previewRowImg(input, id) {
+    if (input.files && input.files[0]) {
+      const reader = new FileReader();
+      reader.onload = function(e) {
+        document.getElementById(`img-preview-${id}`).src = e.target.result;
+        document.getElementById(`img-preview-${id}`).classList.remove('hidden');
+        document.getElementById(`img-icon-${id}`).classList.add('hidden');
+      };
+      reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  async function fetchRates() {
+    try {
+      const res = await fetch('https://open.er-api.com/v6/latest/USD');
+      const data = await res.json();
+      const usdVnd = Math.round(data.rates.VND);
+      const cnyVnd = Math.round(data.rates.VND / data.rates.CNY) + 150;
+      document.getElementById('rate-usd').value = fmtThousandVal(usdVnd);
+      document.getElementById('rate-cny').value = fmtThousandVal(cnyVnd);
+      calcAll();
+    } catch(e) {}
+  }
+
+  // ===== FORMAT DECIMAL (cho ô đơn giá — cho phép dấu phẩy thập phân) =====
+  function formatDecimalPrice(el) {
+    let val = el.value.replace(/[^0-9,]/g, '');
+    const idx = val.indexOf(',');
+    if (idx !== -1) {
+      val = val.slice(0, idx + 1) + val.slice(idx + 1).replace(/,/g, '');
+    }
+    el.value = val;
+    calcAll();
+  }
+
+  // ===== FORMAT THOUSAND SEPARATOR =====
+  function formatThousand(el) {
+    let pos = el.selectionStart;
+    let raw = el.value.replace(/\./g, '');
+    raw = raw.replace(/[^0-9]/g, '');
+    if (!raw) { el.value = ''; return; }
+    const formatted = Number(raw).toLocaleString('vi-VN');
+    const addedDots = formatted.length - raw.length;
+    el.value = formatted;
+    const newPos = pos + (formatted.length - el.value.length >= 0 ? addedDots : 0);
+    el.setSelectionRange(newPos, newPos);
+  }
+
+  function parseNum(el) {
+    if (!el) return 0;
+    return parseFloat(el.value.replace(/\./g, '').replace(/,/g, '.')) || 0;
+  }
+
+  function fmtThousandVal(n) {
+    if (!n || n === 0) return '';
+    return Math.round(n).toLocaleString('vi-VN');
+  }
+
+  // ===== MAIN CALCULATION =====
+  function calcAll(manualEdit) {
+    const currency = document.getElementById('currency').value;
+    const rateUsd = parseNum(document.getElementById('rate-usd')) || 25500;
+    const rateCny = parseNum(document.getElementById('rate-cny')) || 3600;
+    const rate = currency === 'USD' ? rateUsd : currency === 'CNY' ? rateCny : 1;
+
+    document.getElementById('currency-label-1').textContent = currency;
+    document.getElementById('currency-label-2').textContent = currency;
+
+    // Sum all product rows
+    let s1TotalFx = 0;
+    let s1TotalVnd = 0;
+    document.querySelectorAll('#products-tbody tr.product-row').forEach(row => {
+      const id = row.id.replace('product-row-', '');
+      const qty = parseNum(document.getElementById(`qty-${id}`));
+      const uprice = parseNum(document.getElementById(`uprice-${id}`));
+      const rowFx = uprice * (qty || 1);
+      const rowVnd = rowFx * rate;
+      document.getElementById(`total-fx-${id}`).textContent = fmt(rowFx);
+      document.getElementById(`total-vnd-${id}`).textContent = fmt(rowVnd) + ' đ';
+      s1TotalFx += rowFx;
+      s1TotalVnd += rowVnd;
+    });
+
+    // T/T fee
+    const ttFee = parseNum(document.getElementById('s1-tt-fee'));
+    const s1TtVnd = ttFee * rate;
+    document.getElementById('s1-tt-fx').textContent = fmt(ttFee);
+    document.getElementById('s1-tt-vnd').textContent = fmt(s1TtVnd) + ' đ';
+
+    const s1SubFx = s1TotalFx + ttFee;
+    const s1SubVnd = s1TotalVnd + s1TtVnd;
+    document.getElementById('s1-sub-fx').textContent = fmt(s1SubFx);
+    document.getElementById('s1-sub-vnd').textContent = fmt(s1SubVnd) + ' đ';
+
+    // Section II - freight
+    const kg = parseFloat(document.getElementById('s2-kg').value) || 0;
+    const cbm = parseFloat(document.getElementById('s2-cbm').value) || 0;
+
+    let s2Vnd = 0;
+    const priceKgEl = document.getElementById('s2-price-kg');
+    const priceCbmEl = document.getElementById('s2-price-cbm');
+
+    if (manualEdit !== true) {
+      if (kg > 0) priceKgEl.value = fmtThousandVal(getWeightPrice(kg));
+      if (cbm > 0) priceCbmEl.value = fmtThousandVal(getVolumePrice(cbm));
+    }
+
+    const unitW = parseNum(priceKgEl);
+    const unitV = parseNum(priceCbmEl);
+
+    if (kg > 0 || cbm > 0) {
+      const costByWeight = kg * unitW;
+      const costByVolume = cbm * unitV;
+      s2Vnd = Math.max(costByWeight, costByVolume);
+    }
+    document.getElementById('s2-freight-vnd').textContent = fmt(s2Vnd) + ' đ';
+    document.getElementById('s2-sub-vnd').textContent = fmt(s2Vnd) + ' đ';
+
+    // Section III - taxes
+    const taxNkRate = parseFloat(document.getElementById('s3-tax-nk').value) || 0;
+    const taxVatRate = parseFloat(document.getElementById('s3-tax-vat').value) || 0;
+    const feeUtRate = parseFloat(document.getElementById('s3-fee-ut').value) || 0;
+
+    const taxNkVnd = s1SubVnd * taxNkRate / 100;
+    const taxVatVnd = (s1SubVnd + taxNkVnd) * taxVatRate / 100;
+    const feeUtVnd = s1SubVnd * feeUtRate / 100;
+
+    document.getElementById('s3-tax-nk-vnd').textContent = fmt(taxNkVnd) + ' đ';
+    document.getElementById('s3-tax-vat-vnd').textContent = fmt(taxVatVnd) + ' đ';
+    document.getElementById('s3-fee-ut-vnd').textContent = fmt(feeUtVnd) + ' đ';
+
+    const s3SubVnd = taxNkVnd + taxVatVnd + feeUtVnd;
+    document.getElementById('s3-sub-vnd').textContent = fmt(s3SubVnd) + ' đ';
+
+    const shippingVnd = s2Vnd + s3SubVnd;
+    const grandVnd = s1SubVnd + shippingVnd;
+    document.getElementById('shipping-total-vnd').textContent = fmt(shippingVnd) + ' VND';
+    document.getElementById('grand-total-vnd').textContent = fmt(grandVnd) + ' VND';
+  }
+
+  document.getElementById('rate-usd').addEventListener('input', calcAll);
+  document.getElementById('rate-cny').addEventListener('input', calcAll);
+  document.getElementById('currency').addEventListener('change', calcAll);
+
+  // Ngăn arrow keys bubble lên ngoài input (tránh nhảy ô)
+  document.querySelectorAll('table').forEach(table => {
+    table.addEventListener('keydown', function(e) {
+      if (e.target.tagName === 'INPUT' && ['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)) {
+        e.stopPropagation();
+      }
+    });
+  });
+
+  // ===== EXPORT PDF =====
+  function exportPDF() {
+    const oldTitle = document.title;
+    const firstName = document.getElementById('name-1')?.value.trim() || '';
+    document.title = "Bảng Báo Chi Phí NKCN - " + firstName;
+    window.print();
+    window.addEventListener('afterprint', () => { document.title = oldTitle; }, { once: true });
+  }
+
+  // Init
+  calcAll();
+</script>
+
+</body>
+</html>

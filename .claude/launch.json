@@ -1,0 +1,17 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "van-an-landing",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3000", "D:/AI Business/AI Agent Business Kit/Landingpage Vạn An"],
+      "port": 3000
+    },
+    {
+      "name": "van-an-website",
+      "runtimeExecutable": "npx",
+      "runtimeArgs": ["serve", "-l", "3001", "D:/AI Business/AI Agent Business Kit/Vạn An Logistics"],
+      "port": 3001
+    }
+  ]
+}

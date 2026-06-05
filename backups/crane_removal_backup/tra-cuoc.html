@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Tra Cước Vận Chuyển Ước Tính | Vạn An Logistics</title>
+<meta name="description" content="Tra cước vận chuyển chính ngạch Trung Quốc - Việt Nam. Nhập khối lượng, thể tích để ước tính cước phí vận chuyển tuyến Bằng Tường - Hà Nội / HCM.">
+<meta property="og:title" content="Tra Cước Vận Chuyển | Vạn An Logistics"/>
+<meta property="og:description" content="Ước tính cước vận chuyển chính ngạch Trung - Việt. Minh bạch, không phát sinh."/>
+<meta property="og:type" content="website"/>
+<link rel="icon" type="image/x-icon" href="assets/brand/favicon.ico"/>
+
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#67dca4","tertiary-fixed": "#ffdad8","surface-container-highest": "#dee4dd","on-secondary": "#ffffff","surface-container-lowest": "#ffffff","primary-container": "#008558","surface": "#f5fbf4","on-tertiary-fixed-variant": "#80272a","on-secondary-container": "#446d56","surface-variant": "#dee4dd","secondary": "#3e6751","on-secondary-fixed-variant": "#264f3a","background": "#f5fbf4","primary-fixed-dim": "#67dca4","on-tertiary": "#ffffff","on-surface": "#171d19","error": "#ba1a1a","surface-container-low": "#eff5ee","secondary-fixed-dim": "#a4d1b6","inverse-surface": "#2c322d","surface-bright": "#f5fbf4","outline-variant": "#bccabf","on-surface-variant": "#3d4a42","on-primary": "#ffffff","error-container": "#ffdad6","on-tertiary-fixed": "#410006","on-background": "#171d19","on-primary-fixed-variant": "#005234","primary-fixed": "#84f9be","tertiary-fixed-dim": "#ffb3b0","inverse-on-surface": "#ecf2eb","surface-tint": "#006c47","tertiary-container": "#bc5453","surface-dim": "#d5dcd5","secondary-fixed": "#bfedd1","surface-container-high": "#e4eae3","on-error": "#ffffff","on-primary-fixed": "#002113","tertiary": "#9c3c3d","outline": "#6d7a71","on-primary-container": "#f6fff6","on-secondary-fixed": "#002113","on-tertiary-container": "#fffbff","surface-container": "#e9f0e9","primary": "#055a42","on-error-container": "#93000a","secondary-container": "#bfedd1"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        fontFamily: { headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"] }
+      }
+    }
+  }
+</script>
+
+<style>
+  body { font-family: 'Manrope', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-nav { background: rgba(245, 251, 244, 0.8); backdrop-filter: blur(20px); }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%; width: 20%; height: 200%;
+    background: rgba(255,255,255,0.4); transform: rotate(30deg); animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+  .animate-pulse-subtle { animation: pulse-subtle 2s infinite; }
+  @keyframes pulse-subtle {
+    0% { box-shadow: 0 0 0 0 rgba(14,175,117,0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(14,175,117,0); }
+    100% { box-shadow: 0 0 0 0 rgba(14,175,117,0); }
+  }
+  .animate-ticker { animation: ticker-scroll 35s linear infinite; }
+  @media (max-width: 768px) { .animate-ticker { animation-duration: 15s; } }
+  @keyframes ticker-scroll { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.16,1,0.3,1); will-change: transform, opacity; }
+  .reveal-up { transform: translateY(50px); }
+  .reveal-left { transform: translateX(-50px); }
+  .reveal-right { transform: translateX(50px); }
+  .reveal.active { opacity: 1; transform: translate(0,0); }
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .vietnam-pattern {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(132,249,190,0.02) 0%, transparent 80%);
+  }
+  .drum-center {
+    width: 100vw;
+    height: 100vw;
+    background: url("assets/decor/pattern/9.png") no-repeat center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    animation: rotate-slow 400s linear infinite;
+    pointer-events: none;
+  }
+  .lac-bird-decor {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background: url("assets/decor/chim_hac.jpg") no-repeat center;
+    background-size: contain;
+    filter: blur(0.3px) brightness(1.5);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(132,249,190,0.1) 0%, transparent 60%);
+  }
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes fly-across {
+    from { transform: translateX(-20vw) translateY(0); opacity: 0; }
+    15% { opacity: 0.5; }
+    85% { opacity: 0.5; }
+    to { transform: translateX(110vw) translateY(-40px); opacity: 0; }
+  }
+  @keyframes flap-subtle {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.7); }
+  }
+  .animate-fly-1 { animation: fly-across 28s linear infinite; }
+  .animate-fly-2 { animation: fly-across 38s linear infinite -12s; }
+  .animate-flap { animation: flap-subtle 1.8s ease-in-out infinite; }
+
+  /* Calculator-specific */
+  .dest-option input:checked + .dest-card {
+    background: #055a42; color: #fff; border-color: #055a42;
+    box-shadow: 0 8px 24px rgba(5,90,66,0.25);
+  }
+  .calc-input:focus { border-color: #055a42; box-shadow: 0 0 0 4px rgba(5,90,66,0.12); }
+
+  /* Dropdown Styles */
+  .dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 10px);
+    transition: all 0.3s ease;
+  }
+  .group:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<div id="navbar-placeholder"></div>
+<div id="exchange-ticker-placeholder"></div>
+
+<!-- HERO -->
+<section class="relative pt-44 pb-24 overflow-hidden hero-gradient">
+  <div class="vietnam-pattern">
+    <div class="drum-center"></div>
+  </div>
+  <div class="absolute inset-0 dot-pattern opacity-20"></div>
+  <div class="absolute inset-0 hero-glow opacity-50"></div>
+
+  <!-- Flying birds -->
+  <div class="lac-bird-decor top-[20%] animate-fly-1"><div class="animate-flap w-full h-full"></div></div>
+  <div class="lac-bird-decor bottom-[25%] animate-fly-2" style="animation-direction: reverse;"><div class="animate-flap w-full h-full"></div></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12 text-center z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Công cụ ước tính cước phí</span>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tighter mb-6 reveal reveal-up delay-100">
+      Tra Cước Vận Chuyển<br>
+      <span class="text-primary-fixed">Ước Tính Nhanh</span>
+    </h1>
+    <p class="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed reveal reveal-up delay-200">
+      Nhập khối lượng và thể tích hàng hóa để ước tính cước vận chuyển chính ngạch tuyến Bằng Tường — Hà Nội / Hồ Chí Minh
+    </p>
+    <div class="flex flex-wrap items-center justify-center gap-3 mt-10 reveal reveal-up delay-300">
+      <span class="bg-white/10 text-white px-5 py-2.5 rounded-full text-sm font-semibold border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">bolt</span>Kết quả tức thì
+      </span>
+      <span class="bg-white/10 text-white px-5 py-2.5 rounded-full text-sm font-semibold border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">verified</span>Giá minh bạch
+      </span>
+      <span class="bg-white/10 text-white px-5 py-2.5 rounded-full text-sm font-semibold border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">calculate</span>Theo KG & m³
+      </span>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section class="py-24 bg-surface">
+  <div class="max-w-4xl mx-auto px-6 lg:px-12">
+
+    <!-- Calculator Card -->
+    <div class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] overflow-hidden">
+      <div class="hero-gradient p-8 md:p-10">
+        <div class="flex items-center gap-4">
+          <div class="w-14 h-14 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center">
+            <span class="material-symbols-outlined text-white text-3xl">calculate</span>
+          </div>
+          <div>
+            <h2 class="text-2xl md:text-3xl font-extrabold text-white tracking-tight">Nhập thông tin lô hàng</h2>
+            <p class="text-white/70 text-base mt-1">Điền khối lượng và thể tích để tra cước ngay</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-8 md:p-10">
+        <div class="space-y-6 mb-6">
+
+          <!-- Điểm đến -->
+          <div>
+            <label class="block text-sm font-bold text-on-surface mb-3 tracking-tight">Điểm đến</label>
+            <div class="grid grid-cols-2 gap-4">
+              <label class="dest-option cursor-pointer">
+                <input type="radio" name="destination" value="hn" class="sr-only" checked>
+                <div class="dest-card bg-surface-container-low border-2 border-outline-variant rounded-2xl py-5 px-4 text-center font-bold transition flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined">location_city</span> Hà Nội
+                </div>
+              </label>
+              <label class="dest-option cursor-pointer">
+                <input type="radio" name="destination" value="hcm" class="sr-only">
+                <div class="dest-card bg-surface-container-low border-2 border-outline-variant rounded-2xl py-5 px-4 text-center font-bold transition flex items-center justify-center gap-2">
+                  <span class="material-symbols-outlined">apartment</span> Hồ Chí Minh
+                </div>
+              </label>
+            </div>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- KG -->
+            <div>
+              <label for="weight" class="block text-sm font-bold text-on-surface mb-3 tracking-tight">Khối lượng</label>
+              <div class="relative">
+                <input type="number" id="weight" min="0" step="0.1" placeholder="VD: 500" class="calc-input"/>
+                <span class="absolute right-5 top-1/2 -translate-y-1/2 text-on-surface-variant font-bold text-sm">KG</span>
+              </div>
+            </div>
+            <!-- m³ -->
+            <div>
+              <label for="volume" class="block text-sm font-bold text-on-surface mb-3 tracking-tight">Thể tích</label>
+              <div class="relative">
+                <input type="number" id="volume" min="0" step="0.01" placeholder="VD: 3.5" class="calc-input"/>
+                <span class="absolute right-5 top-1/2 -translate-y-1/2 text-on-surface-variant font-bold text-sm">m³</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Density -->
+        <div id="density-box" class="hidden bg-secondary-container/50 rounded-2xl p-5 mb-6 border border-outline-variant">
+          <div class="flex items-center justify-between mb-1">
+            <div class="flex items-center gap-2">
+              <span class="material-symbols-outlined text-primary">bolt</span>
+              <span class="text-sm font-bold text-on-surface">Tỉ trọng hàng hóa</span>
+            </div>
+            <span id="density-value" class="text-lg font-extrabold text-primary"></span>
+          </div>
+          <p class="text-base text-on-surface-variant" id="density-note"></p>
+        </div>
+
+        <!-- CTA -->
+        <button id="calc-btn" onclick="calculate()" class="w-full hero-gradient text-white py-5 rounded-2xl text-lg font-extrabold transition transform hover:scale-[1.01] active:scale-[0.99] shadow-[0px_8px_24px_rgba(5,90,66,0.25)] btn-shine flex items-center justify-center gap-3 tracking-tight">
+          <span class="material-symbols-outlined">calculate</span>
+          Tra Cước Ngay
+        </button>
+      </div>
+    </div>
+
+    <!-- Result -->
+    <div id="result-section" class="hidden mt-10 space-y-6">
+      <!-- Total -->
+      <div class="hero-gradient rounded-[2rem] p-10 md:p-12 text-center shadow-[0px_8px_24px_rgba(5,90,66,0.2)]">
+        <p class="text-white/80 text-sm font-semibold uppercase tracking-widest mb-3">Tổng cước vận chuyển ước tính</p>
+        <p id="total-cost" class="text-5xl md:text-6xl font-extrabold text-white tracking-tighter"></p>
+        <p id="cost-method" class="text-primary-fixed text-sm md:text-base mt-4 font-semibold"></p>
+      </div>
+
+      <!-- Breakdown -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div id="card-weight" class="bg-surface-container-lowest rounded-[2rem] p-7 border-2 border-outline-variant shadow-[0px_8px_24px_rgba(23,29,25,0.04)] transition">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-11 h-11 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary">scale</span>
+            </div>
+            <h3 class="font-extrabold text-on-surface tracking-tight">Tính theo cân nặng</h3>
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between"><span class="text-on-surface-variant">Khối lượng:</span><span id="res-weight" class="font-bold"></span></div>
+            <div class="flex justify-between"><span class="text-on-surface-variant">Đơn giá:</span><span id="res-weight-price" class="font-bold"></span></div>
+            <hr class="border-outline-variant">
+            <div class="flex justify-between"><span class="text-on-surface-variant font-semibold">Phép tính:</span><span id="res-weight-calc" class="font-bold text-primary"></span></div>
+            <div class="flex justify-between text-base pt-1"><span class="font-bold">Thành tiền:</span><span id="res-weight-total" class="font-extrabold text-primary"></span></div>
+          </div>
+        </div>
+
+        <div id="card-volume" class="bg-surface-container-lowest rounded-[2rem] p-7 border-2 border-outline-variant shadow-[0px_8px_24px_rgba(23,29,25,0.04)] transition">
+          <div class="flex items-center gap-3 mb-5">
+            <div class="w-11 h-11 bg-secondary-container rounded-xl flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary">deployed_code</span>
+            </div>
+            <h3 class="font-extrabold text-on-surface tracking-tight">Tính theo thể tích</h3>
+          </div>
+          <div class="space-y-3 text-sm">
+            <div class="flex justify-between"><span class="text-on-surface-variant">Thể tích:</span><span id="res-volume" class="font-bold"></span></div>
+            <div class="flex justify-between"><span class="text-on-surface-variant">Đơn giá:</span><span id="res-volume-price" class="font-bold"></span></div>
+            <hr class="border-outline-variant">
+            <div class="flex justify-between"><span class="text-on-surface-variant font-semibold">Phép tính:</span><span id="res-volume-calc" class="font-bold text-primary"></span></div>
+            <div class="flex justify-between text-base pt-1"><span class="font-bold">Thành tiền:</span><span id="res-volume-total" class="font-extrabold text-primary"></span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Explanation -->
+      <div class="bg-surface-container-lowest rounded-[2rem] p-8 border border-outline-variant shadow-[0px_8px_24px_rgba(23,29,25,0.04)]">
+        <div class="flex items-start gap-4">
+          <div class="w-11 h-11 bg-secondary-container rounded-xl flex items-center justify-center flex-shrink-0">
+            <span class="material-symbols-outlined text-primary">info</span>
+          </div>
+          <div>
+            <h4 class="font-extrabold text-on-surface mb-2 tracking-tight">Nguyên tắc tính cước</h4>
+            <p class="text-base text-on-surface-variant leading-relaxed" id="explanation-text"></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Note -->
+      <div class="text-center text-lg text-on-surface-variant">
+        <p>* Đây là cước ước tính, chưa bao gồm phí ủy thác XNK, thuế và chi phí phát sinh khác.</p>
+        <p class="mt-1">Liên hệ <a href="tel:0862341318" class="text-primary font-bold hover:underline">086.234.1318</a> hoặc <a href="https://zalo.me/0862341318" target="_blank" class="text-primary font-bold hover:underline">Chat Zalo</a> để được báo giá chính xác.</p>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center pt-2">
+        <a href="bang-gia.html" class="inline-flex items-center justify-center gap-2 bg-surface-container-lowest border-2 border-primary text-primary hover:bg-secondary-container px-7 py-3.5 rounded-xl font-extrabold transition tracking-tight">
+          <span class="material-symbols-outlined">table_view</span>
+          Xem bảng giá chi tiết
+        </a>
+        <a href="https://zalo.me/0862341318" target="_blank" class="inline-flex items-center justify-center gap-2 bg-primary hover:bg-primary-container text-on-primary px-7 py-3.5 rounded-xl font-extrabold transition btn-shine tracking-tight">
+          <span class="material-symbols-outlined">chat</span>
+          Chat Zalo Báo Giá
+        </a>
+      </div>
+    </div>
+
+    <!-- Error -->
+    <div id="error-msg" class="hidden mt-6 bg-error-container text-on-error-container px-6 py-4 rounded-2xl text-sm font-semibold text-center border border-error/30"></div>
+  </div>
+</section>
+
+<!-- INFO / FAQ -->
+<section class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Hướng dẫn tra cước</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Cách Tính Cước Hoạt Động</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Cước vận chuyển được tính theo 2 phương pháp, áp dụng giá trị lớn hơn — nguyên tắc chuẩn của ngành logistics quốc tế</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="reveal reveal-up delay-100 bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)]">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">scale</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-on-surface mb-3 tracking-tight">1. Tính theo cân nặng</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Áp dụng cho hàng nặng, tỉ trọng ≥ 300 kg/m³ (thép, máy móc, phụ kiện kim loại). Cước = KG × đơn giá VNĐ/KG.</p>
+      </div>
+      <div class="reveal reveal-up delay-200 hero-gradient p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(5,90,66,0.2)] text-white">
+        <div class="w-14 h-14 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-white text-3xl">deployed_code</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-white mb-3 tracking-tight">2. Tính theo thể tích</h3>
+        <p class="text-white/90 text-sm leading-relaxed">Áp dụng cho hàng cồng kềnh, tỉ trọng ≤ 100 kg/m³ (quần áo, đồ gia dụng nhẹ). Cước = m³ × đơn giá VNĐ/m³.</p>
+      </div>
+      <div class="reveal reveal-up delay-300 bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)]">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">compare_arrows</span>
+        </div>
+        <h3 class="text-xl font-extrabold text-on-surface mb-3 tracking-tight">3. So sánh & áp dụng</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Hệ thống so sánh cả 2 phương pháp và áp dụng giá trị <strong>LỚN HƠN</strong>. Đây là nguyên tắc chuẩn ngành logistics, đảm bảo công bằng.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 hero-gradient relative overflow-hidden">
+  <div class="absolute inset-0 dot-pattern opacity-40"></div>
+  <div class="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Hỗ trợ 24/7</span>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-5 tracking-tight leading-tight reveal reveal-up delay-100">Cần Báo Giá Chính Xác?</h2>
+    <p class="text-white/80 text-lg max-w-2xl mx-auto mb-10 reveal reveal-up delay-200">Liên hệ đội ngũ Vạn An để nhận báo giá trọn gói bao gồm phí ủy thác XNK, thuế và các chi phí liên quan</p>
+    <div class="flex flex-wrap justify-center gap-4 reveal reveal-up delay-300">
+      <a href="https://zalo.me/0862341318" target="_blank" class="bg-white text-primary px-8 py-4 rounded-xl font-extrabold flex items-center gap-2 hover:bg-secondary-container transition shadow-lg">
+        <img src="https://page.widget.zalo.me/static/images/2.0/Logo.svg" alt="Zalo" class="w-6 h-6">
+        Chat Zalo Ngay
+      </a>
+      <a href="tel:0862341318" class="bg-white/10 text-white border-2 border-white/30 px-8 py-4 rounded-xl font-extrabold flex items-center gap-2 hover:bg-white/20 transition backdrop-blur-sm">
+        <span class="material-symbols-outlined">call</span>
+        086.234.1318
+      </a>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="components.js"></script>
+<script>
+  function calculate() {
+    const dest = document.querySelector('input[name="destination"]:checked').value;
+    const weight = parseFloat(document.getElementById('weight').value) || 0;
+    const volume = parseFloat(document.getElementById('volume').value) || 0;
+    const errorMsg = document.getElementById('error-msg');
+    const resultSection = document.getElementById('result-section');
+    const densityBox = document.getElementById('density-box');
+
+    if (weight <= 0 && volume <= 0) {
+      errorMsg.textContent = "Vui lòng nhập khối lượng hoặc thể tích hàng hóa.";
+      errorMsg.classList.remove('hidden');
+      resultSection.classList.add('hidden');
+      return;
+    }
+    errorMsg.classList.add('hidden');
+
+    // 1. Calculate Density
+    if (weight > 0 && volume > 0) {
+      const density = Math.round(weight / volume);
+      document.getElementById('density-value').textContent = density + " kg/m³";
+      densityBox.classList.remove('hidden');
+      if (density >= 300) {
+        document.getElementById('density-note').textContent = "Hàng hóa thuộc nhóm HÀNG NẶNG (≥ 300 kg/m³).";
+      } else if (density <= 100) {
+        document.getElementById('density-note').textContent = "Hàng hóa thuộc nhóm HÀNG CỒNG KỀNH (≤ 100 kg/m³).";
+      } else {
+        document.getElementById('density-note').textContent = "Hàng hóa thuộc nhóm HÀNG THÔNG THƯỜNG.";
+      }
+    } else {
+      densityBox.classList.add('hidden');
+    }
+
+    // 2. Pricing Tiers (HN)
+    const pricesHN = {
+      weight: [ { min: 0, max: 1000, p: 6000 }, { min: 1000, max: 5000, p: 5000 }, { min: 5000, max: Infinity, p: 4000 } ],
+      volume: [ { min: 0, max: 10, p: 1100000 }, { min: 10, max: 30, p: 1000000 }, { min: 30, max: Infinity, p: 900000 } ]
+    };
+    // Pricing Tiers (HCM)
+    const pricesHCM = {
+      weight: [ { min: 0, max: 1000, p: 8000 }, { min: 1000, max: 5000, p: 7000 }, { min: 5000, max: Infinity, p: 6000 } ],
+      volume: [ { min: 0, max: 10, p: 1600000 }, { min: 10, max: 30, p: 1500000 }, { min: 30, max: Infinity, p: 1400000 } ]
+    };
+
+    const config = dest === 'hn' ? pricesHN : pricesHCM;
+    
+    // Find rates
+    const getRate = (val, tiers) => {
+        const tier = tiers.find(t => val >= t.min && val < t.max);
+        return tier ? tier.p : tiers[tiers.length-1].p;
+    };
+    
+    const unitW = weight > 0 ? getRate(weight, config.weight) : (dest === 'hn' ? 6000 : 8000);
+    const unitV = volume > 0 ? getRate(volume, config.volume) : (dest === 'hn' ? 1100000 : 1600000);
+
+    const costW = weight * unitW;
+    const costV = volume * unitV;
+    const isWeight = costW >= costV;
+    const total = isWeight ? costW : costV;
+
+    // 3. UI Update
+    document.getElementById('total-cost').textContent = total.toLocaleString('vi-VN') + " đ";
+    document.getElementById('cost-method').textContent = "Áp dụng phương thức tính theo " + (isWeight ? "CÂN NẶNG" : "THỂ TÍCH") + " (giá trị lớn hơn)";
+    
+    document.getElementById('res-weight').textContent = weight + " KG";
+    document.getElementById('res-weight-price').textContent = unitW.toLocaleString('vi-VN') + " đ/KG";
+    document.getElementById('res-weight-calc').textContent = weight + " × " + unitW.toLocaleString('vi-VN');
+    document.getElementById('res-weight-total').textContent = costW.toLocaleString('vi-VN') + " đ";
+
+    document.getElementById('res-volume').textContent = volume + " m³";
+    document.getElementById('res-volume-price').textContent = unitV.toLocaleString('vi-VN') + " đ/m³";
+    document.getElementById('res-volume-calc').textContent = volume + " × " + unitV.toLocaleString('vi-VN');
+    document.getElementById('res-volume-total').textContent = costV.toLocaleString('vi-VN') + " đ";
+
+    const exText = isWeight 
+      ? `Lô hàng của bạn có cước tính theo cân nặng (${costW.toLocaleString('vi-VN')} đ) lớn hơn cước tính theo thể tích (${costV.toLocaleString('vi-VN')} đ), do đó hệ thống áp dụng giá trị lớn nhất.`
+      : `Lô hàng của bạn có cước tính theo thể tích (${costV.toLocaleString('vi-VN')} đ) lớn hơn cước tính theo cân nặng (${costW.toLocaleString('vi-VN')} đ), do đó hệ thống áp dụng giá trị lớn nhất.`;
+    document.getElementById('explanation-text').textContent = exText;
+
+    resultSection.classList.remove('hidden');
+    resultSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+  }
+</script>
+</body>
+</html>

@@ -1,0 +1,1117 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vạn An Logistics – Vận Chuyển Trung–Việt Chính Ngạch | Báo Giá Ngay</title>
+<meta name="description" content="Vận chuyển hàng Trung Quốc về Việt Nam chính ngạch, 3-5 ngày, giá tốt nhất. Nhận báo giá miễn phí ngay hôm nay.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '997606889607417');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=997606889607417&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --green-dark:   #055a42;
+    --green-mid:    #0eaf75;
+    --green-light:  #84f9be;
+    --green-faint:  #f0fdf8;
+    --red-urgent:   #e63946;
+    --gold:         #f4a01c;
+    --text-dark:    #0d1f18;
+    --text-mid:     #3d4a42;
+    --text-light:   #6b7c74;
+    --white:        #ffffff;
+    --bg-section:   #f5fbf4;
+  }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    background: var(--white);
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+  }
+
+
+
+  /* ── HEADER ── */
+  header {
+    background: white;
+    border-bottom: 1px solid #e8f0ea;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 12px rgba(5,90,66,0.06);
+  }
+  header img.logo { height: 48px; object-fit: contain; }
+  header .hotline-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--green-dark);
+    color: white;
+    text-decoration: none;
+    padding: 10px 18px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 800;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 4px 14px rgba(5,90,66,0.3);
+  }
+  header .hotline-btn:hover { transform: scale(1.04); }
+  header .hotline-btn svg { width: 18px; height: 18px; flex-shrink: 0; }
+
+  /* ── HERO ── */
+  .hero {
+    background: linear-gradient(140deg, var(--green-dark) 0%, #0a8f5e 55%, var(--green-mid) 100%);
+    color: white;
+    padding: 48px 20px 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute; inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.07) 1.5px, transparent 1.5px);
+    background-size: 28px 28px;
+    pointer-events: none;
+  }
+  .hero .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: rgba(255,255,255,0.15);
+    border: 1px solid rgba(255,255,255,0.3);
+    border-radius: 50px;
+    padding: 6px 16px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    backdrop-filter: blur(8px);
+  }
+  .hero .badge .dot { width: 8px; height: 8px; background: var(--green-light); border-radius: 50%; animation: pulse-dot 1.5s infinite; }
+  @keyframes pulse-dot { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.6;transform:scale(1.3)} }
+
+  .hero h1 {
+    font-size: clamp(28px, 8vw, 52px);
+    font-weight: 900;
+    line-height: 1.1;
+    margin-bottom: 16px;
+    letter-spacing: -0.5px;
+  }
+  .hero h1 .accent { color: var(--green-light); }
+  .hero h1 .underline-accent {
+    position: relative;
+    display: inline-block;
+  }
+  .hero h1 .underline-accent::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0; right: 0;
+    height: 4px;
+    background: var(--gold);
+    border-radius: 2px;
+  }
+
+  .hero .sub {
+    font-size: clamp(14px, 3.5vw, 18px);
+    opacity: 0.88;
+    max-width: 560px;
+    margin: 0 auto 28px;
+    font-weight: 500;
+  }
+
+  /* Trust badges strip */
+  .trust-strip {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 32px;
+  }
+  .trust-strip .chip {
+    background: rgba(255,255,255,0.12);
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 50px;
+    padding: 6px 14px;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    backdrop-filter: blur(4px);
+  }
+  .trust-strip .chip svg { width: 14px; height: 14px; }
+
+  /* ── FORM CARD ── */
+  .form-wrapper {
+    max-width: 520px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+  }
+  .form-card {
+    background: white;
+    border-radius: 24px;
+    padding: 32px 28px;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.22);
+    text-align: left;
+  }
+  .form-card .form-title {
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--green-dark);
+    margin-bottom: 4px;
+    text-align: center;
+  }
+  .form-card .form-subtitle {
+    font-size: 13px;
+    color: var(--text-light);
+    text-align: center;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+  }
+  .form-card .form-subtitle .free-badge {
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 2px 8px;
+    border-radius: 50px;
+    text-transform: uppercase;
+  }
+
+  .form-group { margin-bottom: 16px; }
+  .form-group label {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--text-mid);
+    margin-bottom: 6px;
+  }
+  .form-group label .required { color: var(--red-urgent); }
+
+  .form-group input,
+  .form-group select,
+  .form-group textarea {
+    width: 100%;
+    padding: 13px 16px;
+    border: 2px solid #e0ece6;
+    border-radius: 12px;
+    font-size: 15px;
+    font-family: inherit;
+    color: var(--text-dark);
+    background: #fafffe;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    outline: none;
+    appearance: none;
+  }
+  .form-group input:focus,
+  .form-group select:focus,
+  .form-group textarea:focus {
+    border-color: var(--green-mid);
+    box-shadow: 0 0 0 4px rgba(14,175,117,0.12);
+    background: white;
+  }
+  .form-group textarea { resize: none; height: 80px; }
+  .form-group select { background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%236b7c74' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 14px center; padding-right: 36px; }
+
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+  .submit-btn {
+    width: 100%;
+    padding: 16px;
+    background: linear-gradient(135deg, var(--green-dark) 0%, var(--green-mid) 100%);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 8px 24px rgba(5,90,66,0.35);
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    letter-spacing: 0.2px;
+  }
+  .submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0; left: -100%;
+    width: 60%; height: 100%;
+    background: rgba(255,255,255,0.2);
+    transform: skewX(-20deg);
+    animation: btn-shine 2.5s infinite;
+  }
+  @keyframes btn-shine { 0%{left:-100%} 40%,100%{left:160%} }
+  .submit-btn:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(5,90,66,0.4); }
+  .submit-btn:active { transform: translateY(0); }
+  .submit-btn svg { width: 22px; height: 22px; }
+
+  .form-note {
+    font-size: 11px;
+    color: var(--text-light);
+    text-align: center;
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+  }
+  .form-note svg { width: 13px; height: 13px; color: var(--green-dark); }
+
+  /* ── OR DIVIDER ── */
+  .or-divider {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 14px 0;
+    color: var(--text-light);
+    font-size: 12px;
+    font-weight: 600;
+  }
+  .or-divider::before, .or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: #e0ece6;
+  }
+
+  .quick-contact {
+    display: flex;
+    gap: 10px;
+  }
+  .quick-contact a {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 11px;
+    border-radius: 12px;
+    font-size: 13px;
+    font-weight: 800;
+    text-decoration: none;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .quick-contact a:hover { transform: scale(1.03); }
+  .quick-contact .call-btn { background: #e8f5f0; color: var(--green-dark); border: 2px solid #c0e0d4; }
+  .quick-contact .zalo-btn { background: #e8f0ff; color: #0068ff; border: 2px solid #c0d0f0; }
+  .quick-contact a svg { width: 18px; height: 18px; }
+  .quick-contact .zalo-btn img { width: 20px; height: 20px; object-fit: contain; }
+
+  /* ── SUCCESS STATE ── */
+  .success-state {
+    display: none;
+    text-align: center;
+    padding: 20px 0;
+  }
+  .success-state .success-icon {
+    width: 72px; height: 72px;
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 16px;
+    animation: pop-in 0.5s cubic-bezier(0.34,1.56,0.64,1);
+  }
+  @keyframes pop-in { 0%{transform:scale(0)} 100%{transform:scale(1)} }
+  .success-state .success-icon svg { width: 38px; height: 38px; color: white; }
+  .success-state h3 { font-size: 20px; font-weight: 900; color: var(--green-dark); margin-bottom: 8px; }
+  .success-state p { font-size: 14px; color: var(--text-mid); }
+
+  /* ── STATS SECTION ── */
+  .stats-section {
+    background: var(--bg-section);
+    padding: 40px 20px;
+    border-top: 1px solid #dff0e6;
+    border-bottom: 1px solid #dff0e6;
+  }
+  .stats-grid {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .stat-card {
+    background: white;
+    border-radius: 20px;
+    padding: 20px 16px;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(5,90,66,0.06);
+    border: 1px solid #e8f4ee;
+  }
+  .stat-card .stat-icon {
+    width: 44px; height: 44px;
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 10px;
+  }
+  .stat-card .stat-icon svg { width: 22px; height: 22px; color: white; }
+  .stat-card .stat-num { font-size: 28px; font-weight: 900; color: var(--green-dark); line-height: 1; margin-bottom: 4px; }
+  .stat-card .stat-label { font-size: 12px; font-weight: 600; color: var(--text-light); }
+
+  /* ── SERVICES ── */
+  .services-section {
+    padding: 40px 20px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .section-label {
+    text-align: center;
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--green-mid);
+    margin-bottom: 8px;
+  }
+  .section-title {
+    text-align: center;
+    font-size: clamp(20px, 5vw, 28px);
+    font-weight: 900;
+    color: var(--text-dark);
+    margin-bottom: 28px;
+    line-height: 1.2;
+  }
+
+  .service-list { display: flex; flex-direction: column; gap: 12px; }
+  .service-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    background: white;
+    border: 1.5px solid #e0ece6;
+    border-radius: 16px;
+    padding: 16px;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .service-item:hover { border-color: var(--green-mid); box-shadow: 0 4px 16px rgba(14,175,117,0.12); }
+  .service-item .svc-icon {
+    width: 46px; height: 46px; flex-shrink: 0;
+    background: var(--green-faint);
+    border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .service-item .svc-icon svg { width: 24px; height: 24px; color: var(--green-dark); }
+  .service-item h3 { font-size: 14px; font-weight: 800; color: var(--text-dark); margin-bottom: 3px; }
+  .service-item p { font-size: 12px; color: var(--text-light); line-height: 1.5; }
+
+  /* ── WHY US ── */
+  .why-section {
+    background: linear-gradient(140deg, var(--green-dark) 0%, #0a8f5e 100%);
+    padding: 40px 20px;
+    color: white;
+  }
+  .why-section .section-label { color: var(--green-light); }
+  .why-section .section-title { color: white; }
+
+  .why-grid {
+    max-width: 600px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+  .why-card {
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    padding: 20px 16px;
+    backdrop-filter: blur(8px);
+  }
+  .why-card .why-icon {
+    font-size: 28px;
+    margin-bottom: 10px;
+    display: block;
+  }
+  .why-card h4 { font-size: 14px; font-weight: 800; margin-bottom: 4px; }
+  .why-card p { font-size: 12px; opacity: 0.75; line-height: 1.5; }
+
+  /* ── PROCESS ── */
+  .process-section {
+    padding: 40px 20px;
+    max-width: 640px;
+    margin: 0 auto;
+  }
+  .process-steps { display: flex; flex-direction: column; gap: 0; }
+  .process-step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    position: relative;
+    padding-bottom: 24px;
+  }
+  .process-step:last-child { padding-bottom: 0; }
+  .process-step::before {
+    content: '';
+    position: absolute;
+    left: 19px; top: 40px;
+    width: 2px;
+    height: calc(100% - 40px);
+    background: linear-gradient(to bottom, var(--green-mid), transparent);
+  }
+  .process-step:last-child::before { display: none; }
+  .step-num {
+    width: 40px; height: 40px; flex-shrink: 0;
+    background: linear-gradient(135deg, var(--green-dark), var(--green-mid));
+    color: white;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 0 4px 12px rgba(14,175,117,0.35);
+    z-index: 1;
+  }
+  .step-content h4 { font-size: 15px; font-weight: 800; color: var(--text-dark); margin-bottom: 3px; }
+  .step-content p { font-size: 13px; color: var(--text-light); line-height: 1.5; }
+
+  /* ── TESTIMONIALS ── */
+  .testimonials-section {
+    background: var(--bg-section);
+    padding: 40px 20px;
+    border-top: 1px solid #dff0e6;
+  }
+  .testimonials-grid {
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .testimonial-card {
+    background: white;
+    border-radius: 18px;
+    padding: 20px;
+    box-shadow: 0 4px 16px rgba(5,90,66,0.06);
+    border: 1px solid #e8f4ee;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+  }
+  .testimonial-card .avatar {
+    width: 56px; height: 56px; flex-shrink: 0;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--green-faint);
+    box-shadow: 0 4px 12px rgba(5,90,66,0.1);
+  }
+  .testimonial-card .stars { color: var(--gold); font-size: 13px; margin-bottom: 4px; }
+  .testimonial-card .name { font-size: 13px; font-weight: 800; color: var(--text-dark); }
+  .testimonial-card .role { font-size: 11px; color: var(--text-light); margin-bottom: 8px; }
+  .testimonial-card .content { font-size: 13px; color: var(--text-mid); line-height: 1.6; italic; }
+
+  /* ── BOTTOM CTA ── */
+  .bottom-cta {
+    background: var(--green-dark);
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  .bottom-cta h2 { font-size: clamp(20px, 5vw, 28px); font-weight: 900; margin-bottom: 8px; }
+  .bottom-cta p { font-size: 14px; opacity: 0.8; margin-bottom: 24px; }
+  .cta-buttons { display: flex; flex-direction: column; gap: 12px; max-width: 340px; margin: 0 auto; }
+  .cta-btn-main {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: white;
+    color: var(--green-dark);
+    text-decoration: none;
+    padding: 16px 24px;
+    border-radius: 14px;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
+    transition: transform 0.2s;
+    animation: pulse-btn 2s infinite;
+  }
+  .cta-btn-main svg { width: 22px; height: 22px; }
+  @keyframes pulse-btn { 0%,100%{box-shadow:0 8px 24px rgba(0,0,0,0.2)} 50%{box-shadow:0 8px 36px rgba(255,255,255,0.25)} }
+  .cta-btn-main:hover { transform: scale(1.03); }
+  .cta-btn-secondary {
+    display: flex; align-items: center; justify-content: center; gap: 10px;
+    background: rgba(255,255,255,0.12);
+    border: 2px solid rgba(255,255,255,0.3);
+    color: white;
+    text-decoration: none;
+    padding: 14px 24px;
+    border-radius: 14px;
+    font-size: 15px;
+    font-weight: 800;
+    transition: background 0.2s;
+  }
+  .cta-btn-secondary:hover { background: rgba(255,255,255,0.2); }
+  .cta-btn-secondary img { width: 24px; height: 24px; object-fit: contain; }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #0a0a09;
+    color: rgba(255,255,255,0.5);
+    padding: 24px 20px;
+    text-align: center;
+  }
+  footer img { height: 36px; object-fit: contain; margin-bottom: 12px; opacity: 0.7; }
+  footer p { font-size: 11px; line-height: 1.8; }
+  footer a { color: rgba(255,255,255,0.6); text-decoration: none; }
+
+  /* ── STICKY BOTTOM BAR (mobile) ── */
+  .sticky-bottom {
+    display: none;
+    position: fixed;
+    bottom: 0; left: 0; right: 0;
+    background: var(--green-dark);
+    padding: 10px 16px;
+    z-index: 200;
+    box-shadow: 0 -4px 24px rgba(0,0,0,0.18);
+    gap: 10px;
+  }
+  .sticky-bottom a {
+    flex: 1;
+    display: flex; align-items: center; justify-content: center; gap: 8px;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 11px 8px;
+    font-size: 13px;
+    font-weight: 800;
+    transition: opacity 0.2s;
+  }
+  .sticky-bottom a:active { opacity: 0.7; }
+  .sticky-bottom .sb-form-btn { background: white; color: var(--green-dark); }
+  .sticky-bottom .sb-call-btn { background: rgba(255,255,255,0.15); color: white; border: 1.5px solid rgba(255,255,255,0.3); }
+  .sticky-bottom svg { width: 18px; height: 18px; }
+  .sticky-bottom img { width: 20px; height: 20px; }
+
+  @media (max-width: 640px) {
+    .sticky-bottom { display: flex; }
+    .form-row { grid-template-columns: 1fr; gap: 14px; }
+    body { padding-bottom: 70px; }
+    .why-grid { grid-template-columns: 1fr; }
+    .stats-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* ── ANIMATIONS ── */
+  @keyframes fade-up {
+    from { opacity: 0; transform: translateY(30px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  .fade-up { animation: fade-up 0.7s cubic-bezier(0.16,1,0.3,1) both; }
+  .delay-1 { animation-delay: 0.1s; }
+  .delay-2 { animation-delay: 0.2s; }
+  .delay-3 { animation-delay: 0.3s; }
+  .delay-4 { animation-delay: 0.4s; }
+
+  /* ── SCROLL REVEAL ── */
+  .scroll-reveal {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s cubic-bezier(0.16,1,0.3,1), transform 0.6s cubic-bezier(0.16,1,0.3,1);
+  }
+  .scroll-reveal.visible { opacity: 1; transform: none; }
+</style>
+</head>
+<body>
+
+
+
+<!-- ── HEADER ── -->
+<header>
+  <img src="Logo Vạn An - Ngang.png" alt="Vạn An Logistics" class="logo">
+  <a href="tel:0862341318" class="hotline-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .08h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/>
+    </svg>
+    Gọi ngay
+  </a>
+</header>
+
+<!-- ── HERO + FORM ── -->
+<section class="hero">
+  <div class="badge fade-up">
+    <span class="dot"></span>
+    Chuyên tuyến Trung Quốc – Việt Nam
+  </div>
+
+  <h1 class="fade-up delay-1">
+    Vận chuyển hàng TQ về VN<br>
+    <span class="underline-accent">Chính ngạch</span> –
+    <span class="accent">3-5 ngày</span>
+  </h1>
+
+  <p class="sub fade-up delay-2">
+    Giá cạnh tranh nhất thị trường · Bảo hiểm hàng hóa 100% · Theo dõi đơn hàng realtime qua Zalo
+  </p>
+
+  <div class="trust-strip fade-up delay-3">
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      500+ Khách hàng
+    </div>
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      Giao hàng 3-5 ngày
+    </div>
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      Bảo hiểm 100%
+    </div>
+    <div class="chip">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      Giá từ 4,000đ/kg
+    </div>
+  </div>
+
+  <!-- FORM CARD -->
+  <div class="form-wrapper fade-up delay-4">
+    <div class="form-card">
+      <p class="form-title">📋 Nhận báo giá MIỄN PHÍ</p>
+      <p class="form-subtitle">
+        Chúng tôi phản hồi trong vòng <strong>15 phút</strong>
+        <span class="free-badge">Miễn phí</span>
+      </p>
+
+      <div id="leadForm">
+        <div class="form-group">
+          <label for="fullName">Họ và tên <span class="required">*</span></label>
+          <input type="text" id="fullName" name="fullName" placeholder="Nguyễn Văn A" autocomplete="name" required>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="phone">Số điện thoại <span class="required">*</span></label>
+            <input type="tel" id="phone" name="phone" placeholder="0912 345 678" autocomplete="tel" required>
+          </div>
+          <div class="form-group">
+            <label for="service">Dịch vụ cần</label>
+            <select id="service" name="service">
+              <option value="">Chọn dịch vụ...</option>
+              <option value="hang-le">Vận chuyển hàng lẻ</option>
+              <option value="nguyen-cont">Nguyên container</option>
+              <option value="uy-thac">Ủy thác nhập khẩu</option>
+              <option value="thanh-toan">Thanh toán hộ (Alipay)</option>
+              <option value="order">Order hàng Taobao/1688</option>
+              <option value="khac">Khác</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="cargo">Mô tả hàng hóa</label>
+          <textarea id="cargo" name="cargo" placeholder="Ví dụ: Quần áo, đồ điện tử, máy móc... khoảng 500kg/tháng từ Quảng Châu"></textarea>
+        </div>
+
+        <button type="button" class="submit-btn" id="submitBtn" onclick="submitForm()">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/>
+          </svg>
+          NHẬN BÁO GIÁ NGAY
+        </button>
+
+        <p class="form-note">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+          Thông tin của bạn được bảo mật tuyệt đối
+        </p>
+
+        <div class="or-divider">Hoặc liên hệ trực tiếp</div>
+
+        <div class="quick-contact">
+          <a href="tel:0862341318" class="call-btn">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .08h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            Gọi: 086.234.1318
+          </a>
+          <a href="https://zalo.me/0862341318" target="_blank" class="zalo-btn">
+            <img src="Icon_of_Zalo.svg.png" alt="Zalo">
+            Chat Zalo
+          </a>
+        </div>
+      </div>
+
+      <!-- SUCCESS STATE -->
+      <div class="success-state" id="successState">
+        <div class="success-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+        </div>
+        <h3>Đã nhận yêu cầu!</h3>
+        <p>Cảm ơn <strong id="customerName"></strong>! Chuyên viên Vạn An sẽ gọi lại cho bạn trong vòng <strong>15 phút</strong>.</p>
+        <br>
+        <a href="https://zalo.me/0862341318" target="_blank" style="display:inline-flex;align-items:center;gap:8px;background:var(--green-dark);color:white;text-decoration:none;padding:12px 24px;border-radius:12px;font-weight:800;font-size:14px;margin-top:8px;">
+          <img src="Icon_of_Zalo.svg.png" alt="Zalo" style="width:20px;height:20px;filter:brightness(10);">
+          Chat Zalo để trao đổi ngay
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── STATS ── -->
+<section class="stats-section">
+  <p class="section-label scroll-reveal">Số liệu thực tế</p>
+  <h2 class="section-title scroll-reveal">Được hàng nghìn doanh nghiệp tin tưởng</h2>
+  <div class="stats-grid">
+    <div class="stat-card scroll-reveal">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+      </div>
+      <div class="stat-num">500+</div>
+      <div class="stat-label">Khách hàng B2B</div>
+    </div>
+    <div class="stat-card scroll-reveal">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div class="stat-num">10,000+</div>
+      <div class="stat-label">Lô hàng vận chuyển</div>
+    </div>
+    <div class="stat-card scroll-reveal">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+      </div>
+      <div class="stat-num">3-5</div>
+      <div class="stat-label">Ngày giao hàng</div>
+    </div>
+    <div class="stat-card scroll-reveal">
+      <div class="stat-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+      </div>
+      <div class="stat-num">100%</div>
+      <div class="stat-label">Bảo hiểm hàng hóa</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section class="services-section">
+  <p class="section-label scroll-reveal">Dịch vụ</p>
+  <h2 class="section-title scroll-reveal">Tất cả nhu cầu nhập hàng Trung Quốc<br>đều được giải quyết</h2>
+  <div class="service-list">
+    <div class="service-item scroll-reveal">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+      </div>
+      <div>
+        <h3>🚛 Vận chuyển hàng lẻ & nguyên container</h3>
+        <p>Nhận hàng từ kho Bằng Tường, Quảng Châu, Nghĩa Ô. Giao về Hà Nội trong 3-5 ngày. Giá từ 4,000đ/kg hoặc 900,000đ/khối.</p>
+      </div>
+    </div>
+    <div class="service-item scroll-reveal">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+      </div>
+      <div>
+        <h3>📄 Ủy thác xuất nhập khẩu (XNK)</h3>
+        <p>Đứng tên làm đầu mối nhập hàng thay cho doanh nghiệp. Có đầy đủ hóa đơn VAT, C/O, CO, bộ chứng từ hợp lệ. Phí chỉ từ 1%.</p>
+      </div>
+    </div>
+    <div class="service-item scroll-reveal">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+      </div>
+      <div>
+        <h3>💸 Thanh toán hộ qua Alipay / WeChat</h3>
+        <p>Chuyển tiền CNY để mua hàng trực tuyến hoặc thanh toán nhà cung cấp Trung Quốc. Tỷ giá cạnh tranh, xử lý trong ngày.</p>
+      </div>
+    </div>
+    <div class="service-item scroll-reveal">
+      <div class="svc-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 01-2.83 0L2 12V2h10l8.59 8.59a2 2 0 010 2.82z"/><line x1="7" y1="7" x2="7.01" y2="7"/></svg>
+      </div>
+      <div>
+        <h3>🛍️ Order hàng Taobao / 1688 / Pinduoduo</h3>
+        <p>Đặt mua hộ, kiểm hàng tại kho Trung Quốc, đóng gói và vận chuyển về Việt Nam. Không lo hàng giả, hàng lỗi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── WHY US ── -->
+<section class="why-section">
+  <p class="section-label scroll-reveal">Tại sao chọn Vạn An?</p>
+  <h2 class="section-title scroll-reveal" style="margin-bottom:24px">Cam kết từ người làm nghề<br>uy tín 5+ năm</h2>
+  <div class="why-grid" style="max-width:600px;margin:0 auto">
+    <div class="why-card scroll-reveal">
+      <span class="why-icon">⚡</span>
+      <h4>Xử lý siêu nhanh</h4>
+      <p>Hàng về kho Bằng Tường chiều nay, sáng mai đã lên xe về Hà Nội.</p>
+    </div>
+    <div class="why-card scroll-reveal">
+      <span class="why-icon">🔍</span>
+      <h4>Tracking minh bạch</h4>
+      <p>Theo dõi hành trình qua Zalo OA. Nhận ảnh thực tế tại từng điểm dừng.</p>
+    </div>
+    <div class="why-card scroll-reveal">
+      <span class="why-icon">💎</span>
+      <h4>Giá niêm yết công khai</h4>
+      <p>Không phí ẩn, không tự ý tăng giá. Bảng giá công khai trên website.</p>
+    </div>
+    <div class="why-card scroll-reveal">
+      <span class="why-icon">🛡️</span>
+      <h4>Bảo hiểm toàn diện</h4>
+      <p>Bảo hiểm hàng hóa 100% giá trị. Phí chỉ 3% – hoàn tiền nếu thất lạc.</p>
+    </div>
+    <div class="why-card scroll-reveal">
+      <span class="why-icon">🤝</span>
+      <h4>Đội ngũ song ngữ</h4>
+      <p>Nhân viên thông thạo tiếng Trung xử lý mọi thủ tục tại cửa khẩu.</p>
+    </div>
+    <div class="why-card scroll-reveal">
+      <span class="why-icon">📞</span>
+      <h4>Hỗ trợ 24/7</h4>
+      <p>Tư vấn viên trực tuyến mọi lúc qua Zalo. Giải quyết phát sinh trong 2 giờ.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROCESS ── -->
+<section class="process-section">
+  <p class="section-label scroll-reveal">Quy trình</p>
+  <h2 class="section-title scroll-reveal">Chỉ 4 bước đơn giản<br>để nhận hàng tại Việt Nam</h2>
+  <div class="process-steps">
+    <div class="process-step scroll-reveal">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h4>Liên hệ & Nhận báo giá</h4>
+        <p>Điền form hoặc nhắn Zalo để nhận báo giá miễn phí trong 15 phút. Không cần cam kết ngay.</p>
+      </div>
+    </div>
+    <div class="process-step scroll-reveal">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h4>Đưa hàng đến kho Trung Quốc</h4>
+        <p>Chuyển hàng đến kho của chúng tôi tại Bằng Tường hoặc Quảng Châu. Nhân viên kiểm đếm, cân đo và chụp ảnh đầy đủ.</p>
+      </div>
+    </div>
+    <div class="process-step scroll-reveal">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h4>Thông quan & Vận chuyển</h4>
+        <p>Hàng được xử lý thủ tục hải quan chính ngạch và vận chuyển bằng xe chuyên dụng về Hà Nội.</p>
+      </div>
+    </div>
+    <div class="process-step scroll-reveal">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h4>Nhận hàng tại Việt Nam</h4>
+        <p>Giao hàng đến kho hoặc tận địa chỉ tại Hà Nội. Nhận đủ chứng từ, hóa đơn và hoàn tất thanh toán.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TESTIMONIALS ── -->
+<section class="testimonials-section">
+  <p class="section-label scroll-reveal">Đánh giá thực tế</p>
+  <h2 class="section-title scroll-reveal" style="margin-bottom:20px">Khách hàng nói gì về Vạn An?</h2>
+  <div class="testimonials-grid">
+    <div class="testimonial-card scroll-reveal">
+      <img src="Avatar Testimonial/Anh Hoàng Đức.jpg" alt="Anh Hoàng Đức" class="avatar">
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="name">Anh Hoàng Đức</div>
+        <div class="role">Chủ shop thời trang – Hà Đông, Hà Nội</div>
+        <p class="content">
+          "Mình nhập hàng quần áo từ Quảng Châu qua Vạn An được 8 tháng. Hàng về đúng hẹn, kiểm đếm cẩn thận, giá cũng ổn định. Nhất là theo dõi qua Zalo – rất tiện, biết hàng đang ở đâu mọi lúc."
+        </p>
+      </div>
+    </div>
+    <div class="testimonial-card scroll-reveal">
+      <img src="Avatar Testimonial/Chị Hương.jpg" alt="Chị Hương" class="avatar">
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="name">Chị Hương</div>
+        <div class="role">Giám đốc – Công ty nhập khẩu đồ gia dụng</div>
+        <p class="content">
+          "Trước mình làm qua mấy đơn vị khác hay bị mất hàng, phí phát sinh. Chuyển sang Vạn An là hết chuyện đó. Chính ngạch, hóa đơn VAT đầy đủ – kế toán không phàn nàn gì nữa."
+        </p>
+      </div>
+    </div>
+    <div class="testimonial-card scroll-reveal">
+      <img src="Avatar Testimonial/Anh Minh Đức.jpg" alt="Anh Minh Đức" class="avatar">
+      <div>
+        <div class="stars">★★★★★</div>
+        <div class="name">Anh Minh Đức</div>
+        <div class="role">Chủ xưởng sản xuất – Nam Định</div>
+        <p class="content">
+          "Mình cần order máy móc từ Trung Quốc về. Vạn An hỗ trợ từ A-Z: thanh toán hộ Alipay, kiểm máy tại kho, vận chuyển về đến xưởng. Uy tín không cần bàn."
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── BOTTOM CTA ── -->
+<section class="bottom-cta">
+  <h2 class="scroll-reveal">Sẵn sàng nhập hàng<br>an toàn, giá tốt nhất?</h2>
+  <p class="scroll-reveal">Chuyên viên Vạn An sẽ tư vấn miễn phí và báo giá trong 15 phút</p>
+  <div class="cta-buttons scroll-reveal">
+    <a href="#" onclick="document.getElementById('fullName').focus();window.scrollTo({top:0,behavior:'smooth'});return false;" class="cta-btn-main">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+      Nhận báo giá MIỄN PHÍ
+    </a>
+    <a href="https://zalo.me/0862341318" target="_blank" class="cta-btn-secondary">
+      <img src="Icon_of_Zalo.svg.png" alt="Zalo">
+      Chat Zalo: 086.234.1318
+    </a>
+    <a href="tel:0862341318" class="cta-btn-secondary">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="width:22px;height:22px"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .08h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+      Gọi điện: 086.234.1318
+    </a>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <img src="Logo Trắng.png" alt="Vạn An Logistics"><br>
+  <p>
+    <strong style="color:rgba(255,255,255,0.7)">CÔNG TY TNHH KINH DOANH THƯƠNG MẠI XNK TRƯỜNG VẠN AN</strong><br>
+    VPHN: HH2 FLC Garden City, Đại Mỗ, Nam Từ Liêm, Hà Nội<br>
+    Hotline: <a href="tel:0862341318">086.234.1318</a> | <a href="tel:0986465678">0986.465.678</a><br><br>
+    © 2025 Vạn An Logistics. All rights reserved. |
+    <a href="chinh-sach.html">Chính sách</a>
+  </p>
+</footer>
+
+<!-- ── STICKY BOTTOM BAR ── -->
+<div class="sticky-bottom" id="stickyBar">
+  <a href="#" onclick="document.getElementById('fullName').focus();window.scrollTo({top:0,behavior:'smooth'});return false;" class="sb-form-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22 11 13 2 9l20-7z"/></svg>
+    Báo giá miễn phí
+  </a>
+  <a href="tel:0862341318" class="sb-call-btn">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 10a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .08h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+    Gọi ngay
+  </a>
+  <a href="https://zalo.me/0862341318" target="_blank" class="sb-call-btn" style="flex:0.8">
+    <img src="Icon_of_Zalo.svg.png" alt="Zalo" style="filter:brightness(10)">
+    Zalo
+  </a>
+</div>
+
+<script>
+
+
+  // ── TELEGRAM CONFIG ──
+  const TG_TOKEN = '8756025848:AAHyyvQHdYaEy15_qQh_MPyHS6Si5gDpklU';
+  const TG_CHAT  = '952234412';
+
+  function sendTelegram(text) {
+    fetch('https://api.telegram.org/bot' + TG_TOKEN + '/sendMessage', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ chat_id: TG_CHAT, text: text, parse_mode: 'HTML' })
+    }).catch(() => {});
+  }
+
+  // ── FORM SUBMIT ──
+  function submitForm() {
+    const name = document.getElementById('fullName').value.trim();
+    const phone = document.getElementById('phone').value.trim();
+
+    if (!name) {
+      alert('Vui lòng nhập họ và tên của bạn.');
+      document.getElementById('fullName').focus();
+      return;
+    }
+    if (!phone || !/^[0-9+\s\-]{9,15}$/.test(phone)) {
+      alert('Vui lòng nhập số điện thoại hợp lệ.');
+      document.getElementById('phone').focus();
+      return;
+    }
+
+    const service = document.getElementById('service').value;
+    const cargo = document.getElementById('cargo').value.trim();
+
+    const serviceMap = {
+      'hang-le': 'Vận chuyển hàng lẻ',
+      'nguyen-cont': 'Nguyên container',
+      'uy-thac': 'Ủy thác nhập khẩu',
+      'thanh-toan': 'Thanh toán hộ (Alipay)',
+      'order': 'Order hàng Taobao/1688',
+      'khac': 'Khác'
+    };
+
+    const now = new Date().toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' });
+    const msg =
+      '📋 <b>LEAD MỚI — LANDING FB</b>\n' +
+      '─────────────────────\n' +
+      '👤 <b>Họ tên:</b> ' + name + '\n' +
+      '📞 <b>SĐT/Zalo:</b> ' + phone + '\n' +
+      '📦 <b>Dịch vụ:</b> ' + (serviceMap[service] || 'Chưa chọn') + '\n' +
+      '📝 <b>Hàng hóa:</b> ' + (cargo || 'Chưa nhập') + '\n' +
+      '─────────────────────\n' +
+      '🌐 <b>Nguồn:</b> ' + (document.referrer || 'Facebook Ads') + '\n' +
+      '🕐 <b>Thời gian:</b> ' + now + '\n' +
+      '⚡ <i>Phản hồi trong 15 phút!</i>';
+
+    sendTelegram(msg);
+
+    // Show success UI
+    document.getElementById('customerName').textContent = name;
+    document.getElementById('leadForm').style.display = 'none';
+    document.getElementById('successState').style.display = 'block';
+
+    // Scroll to confirmation
+    document.querySelector('.form-card').scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+    // Track Facebook Pixel Lead event if available
+    if (typeof fbq === 'function') {
+      fbq('track', 'Lead', { content_name: 'Van An Logistics Form', value: service });
+    }
+  }
+
+  // ── SCROLL REVEAL ──
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+  document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
+
+  // ── FORM ENTER KEY ──
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && e.target.tagName !== 'TEXTAREA') submitForm();
+  });
+</script>
+
+</body>
+</html>

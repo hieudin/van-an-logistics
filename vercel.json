@@ -1,0 +1,25 @@
+{
+  "cleanUrls": true,
+  "redirects": [
+    { "source": "/hs-code-la-gi.html", "destination": "/kien-thuc/hs-code-la-gi.html", "permanent": true },
+    { "source": "/hs-code-la-gi", "destination": "/kien-thuc/hs-code-la-gi", "permanent": true },
+    { "source": "/giay-to-van-chuyen-trung-viet.html", "destination": "/kien-thuc/giay-to-van-chuyen-trung-viet.html", "permanent": true },
+    { "source": "/giay-to-van-chuyen-trung-viet", "destination": "/kien-thuc/giay-to-van-chuyen-trung-viet", "permanent": true },
+    { "source": "/quy-trinh-van-chuyen.html", "destination": "/kien-thuc/quy-trinh-van-chuyen.html", "permanent": true },
+    { "source": "/quy-trinh-van-chuyen", "destination": "/kien-thuc/quy-trinh-van-chuyen", "permanent": true },
+    { "source": "/van-chuyen-tieu-ngach.html", "destination": "/kien-thuc/van-chuyen-tieu-ngach.html", "permanent": true },
+    { "source": "/van-chuyen-tieu-ngach", "destination": "/kien-thuc/van-chuyen-tieu-ngach", "permanent": true },
+    { "source": "/kien-thuc.html", "destination": "/kien-thuc/", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)",
+      "headers": [
+        { "key": "X-Content-Type-Options", "value": "nosniff" },
+        { "key": "X-Frame-Options", "value": "SAMEORIGIN" },
+        { "key": "X-XSS-Protection", "value": "1; mode=block" },
+        { "key": "Referrer-Policy", "value": "strict-origin-when-cross-origin" }
+      ]
+    }
+  ]
+}

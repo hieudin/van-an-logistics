@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Vạn An Logistics - Vận Chuyển Chính Ngạch Trung Quốc – Việt Nam | Tối Ưu Thuế Phí, Bảo Hiểm 100%</title>
+<meta name="description" content="Dịch vụ vận chuyển chính ngạch Trung - Việt tuyến Bằng Tường - Hà Nội. 3-5 ngày về tới nơi, bảo hiểm 100% hàng hóa, hóa đơn VAT đầy đủ, tối ưu thuế nhập khẩu theo Form E. Liên hệ ngay: 086.234.1318.">
+<meta property="og:title" content="Vạn An Logistics - Vận chuyển chính ngạch Trung Quốc – Việt Nam">
+<meta property="og:description" content="Dịch vụ vận chuyển hàng hóa chính ngạch Trung Quốc - Việt Nam. 3-5 ngày, bảo hiểm 100%, hóa đơn VAT, tối ưu thuế.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="Thumnail/Thumnail-index.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="Thumnail/Thumnail-index.png">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#67dca4",
+          "tertiary-fixed": "#ffdad8",
+          "surface-container-highest": "#dee4dd",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "primary-container": "#008558",
+          "surface": "#f5fbf4",
+          "on-tertiary-fixed-variant": "#80272a",
+          "on-secondary-container": "#446d56",
+          "surface-variant": "#dee4dd",
+          "secondary": "#3e6751",
+          "on-secondary-fixed-variant": "#264f3a",
+          "background": "#f5fbf4",
+          "primary-fixed-dim": "#67dca4",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#171d19",
+          "error": "#ba1a1a",
+          "surface-container-low": "#eff5ee",
+          "secondary-fixed-dim": "#a4d1b6",
+          "inverse-surface": "#2c322d",
+          "surface-bright": "#f5fbf4",
+          "outline-variant": "#bccabf",
+          "on-surface-variant": "#3d4a42",
+          "on-primary": "#ffffff",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#410006",
+          "on-background": "#171d19",
+          "on-primary-fixed-variant": "#005234",
+          "primary-fixed": "#84f9be",
+          "tertiary-fixed-dim": "#ffb3b0",
+          "inverse-on-surface": "#ecf2eb",
+          "surface-tint": "#006c47",
+          "tertiary-container": "#bc5453",
+          "surface-dim": "#d5dcd5",
+          "secondary-fixed": "#bfedd1",
+          "surface-container-high": "#e4eae3",
+          "on-error": "#ffffff",
+          "on-primary-fixed": "#002113",
+          "tertiary": "#9c3c3d",
+          "outline": "#6d7a71",
+          "on-primary-container": "#f6fff6",
+          "on-secondary-fixed": "#002113",
+          "on-tertiary-container": "#fffbff",
+          "surface-container": "#e9f0e9",
+          "primary": "#055a42",
+          "on-error-container": "#93000a",
+          "secondary-container": "#bfedd1"
+        },
+        borderRadius: {
+          DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem"
+        },
+        fontFamily: {
+          headline: ["Manrope"],
+          body: ["Manrope"],
+          label: ["Manrope"]
+        }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; }
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  }
+  .glass-nav { background: rgba(245, 251, 244, 0.8); backdrop-filter: blur(20px); }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .typing-cursor::after {
+    content: '|';
+    animation: blink 1s step-end infinite;
+    margin-left: 4px;
+  }
+  @keyframes blink { from, to { opacity: 0; } 50% { opacity: 1; } }
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%;
+    width: 20%; height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(30deg); transition: none;
+    animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+  .animate-pulse-subtle { animation: pulse-subtle 2s infinite; }
+  @keyframes pulse-subtle {
+    0% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(14, 175, 117, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0); }
+  }
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0%, 100% { transform: translateY(0) rotate(3deg); }
+    50% { transform: translateY(-30px) rotate(5deg); }
+  }
+  .animate-float-slow { animation: float-slow 4s ease-in-out infinite; }
+  @keyframes float-slow {
+    0%, 100% { transform: scale(1.05) translateY(0px); }
+    50% { transform: scale(1.05) translateY(-14px); }
+  }
+  @media (max-width: 767px) {
+    @keyframes float-slow {
+      0%, 100% { transform: scale(1) translateY(0px); }
+      50% { transform: scale(1) translateY(-14px); }
+    }
+  }
+  @keyframes glow {
+    0%, 100% { border-color: rgba(14, 175, 117, 0.2); box-shadow: 0 0 20px rgba(14, 175, 117, 0.1); }
+    50% { border-color: rgba(14, 175, 117, 0.6); box-shadow: 0 0 40px rgba(14, 175, 117, 0.3); }
+  }
+  .animate-glow { animation: glow 3s ease-in-out infinite; }
+  .animate-float-card { animation: float-slow 4s ease-in-out infinite, glow 3s ease-in-out infinite; }
+  .animate-drive { animation: drive-motion 2s ease-in-out infinite; }
+  @keyframes drive-motion {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-4px) rotate(0.3deg); }
+    50% { transform: translateY(0) rotate(-0.2deg); }
+    75% { transform: translateY(-2px) rotate(0.1deg); }
+  }
+  .animate-ticker {
+    animation: ticker-scroll 35s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  .animate-ticker > * { flex-shrink: 0; }
+  @media (max-width: 768px) { .animate-ticker { animation-duration: 15s; } }
+  @keyframes ticker-scroll {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(calc(var(--ticker-shift, 50%) * -1), 0, 0); }
+  }
+  .animate-ticker-rev {
+    animation: ticker-scroll-rev 40s linear infinite;
+    will-change: transform;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+  .animate-ticker-rev > * { flex-shrink: 0; }
+  @media (max-width: 768px) { .animate-ticker-rev { animation-duration: 20s; } }
+  @keyframes ticker-scroll-rev {
+    0% { transform: translate3d(calc(var(--ticker-shift, 50%) * -1), 0, 0); }
+    100% { transform: translate3d(0, 0, 0); }
+  }
+  .reveal {
+    opacity: 0;
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: transform, opacity;
+  }
+  .reveal-up { transform: translateY(50px); }
+  .reveal-left { transform: translateX(-50px); }
+  .reveal-right { transform: translateX(50px); }
+  .reveal.active { opacity: 1; transform: translate(0, 0); }
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .grid-pattern {
+    background-image: linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
+                      linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px);
+    background-size: 60px 60px;
+  }
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(132,249,190,0.12) 0%, transparent 60%);
+  }
+  .text-gradient-green {
+    background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 0.05em 0 0.25em 0;
+    margin: -0.05em 0 -0.25em 0;
+    line-height: 1.1;
+    display: inline-block;
+    vertical-align: top;
+  }
+  @keyframes float-orb {
+    0%, 100% { transform: translate(0, 0) scale(1); }
+    50% { transform: translate(24px, -24px) scale(1.08); }
+  }
+  .animate-float-orb { animation: float-orb 12s ease-in-out infinite; }
+  .animate-float-orb-2 { animation: float-orb 18s ease-in-out reverse infinite; }
+  /* Comparison table styles */
+  .compare-check { color: #055a42; font-size: 1.25rem; }
+  .compare-x { color: #ba1a1a; font-size: 1.25rem; }
+  .table-row-hover tbody tr:hover { background-color: #eff5ee; transition: background 0.2s; }
+</style>
+</head>
+<body class="bg-surface text-on-surface">
+
+<div id="navbar-placeholder" data-no-ticker="true"></div>
+
+<!-- ===================================================
+     HERO SECTION
+     =================================================== -->
+<section class="relative pt-24 pb-20 lg:pt-40 lg:pb-24 overflow-hidden bg-surface">
+  <!-- Background orbs -->
+  <div class="absolute top-0 right-0 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl -mr-80 -mt-40 pointer-events-none animate-float-orb"></div>
+  <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-primary/3 rounded-full blur-2xl -ml-60 pointer-events-none animate-float-orb-2"></div>
+
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+    <!-- Left: Copy -->
+    <div class="z-10">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-6 reveal reveal-up">Chuyên tuyến Bằng Tường – Hà Nội</span>
+      <h1 class="font-extrabold text-on-surface leading-[1.25] mb-6 tracking-tighter reveal reveal-up delay-100">
+        <span class="text-3xl md:text-4xl block opacity-70 mb-2 font-bold text-on-surface-variant">Vận chuyển hàng hóa</span>
+        <span class="text-5xl md:text-7xl text-gradient-green">Chính Ngạch</span><br/>
+        <span class="text-5xl md:text-7xl">Trung – Việt</span><br/>
+        <span id="typing-text" class="text-gradient-green typing-cursor text-5xl md:text-7xl"></span>
+      </h1>
+      <p class="text-lg text-on-surface-variant mb-8 leading-relaxed max-w-lg reveal reveal-up delay-200">
+        Giao hàng <strong class="text-on-surface">3–5 ngày</strong> về Hà Nội. Bảo hiểm hàng hóa <strong class="text-on-surface">100%</strong>. Hóa đơn VAT đầy đủ, tối ưu thuế nhập khẩu theo Form E.
+      </p>
+      <div class="flex flex-col sm:flex-row items-center gap-4 max-w-lg reveal reveal-up delay-300">
+        <a href="https://zalo.me/0862341318" target="_blank"
+           class="w-full sm:w-auto hero-gradient text-on-primary px-10 py-5 rounded-2xl font-black flex items-center justify-center gap-3 shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 btn-shine animate-pulse-subtle">
+          <span class="material-symbols-outlined text-2xl">description</span>
+          Nhận báo giá ngay
+        </a>
+        <a href="tel:0862341318"
+           class="w-full sm:w-auto bg-white border-2 border-primary/20 text-primary px-8 py-4 rounded-2xl font-bold flex items-center justify-center gap-2 hover:bg-surface-container-low active:scale-95 transition-all duration-300">
+          <span class="material-symbols-outlined text-xl">call</span>
+          086.234.1318
+        </a>
+      </div>
+      <!-- Trust micro-signals -->
+      <div class="flex flex-wrap gap-6 mt-8 reveal reveal-up delay-400">
+        <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary text-lg">verified</span>
+          <span>100% chính ngạch</span>
+        </div>
+        <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary text-lg">security</span>
+          <span>Bảo hiểm hàng hóa</span>
+        </div>
+        <div class="flex items-center gap-2 text-sm text-on-surface-variant">
+          <span class="material-symbols-outlined text-primary text-lg">receipt_long</span>
+          <span>Hóa đơn VAT đầy đủ</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: Truck Image + floating badge -->
+    <div class="relative animate-drive reveal reveal-right delay-400 -mt-6 lg:mt-0">
+      <div class="relative z-10">
+        <img class="w-full h-auto object-contain scale-125 lg:scale-110"
+             alt="Xe tải Vạn An Logistics - vận chuyển Trung Việt chính ngạch"
+             src="Xe.png"/>
+      </div>
+      <div class="absolute -bottom-6 inset-x-0 mx-auto md:inset-x-auto md:left-8 md:bottom-4 bg-white p-3 md:p-5 rounded-2xl shadow-2xl z-20 flex items-center gap-3 md:gap-4 reveal reveal-up delay-500 w-max">
+        <div class="w-10 h-10 md:w-12 md:h-12 bg-primary/10 rounded-full flex items-center justify-center">
+          <span class="material-symbols-outlined text-primary text-lg md:text-2xl">speed</span>
+        </div>
+        <div>
+          <p class="text-[10px] md:text-xs text-outline font-bold uppercase tracking-wider">Thời gian tối ưu</p>
+          <p class="text-base md:text-xl font-extrabold text-on-surface">3 - 5 Ngày</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     INFINITE TICKER
+     =================================================== -->
+<section class="py-10 bg-surface border-y border-outline-variant/10 overflow-hidden relative">
+  <div class="flex flex-nowrap animate-ticker" id="ticker-track" style="width: max-content;">
+    <div class="flex flex-nowrap items-center gap-20 pr-20 ticker-set">
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">3-5 ngày</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Hàng về Hà Nội</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">500+</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Khách hàng tin tưởng</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">10,000+</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Lô hàng đã vận chuyển</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">100%</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Chính ngạch</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">24/7</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Tư vấn mọi lúc</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">Phí từ 1%</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Ủy thác XNK cực rẻ</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+      <div class="flex flex-col items-center flex-shrink-0">
+        <span class="text-3xl font-black text-primary tracking-tighter">Tỉ giá tốt</span>
+        <span class="text-[10px] font-bold uppercase tracking-widest text-on-surface-variant">Cạnh tranh nhất thị trường</span>
+      </div>
+      <div class="w-2 h-2 rounded-full bg-primary/20 flex-shrink-0"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     WHY CHÍNH NGẠCH IS CRITICAL (2025-2026)
+     =================================================== -->
+<section class="py-24 bg-surface-container-low" id="tai-sao-chinh-ngach">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Xu hướng 2025–2026</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-4">
+        Vì sao vận chuyển chính ngạch<br/>
+        <span class="text-gradient-green">không còn là lựa chọn?</span>
+      </h2>
+      <p class="text-on-surface-variant text-lg max-w-3xl mx-auto leading-relaxed">
+        Thương mại Trung – Việt đạt hơn <strong class="text-on-surface">208 tỷ USD/năm</strong>. Nhà nước siết chặt quản lý biên giới từ 2025. Các phương thức "hàng bao thuế" tiểu ngạch cũ đang biến mất.
+      </p>
+    </div>
+
+    <!-- 3 problem cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+      <div class="bg-error-container/40 rounded-[2rem] p-8 reveal reveal-up">
+        <div class="w-14 h-14 bg-error/10 rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-error text-3xl">gavel</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3 text-on-surface">Rủi ro pháp lý ngày càng lớn</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Hàng tiểu ngạch không khai báo bị tịch thu, phạt nặng tại cửa khẩu. Không có hóa đơn VAT để hạch toán chi phí.</p>
+      </div>
+      <div class="bg-error-container/40 rounded-[2rem] p-8 reveal reveal-up delay-100">
+        <div class="w-14 h-14 bg-error/10 rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-error text-3xl">hide_source</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3 text-on-surface">Chi phí ẩn không kiểm soát</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Phí "bảo kê", phí lưu kho bất ngờ, thuế không minh bạch. Doanh nghiệp không thể tính toán giá thành sản phẩm chính xác.</p>
+      </div>
+      <div class="bg-error-container/40 rounded-[2rem] p-8 reveal reveal-up delay-200">
+        <div class="w-14 h-14 bg-error/10 rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-error text-3xl">block</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3 text-on-surface">Ách tắc không báo trước</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Hàng tiểu ngạch bị mắc kẹt tại biên giới mà không có bất kỳ hỗ trợ pháp lý nào. Thiệt hại kinh doanh không ai chịu trách nhiệm.</p>
+      </div>
+    </div>
+
+    <!-- Solution statement -->
+    <div class="hero-gradient rounded-[2.5rem] p-10 md:p-14 text-on-primary flex flex-col md:flex-row items-center gap-10 shadow-2xl relative overflow-hidden reveal reveal-up">
+      <div class="absolute inset-0 dot-pattern opacity-20 pointer-events-none"></div>
+      <div class="relative z-10 md:w-2/3">
+        <p class="text-xs font-bold tracking-widest uppercase mb-3 opacity-80">Giải pháp của Vạn An</p>
+        <h3 class="text-3xl md:text-4xl font-extrabold mb-4 leading-tight">Vận chuyển chính ngạch trọn gói — bạn chỉ cần chuẩn bị hàng, còn lại để Vạn An lo</h3>
+        <p class="opacity-90 text-lg leading-relaxed">Chúng tôi xử lý toàn bộ: thu gom, đóng gói, khai báo hải quan, tối ưu mã HS Code, áp Form E giảm thuế, vận chuyển về tận kho Hà Nội, cấp hóa đơn VAT đầy đủ.</p>
+      </div>
+      <div class="relative z-10 md:w-1/3 flex flex-col gap-4">
+        <div class="bg-white/15 rounded-2xl p-4 flex items-center gap-4">
+          <span class="material-symbols-outlined text-3xl">check_circle</span>
+          <span class="font-bold">Thuế tối ưu 0–5% theo Form E</span>
+        </div>
+        <div class="bg-white/15 rounded-2xl p-4 flex items-center gap-4">
+          <span class="material-symbols-outlined text-3xl">check_circle</span>
+          <span class="font-bold">Hóa đơn VAT hợp lệ 100%</span>
+        </div>
+        <div class="bg-white/15 rounded-2xl p-4 flex items-center gap-4">
+          <span class="material-symbols-outlined text-3xl">check_circle</span>
+          <span class="font-bold">Bảo hiểm hàng hóa đầy đủ</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     CORE ADVANTAGES (6 features)
+     =================================================== -->
+<section class="py-24 bg-surface" id="uu-diem">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
+      <div class="md:w-1/2 reveal reveal-left">
+        <span class="text-xs font-bold tracking-widest text-primary uppercase mb-2 block">Lợi thế cạnh tranh</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">Tại sao chọn<br/>Vạn An Logistics?</h2>
+      </div>
+      <div class="md:w-1/2 md:pt-10 reveal reveal-right">
+        <p class="text-on-surface-variant text-lg leading-relaxed md:pl-12">Chỉ tập trung duy nhất một tuyến Bằng Tường – Hà Nội, chúng tôi am hiểu tường tận từng quy trình, từng loại hàng hóa, từng mức thuế — điều mà không đơn vị logistics đa tuyến nào làm được.</p>
+      </div>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Feature 1 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-xl transition-all duration-300 group reveal reveal-up">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-primary text-3xl">bolt</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3">Giao hàng 3–5 ngày</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Lịch chạy hàng cố định, tuyến thẳng Bằng Tường – Hà Nội. Hàng về kho Hà Nội nhanh nhất trong ngành.</p>
+      </div>
+      <!-- Feature 2 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-xl transition-all duration-300 group reveal reveal-up delay-100">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-primary text-3xl">security</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3">Bảo hiểm 100% giá trị</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Hàng hóa được bảo hiểm theo giá trị invoice thương mại. Bồi thường đầy đủ nếu có hư hỏng hay thất lạc.</p>
+      </div>
+      <!-- Feature 3 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-xl transition-all duration-300 group reveal reveal-up delay-200">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3">Hóa đơn VAT hợp lệ</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Đầy đủ chứng từ pháp lý: hóa đơn VAT, tờ khai hải quan, C/O Form E. Doanh nghiệp yên tâm hạch toán kế toán.</p>
+      </div>
+      <!-- Feature 4 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-xl transition-all duration-300 group reveal reveal-up delay-100">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-primary text-3xl">percent</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3">Tối ưu thuế nhập khẩu</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Tư vấn mã HS Code miễn phí, áp dụng C/O Form E theo Hiệp định ACFTA giảm thuế nhập khẩu xuống còn 0–5%.</p>
+      </div>
+      <!-- Feature 5 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-xl transition-all duration-300 group reveal reveal-up delay-200">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-primary text-3xl">support_agent</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3">Hỗ trợ 24/7</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Đội ngũ song ngữ Việt – Trung sẵn sàng tư vấn bất kỳ lúc nào qua Zalo, điện thoại hoặc chat trực tiếp.</p>
+      </div>
+      <!-- Feature 6 -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-xl transition-all duration-300 group reveal reveal-up delay-300">
+        <div class="w-14 h-14 bg-primary/10 rounded-2xl flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+          <span class="material-symbols-outlined text-primary text-3xl">monitoring</span>
+        </div>
+        <h3 class="font-extrabold text-xl mb-3">Tracking qua Zalo</h3>
+        <p class="text-on-surface-variant leading-relaxed text-sm">Cập nhật trạng thái hàng hóa liên tục: khi vào kho, khi xuất xe, khi qua cửa khẩu, khi giao thành công.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     COMPARISON TABLE: Tiểu ngạch vs Chính ngạch
+     =================================================== -->
+<section class="py-24 bg-surface-container-low" id="so-sanh">
+  <div class="max-w-5xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-12 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Đừng để rủi ro</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-4">
+        Tiểu ngạch cũ vs.<br/>
+        <span class="text-gradient-green">Chính ngạch Vạn An</span>
+      </h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Sự khác biệt không chỉ là giấy tờ — đó là sự an toàn cho toàn bộ chuỗi cung ứng của bạn.</p>
+    </div>
+
+    <div class="bg-surface-container-lowest rounded-[2rem] overflow-hidden shadow-[0px_12px_32px_rgba(23,29,25,0.06)] reveal reveal-up">
+      <div class="overflow-x-auto table-row-hover">
+        <table class="w-full min-w-[560px]">
+          <thead>
+            <tr>
+              <th class="text-left px-6 py-5 text-sm font-extrabold text-on-surface-variant uppercase tracking-wider bg-surface-container w-2/5">Tiêu chí</th>
+              <th class="px-6 py-5 text-center bg-error-container/50">
+                <span class="block text-sm font-extrabold text-on-surface uppercase tracking-wider">Tiểu ngạch cũ</span>
+                <span class="text-xs text-on-surface-variant font-medium">Rủi ro cao</span>
+              </th>
+              <th class="px-6 py-5 text-center hero-gradient">
+                <span class="block text-sm font-extrabold text-on-primary uppercase tracking-wider">Chính ngạch Vạn An</span>
+                <span class="text-xs text-on-primary/80 font-medium">Giải pháp tối ưu</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-outline-variant/20">
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Tính pháp lý</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Nguy cơ bị tịch thu</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">100% tuân thủ pháp luật</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Thuế nhập khẩu</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Ẩn, không minh bạch</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">Tối ưu 0–5% via Form E</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Hóa đơn VAT</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Không có hóa đơn</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">Hóa đơn VAT đầy đủ</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Ổn định thông quan</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Thường xuyên bị ách tắc</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">Lịch thông quan cố định</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Bảo hiểm hàng hóa</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Khó đòi bồi thường</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">Bồi thường 100% giá trị</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Tracking đơn hàng</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Không có</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">Cập nhật qua Zalo 24/7</span>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td class="px-6 py-4 text-sm font-bold text-on-surface">Dịch vụ trọn gói</td>
+              <td class="px-6 py-4 text-center">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-x">cancel</span>
+                  <span class="text-xs text-on-surface-variant">Tự lo từng khâu</span>
+                </div>
+              </td>
+              <td class="px-6 py-4 text-center bg-primary/5">
+                <div class="flex flex-col items-center gap-1">
+                  <span class="material-symbols-outlined compare-check">check_circle</span>
+                  <span class="text-xs text-primary font-bold">Thu gom → giao tận nơi</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="px-6 py-4 bg-secondary-container/30 flex items-center gap-3">
+        <span class="material-symbols-outlined text-on-secondary-container text-xl">info</span>
+        <p class="text-sm text-on-secondary-container font-medium">Chính sách siết biên giới 2025–2026 khiến hàng tiểu ngạch ngày càng khó khăn hơn. Đừng để rủi ro ảnh hưởng đến chuỗi cung ứng của bạn.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     SERVICES GRID
+     =================================================== -->
+<section class="py-24 bg-surface" id="services">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="flex flex-col md:flex-row justify-between items-start mb-16 gap-8">
+      <div class="md:w-1/2 reveal reveal-left">
+        <span class="text-xs font-bold tracking-widest text-primary uppercase mb-2 block">Hệ sinh thái dịch vụ</span>
+        <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight">Giải pháp logistics<br/>toàn diện</h2>
+      </div>
+      <div class="md:w-1/2 md:pt-10 reveal reveal-right">
+        <p class="text-on-surface-variant text-lg leading-relaxed md:pl-12">Chúng tôi cung cấp hệ sinh thái dịch vụ khép kín, được thiết kế riêng để đáp ứng những yêu cầu khắt khe nhất của thị trường thương mại quốc tế.</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+      <!-- Left Column -->
+      <div class="flex flex-col gap-8 reveal reveal-left">
+        <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg transition-all duration-300 flex-1 group">
+          <div class="text-primary mb-6 group-hover:scale-110 transition-transform origin-left">
+            <span class="material-symbols-outlined text-4xl">local_shipping</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Vận chuyển hàng lẻ</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">Ghép container tiết kiệm. Nhận từ 150kg hoặc 2m³. Tuyến cố định Bằng Tường – Hà Nội.</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg transition-all duration-300 flex-1 group">
+          <div class="text-primary mb-6 group-hover:scale-110 transition-transform origin-left">
+            <span class="material-symbols-outlined text-4xl">monitoring</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Tracking thời gian thực</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">Theo dõi lộ trình hàng hóa qua Zalo OA. Thông báo tự động khi hàng qua từng mốc quan trọng.</p>
+        </div>
+      </div>
+      <!-- Center (featured) -->
+      <div class="hero-gradient p-10 rounded-[2rem] shadow-2xl text-on-primary flex flex-col justify-between relative overflow-hidden group reveal reveal-up delay-200">
+        <div class="absolute top-0 right-0 w-32 h-32 bg-white/5 rounded-full -mr-16 -mt-16 group-hover:scale-150 transition-transform duration-700"></div>
+        <div class="relative z-10">
+          <div class="mb-12">
+            <span class="material-symbols-outlined text-5xl">verified_user</span>
+          </div>
+          <h3 class="text-3xl font-extrabold mb-6 leading-tight">Ủy thác nhập khẩu chính ngạch</h3>
+          <p class="text-white/80 leading-relaxed mb-10">Giải pháp ủy thác trọn gói: Vạn An đứng tên nhập khẩu, xử lý toàn bộ hồ sơ pháp lý, thủ tục hải quan, thuế nhập khẩu cho doanh nghiệp của bạn.</p>
+          <ul class="space-y-5">
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-xl text-primary-fixed">check_circle</span>
+              <span class="text-sm font-semibold">Hợp đồng thương mại quốc tế</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-xl text-primary-fixed">check_circle</span>
+              <span class="text-sm font-semibold">Thanh toán quốc tế an toàn</span>
+            </li>
+            <li class="flex items-center gap-3">
+              <span class="material-symbols-outlined text-xl text-primary-fixed">check_circle</span>
+              <span class="text-sm font-semibold">Hóa đơn VAT + C/O Form E</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Right Column -->
+      <div class="flex flex-col gap-8 reveal reveal-right delay-400">
+        <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg transition-all duration-300 flex-1 group">
+          <div class="text-primary mb-6 group-hover:scale-110 transition-transform origin-left">
+            <span class="material-symbols-outlined text-4xl">payments</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Thanh toán hộ Alipay / WeChat</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">Xử lý giao dịch CNY nhanh chóng với tỷ giá ưu đãi. Không cần tài khoản ngân hàng Trung Quốc.</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg transition-all duration-300 flex-1 group">
+          <div class="text-primary mb-6 group-hover:scale-110 transition-transform origin-left">
+            <span class="material-symbols-outlined text-4xl">fact_check</span>
+          </div>
+          <h3 class="text-2xl font-bold mb-4">Kiểm đếm & Order hộ</h3>
+          <p class="text-on-surface-variant leading-relaxed text-sm">Kiểm tra chất lượng hàng hóa tại kho Trung Quốc. Chụp ảnh, video trước khi đóng gói về Việt Nam.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     TRUST STATS
+     =================================================== -->
+<section class="py-24 bg-surface-container-low overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      <div class="grid grid-cols-2 gap-6 reveal reveal-left">
+        <div class="bg-surface-container p-8 rounded-[2rem] mt-12">
+          <h4 class="text-primary font-extrabold text-4xl mb-2">100%</h4>
+          <p class="font-bold text-on-surface">Bảo hiểm</p>
+          <p class="text-xs text-on-surface-variant">Hàng hóa an toàn tuyệt đối</p>
+        </div>
+        <div class="hero-gradient text-on-primary p-8 rounded-[2rem]">
+          <h4 class="font-extrabold text-4xl mb-2">24/7</h4>
+          <p class="font-bold">Hỗ trợ</p>
+          <p class="text-xs opacity-80">Tư vấn viên tận tâm</p>
+        </div>
+        <div class="bg-surface-container-high p-8 rounded-[2rem] col-span-2">
+          <div class="flex items-center gap-6">
+            <span class="material-symbols-outlined text-4xl text-primary">verified</span>
+            <div>
+              <h4 class="font-bold text-xl">Giá cả minh bạch</h4>
+              <p class="text-on-surface-variant">Không phí ẩn, bảng giá niêm yết công khai trên website.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="reveal reveal-right delay-200">
+        <h2 class="text-4xl font-extrabold mb-8 tracking-tight">Chuyên sâu một tuyến — chuyên nghiệp từng chi tiết</h2>
+        <ul class="space-y-6">
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <div>
+              <p class="font-bold text-lg">Chỉ tập trung tuyến Bằng Tường – Hà Nội</p>
+              <p class="text-on-surface-variant">Am hiểu toàn bộ quy trình, tối ưu thời gian và chi phí vận chuyển.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <div>
+              <p class="font-bold text-lg">Thông quan hàng luồng xanh</p>
+              <p class="text-on-surface-variant">Pre-check hồ sơ 3–5 ngày trước khi xuất, tăng tỷ lệ thông quan xanh.</p>
+            </div>
+          </li>
+          <li class="flex items-start gap-4">
+            <span class="material-symbols-outlined text-primary mt-1">check_circle</span>
+            <div>
+              <p class="font-bold text-lg">Đội ngũ song ngữ Việt – Trung</p>
+              <p class="text-on-surface-variant">Xử lý trực tiếp với đối tác Trung Quốc, không qua trung gian thứ ba.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     PROCESS (5 Steps)
+     =================================================== -->
+<section class="py-24 bg-surface" id="quy-trinh">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="text-xs font-bold tracking-widest text-primary uppercase mb-2 block">Quy trình</span>
+      <h2 class="text-4xl font-extrabold text-center tracking-tight">Quy trình vận chuyển chuyên nghiệp</h2>
+      <p class="text-on-surface-variant mt-3 max-w-xl mx-auto">5 bước đơn giản — bạn chỉ cần chuẩn bị hàng, Vạn An lo mọi thủ tục còn lại</p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-8 relative">
+      <div class="text-center relative z-10 reveal reveal-up">
+        <div class="w-20 h-20 hero-gradient text-on-primary rounded-full flex items-center justify-center mx-auto mb-6 shadow-xl text-2xl font-bold">1</div>
+        <h3 class="font-bold text-lg mb-2">Báo giá & Tư vấn</h3>
+        <p class="text-on-surface-variant text-sm px-2">Gửi yêu cầu qua Zalo/điện thoại. Tư vấn mã HS Code, loại hàng, chi phí miễn phí.</p>
+      </div>
+      <div class="text-center relative z-10 reveal reveal-up delay-100">
+        <div class="w-20 h-20 bg-surface-container-lowest text-primary border-4 border-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md text-2xl font-bold">2</div>
+        <h3 class="font-bold text-lg mb-2">Thu gom & Kiểm đếm</h3>
+        <p class="text-on-surface-variant text-sm px-2">Hàng về kho Bằng Tường, kiểm đếm cẩn thận, chụp ảnh xác nhận trước khi đóng gói.</p>
+      </div>
+      <div class="text-center relative z-10 reveal reveal-up delay-200">
+        <div class="w-20 h-20 bg-surface-container-lowest text-primary border-4 border-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md text-2xl font-bold">3</div>
+        <h3 class="font-bold text-lg mb-2">Khai báo hải quan</h3>
+        <p class="text-on-surface-variant text-sm px-2">Khai báo điện tử VNACCS/VCIS, nộp thuế, xử lý C/O Form E để tối ưu thuế nhập khẩu.</p>
+      </div>
+      <div class="text-center relative z-10 reveal reveal-up delay-300">
+        <div class="w-20 h-20 bg-surface-container-lowest text-primary border-4 border-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md text-2xl font-bold">4</div>
+        <h3 class="font-bold text-lg mb-2">Vận chuyển</h3>
+        <p class="text-on-surface-variant text-sm px-2">Xe chuyên dụng chạy thẳng tuyến Bằng Tường – Hà Nội. Cập nhật trạng thái qua Zalo.</p>
+      </div>
+      <div class="text-center relative z-10 reveal reveal-up delay-400">
+        <div class="w-20 h-20 bg-surface-container-lowest text-primary border-4 border-primary/20 rounded-full flex items-center justify-center mx-auto mb-6 shadow-md text-2xl font-bold">5</div>
+        <h3 class="font-bold text-lg mb-2">Giao hàng & Chứng từ</h3>
+        <p class="text-on-surface-variant text-sm px-2">Giao hàng tận kho tại Hà Nội. Cấp hóa đơn VAT, tờ khai hải quan đầy đủ cho doanh nghiệp.</p>
+      </div>
+      <div class="hidden md:block absolute top-10 left-0 w-full h-0.5 bg-outline-variant/30 -z-0"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     PRICING SECTION
+     =================================================== -->
+<section class="py-24 bg-surface-container-low" id="pricing">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <!-- Header -->
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="text-xs font-bold tracking-widest text-primary uppercase mb-2 block">Bảng giá minh bạch</span>
+      <h2 class="text-4xl font-extrabold text-on-surface mb-3 tracking-tight">Cước Vận Chuyển Tuyến Bằng Tường – Hà Nội</h2>
+      <p class="text-on-surface-variant max-w-2xl mx-auto text-sm font-medium">Giá đã bao gồm thu gom tại kho Bằng Tường, kiểm đếm, thông quan chính ngạch</p>
+    </div>
+    <!-- Pricing Cards -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12 items-stretch">
+      <!-- Card 1: Nguyên Container -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2.5rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex flex-col items-start border border-outline-variant/10 group hover:shadow-xl transition-all duration-500 reveal reveal-up">
+        <h3 class="text-2xl font-bold mb-1">Nguyên Container</h3>
+        <p class="text-xs text-on-surface-variant mb-8">Từ 30 khối trở lên</p>
+        <div class="mb-10">
+          <div class="flex items-baseline gap-1">
+            <span class="text-5xl font-extrabold text-on-surface tracking-tighter">900,000</span>
+            <span class="text-sm font-bold text-on-surface-variant uppercase">VNĐ/khối</span>
+          </div>
+          <p class="text-xs text-on-surface-variant mt-2 italic font-medium">Giá ưu đãi cho lô hàng lớn</p>
+        </div>
+        <ul class="space-y-4 mb-10 text-[13px] text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Từ 30 khối trở lên</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Giao hàng 3-5 ngày</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Thông quan chính ngạch</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Giá tốt nhất cho hàng số lượng lớn</span>
+          </li>
+        </ul>
+        <a href="https://zalo.me/0862341318" target="_blank" class="w-full py-4 bg-surface-container-high rounded-2xl font-extrabold text-on-surface-variant hover:bg-surface-container-highest transition-all duration-300 mt-auto active:scale-95 text-center cursor-pointer block">Đặt Container</a>
+      </div>
+      <!-- Card 2: Hàng Lẻ Ghép Container (Featured) -->
+      <div class="reveal reveal-up delay-100 z-10">
+      <div class="bg-surface-container-lowest p-8 rounded-[2.5rem] shadow-2xl flex flex-col items-start border-2 border-primary relative overflow-visible transition-shadow duration-500 group animate-float-card">
+        <div class="absolute -top-4 left-1/2 -translate-x-1/2 hero-gradient text-white px-5 py-1.5 text-[10px] font-black rounded-full uppercase tracking-widest whitespace-nowrap shadow-lg">Phổ biến nhất</div>
+        <h3 class="text-2xl font-bold mb-1">Hàng Lẻ Ghép Container</h3>
+        <p class="text-xs text-on-surface-variant mb-8">Ghép container, tiết kiệm chi phí</p>
+        <div class="mb-10">
+          <div class="flex items-baseline gap-1">
+            <span class="text-5xl font-extrabold text-primary tracking-tighter">4,000</span>
+            <span class="text-sm font-bold text-primary uppercase">VNĐ/KG</span>
+          </div>
+          <p class="text-[11px] text-on-surface-variant mt-2 font-bold uppercase tracking-tight">hoặc từ 900,000 VNĐ/khối</p>
+        </div>
+        <ul class="space-y-4 mb-10 text-[13px] text-on-surface font-bold">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+            <span>Nhận từ 150kg hoặc 2 khối trở lên</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+            <span>Giao hàng 3-5 ngày</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+            <span>Kiểm đếm, cân đo tại kho</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+            <span>Tracking qua Zalo</span>
+          </li>
+        </ul>
+        <a href="https://zalo.me/0862341318" target="_blank" class="w-full py-4 hero-gradient text-white rounded-2xl font-black shadow-[0px_12px_24px_rgba(5,90,66,0.25)] hover:brightness-110 active:scale-95 transition-all duration-300 mt-auto uppercase tracking-wider text-xs btn-shine animate-pulse-subtle text-center block">Gửi Hàng Ghép</a>
+      </div>
+      </div>
+      <!-- Card 3: Hàng Đặc Biệt -->
+      <div class="bg-surface-container-lowest p-8 rounded-[2.5rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex flex-col items-start border border-outline-variant/10 group hover:shadow-xl transition-all duration-500 reveal reveal-up delay-200">
+        <h3 class="text-2xl font-bold mb-1">Hàng Đặc Biệt</h3>
+        <p class="text-xs text-on-surface-variant mb-8">Quá khổ, cồng kềnh, giá trị cao</p>
+        <div class="mb-10">
+          <div class="flex items-baseline gap-1">
+            <span class="text-5xl font-extrabold text-on-surface tracking-tighter">Liên hệ</span>
+          </div>
+          <p class="text-xs text-on-surface-variant mt-2 italic font-medium">Báo giá riêng theo lô hàng</p>
+        </div>
+        <ul class="space-y-4 mb-10 text-[13px] text-on-surface-variant font-medium">
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Hàng quá khổ, quá tải</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Máy móc, thiết bị công nghiệp</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Hàng dễ vỡ, cần gia cố khung</span>
+          </li>
+          <li class="flex items-center gap-3">
+            <span class="material-symbols-outlined text-primary text-lg">check</span>
+            <span>Bảo hiểm hàng hóa (3% giá trị)</span>
+          </li>
+        </ul>
+        <a href="tel:0862341318" class="w-full py-4 bg-surface-container-high rounded-2xl font-extrabold text-on-surface-variant hover:bg-surface-container-highest transition-all duration-300 mt-auto active:scale-95 text-center cursor-pointer block">Nhận Tư Vấn</a>
+      </div>
+    </div>
+    <!-- Pricing Footer -->
+    <div class="text-center pt-4 reveal reveal-up">
+      <p class="text-sm text-on-surface-variant mb-10 font-bold tracking-tight">* Giá tham khảo, có thể thay đổi theo loại hàng hóa và thời điểm. Liên hệ để nhận báo giá chính xác nhất.</p>
+      <a href="bang-gia.html" class="inline-flex items-center gap-3 bg-on-surface text-surface px-10 py-5 rounded-[1.25rem] font-black hover:bg-primary transition-all duration-300 shadow-2xl active:scale-95 group btn-shine animate-pulse-subtle">
+        <span>Xem bảng giá chi tiết tại đây</span>
+        <span class="material-symbols-outlined text-xl group-hover:translate-x-1 transition-transform">arrow_forward</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     REQUIRED DOCUMENTS
+     =================================================== -->
+<section class="py-24 bg-surface" id="ho-so">
+  <div class="max-w-5xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-12 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-primary/10 text-primary text-xs font-bold tracking-widest uppercase mb-5">Hồ sơ cần có</span>
+      <h2 class="text-4xl font-extrabold text-on-surface tracking-tight mb-4">Giấy tờ cần chuẩn bị</h2>
+      <p class="text-on-surface-variant text-lg max-w-2xl mx-auto">Vạn An hỗ trợ hướng dẫn và kiểm tra hồ sơ miễn phí trước khi xuất hàng để đảm bảo thông quan suôn sẻ</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="bg-surface-container-lowest rounded-[2rem] p-7 shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex items-start gap-4 hover:shadow-lg transition-all duration-300 reveal reveal-up">
+        <div class="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-white text-xl">handshake</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-on-surface mb-1">Hợp đồng mua bán</h4>
+          <p class="text-sm text-on-surface-variant">Sales Contract giữa bên mua và bên bán Trung Quốc</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-[2rem] p-7 shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex items-start gap-4 hover:shadow-lg transition-all duration-300 reveal reveal-up delay-100">
+        <div class="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-white text-xl">receipt_long</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-on-surface mb-1">Invoice thương mại</h4>
+          <p class="text-sm text-on-surface-variant">Commercial Invoice ghi đầy đủ mô tả hàng hóa, đơn giá, tổng giá trị</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-[2rem] p-7 shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex items-start gap-4 hover:shadow-lg transition-all duration-300 reveal reveal-up delay-200">
+        <div class="w-12 h-12 hero-gradient rounded-xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-white text-xl">list_alt</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-on-surface mb-1">Packing List</h4>
+          <p class="text-sm text-on-surface-variant">Bảng kê chi tiết số lượng, trọng lượng, kích thước từng kiện hàng</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-[2rem] p-7 shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex items-start gap-4 hover:shadow-lg transition-all duration-300 reveal reveal-up delay-100">
+        <div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-on-secondary-container text-xl">workspace_premium</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-on-surface mb-1">C/O Form E <span class="text-xs font-normal text-primary">(giảm thuế)</span></h4>
+          <p class="text-sm text-on-surface-variant">Giấy chứng nhận xuất xứ theo Hiệp định ACFTA, giảm thuế nhập khẩu xuống 0–5%</p>
+        </div>
+      </div>
+      <div class="bg-surface-container-lowest rounded-[2rem] p-7 shadow-[0px_8px_24px_rgba(23,29,25,0.04)] flex items-start gap-4 hover:shadow-lg transition-all duration-300 reveal reveal-up delay-200">
+        <div class="w-12 h-12 bg-surface-container rounded-xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-on-surface text-xl">article</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-on-surface mb-1">Vận đơn (B/L)</h4>
+          <p class="text-sm text-on-surface-variant">Bill of Lading hoặc Air Waybill xác nhận lô hàng đã được vận chuyển</p>
+        </div>
+      </div>
+      <div class="bg-primary/5 border-2 border-dashed border-primary/20 rounded-[2rem] p-7 flex items-center gap-4 reveal reveal-up delay-300">
+        <div class="w-12 h-12 bg-primary/10 rounded-xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-xl">support_agent</span>
+        </div>
+        <div>
+          <h4 class="font-extrabold text-primary mb-1">Chưa có giấy tờ?</h4>
+          <p class="text-sm text-on-surface-variant">Vạn An tư vấn và hỗ trợ chuẩn bị đầy đủ miễn phí. Liên hệ ngay!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     TESTIMONIALS
+     =================================================== -->
+<section class="py-24 bg-surface-container-low overflow-hidden" id="testimonials">
+  <!-- Header -->
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 mb-14">
+    <div class="text-center reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Khách hàng nói gì</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight mb-4">Nghe từ người đã gửi hàng<br/><span class="text-gradient-green">qua Vạn An</span></h2>
+      <p class="text-on-surface-variant text-lg max-w-xl mx-auto">Không phải lời quảng cáo — đây là cảm nhận thật từ khách hàng thực tế</p>
+    </div>
+  </div>
+
+  <!-- Row 1: scroll left -->
+  <div class="relative mb-5"
+       style="-webkit-mask-image:linear-gradient(to right,transparent 0%,black 6%,black 94%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,black 6%,black 94%,transparent 100%);">
+    <div class="flex flex-nowrap gap-5 animate-ticker" id="t-track-1" style="width:max-content;">
+      <div class="flex gap-5 flex-nowrap t-set-a">
+
+        <!-- T1 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Lần đầu gửi hàng chính ngạch thấy thủ tục nhiều quá, nhưng Vạn An lo hết rồi, mình chỉ cần chuẩn bị invoice với packing list thôi. Hàng về 4 ngày đúng hẹn, có hóa đơn đỏ để khai thuế. Ổn hơn mình nghĩ."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/Nữ 1.jpg" alt="Chị Lan Anh" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Lan Anh</p>
+              <p class="text-xs text-on-surface-variant">Shop thời trang Quảng Châu, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T2 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Cái hay là họ chụp ảnh lô hàng trước khi đóng xe rồi gửi Zalo cho mình, nên biết ngay tình trạng. Lần trước gửi chỗ khác thiếu 2 kiện mà không có bằng chứng gì. Từ hồi sang đây không bị vậy nữa."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/Nam 1.jpg" alt="Anh Minh Tuấn" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Minh Tuấn</p>
+              <p class="text-xs text-on-surface-variant">Nhập khẩu linh kiện điện tử, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T3 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Đồ chơi nhựa hay bị mấy chỗ từ chối hoặc báo giá trên trời vì sợ rủi ro thông quan. Vạn An vẫn nhận, tư vấn khai đúng mã HS, hàng về không bị giữ. Đó là điều mình cần nhất."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/Nữ 2.jpg" alt="Chị Thu Hằng" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Thu Hằng</p>
+              <p class="text-xs text-on-surface-variant">Kinh doanh đồ chơi trẻ em, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T4 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Công ty mình cần hóa đơn VAT để hạch toán, cái này tiểu ngạch không làm được. Chuyển sang Vạn An thì giải quyết được. Giá cước không chênh nhiều so với trước, mà yên tâm hơn hẳn về mặt pháp lý."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/Nam 2.jpg" alt="Anh Phúc Nguyên" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Phúc Nguyên</p>
+              <p class="text-xs text-on-surface-variant">GĐ Cty TNHH Cơ khí, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T9 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Mình hay đặt hàng gấp, cần biết chính xác hàng đang ở đâu để sắp xếp kho. Vạn An cập nhật từng chặng qua Zalo, không cần hỏi mới báo. Nhỏ thôi nhưng làm mình thoải mái hơn nhiều."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/Nữ 3.jpg" alt="Chị Hải Yến" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Hải Yến</p>
+              <p class="text-xs text-on-surface-variant">Kinh doanh mỹ phẩm, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T10 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Hàng điện tử linh kiện của mình khá nhạy cảm khi thông quan. Nhân viên Vạn An hỗ trợ chuẩn bị bộ hồ sơ đúng yêu cầu từ lần đầu, không phải sửa đi sửa lại. Tiết kiệm được cả thời gian lẫn phí phát sinh."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/Nam 3.jpg" alt="Anh Quốc Khánh" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Quốc Khánh</p>
+              <p class="text-xs text-on-surface-variant">Nhập khẩu linh kiện điện tử, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T11 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★☆</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Cước phí có cao hơn một chút so với mấy chỗ tiểu ngạch, nhưng lô hàng nào cũng về nguyên vẹn, đúng số lượng. Tính ra không bị thiệt. Quan trọng là không lo lô hàng bị giữ giữa chừng như trước nữa."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/Nữ 4.jpg" alt="Chị Bích Liên" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Bích Liên</p>
+              <p class="text-xs text-on-surface-variant">Cửa hàng thời trang, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T12 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Trước mình toàn nhờ người quen bên kia gửi về, rủi ro cao mà không có bảo hiểm gì. Lần đầu dùng Vạn An thấy quy trình bài bản hẳn — có hợp đồng, có biên lai, hàng hỏng đã có người chịu trách nhiệm. An tâm hơn nhiều."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/Nam.jpg" alt="Anh Tuấn Tú" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Tuấn Tú</p>
+              <p class="text-xs text-on-surface-variant">Kinh doanh đồ gia dụng, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T18 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Xưởng mình nhập vải và phụ liệu may đều đặn hàng tháng. Vạn An làm được cả hàng cuộn cồng kềnh lẫn hàng nhỏ lẻ trong cùng một lô. Không phải tách đơn, không phải lo tìm thêm đơn vị khác — gộp hết một chỗ là xong."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/6ed92d76c8bbcc4f4f740978b89978c6.jpg" alt="Chị Hồng Thắm" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Hồng Thắm</p>
+              <p class="text-xs text-on-surface-variant">Chủ xưởng may, Hà Nội</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- Row 2: scroll right -->
+  <div class="relative"
+       style="-webkit-mask-image:linear-gradient(to right,transparent 0%,black 6%,black 94%,transparent 100%);mask-image:linear-gradient(to right,transparent 0%,black 6%,black 94%,transparent 100%);">
+    <div class="flex flex-nowrap gap-5 animate-ticker-rev" id="t-track-2" style="width:max-content;">
+      <div class="flex gap-5 flex-nowrap t-set-b">
+
+        <!-- T5 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★☆</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Nội thất cồng kềnh, mình hay lo bị tính giá trên trời. Vạn An báo giá theo khối, rõ ràng từ đầu, không có phát sinh thêm. Lần đầu gửi 12 khối, về đúng hẹn, chỉ móp nhẹ 1 góc thùng — nhưng trong chấp nhận được."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/7285d4846a1b189777475f5219b3ff29.jpg" alt="Chị Minh Hoa" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Minh Hoa</p>
+              <p class="text-xs text-on-surface-variant">Cửa hàng nội thất, TP.HCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T6 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Hỏi giá lúc 10 giờ đêm, 15 phút sau đã có người trả lời. Hàng máy móc của mình khá đặc thù — họ hỏi kỹ trước khi nhận, không phải kiểu nhận bừa rồi gặp vấn đề sau. Cảm giác họ biết mình đang làm gì."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/2cad80dd5177e5dbb43457cc1bd1f0f8.jpg" alt="Anh Đức Mạnh" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Đức Mạnh</p>
+              <p class="text-xs text-on-surface-variant">Nhập khẩu thiết bị công nghiệp, TP.HCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T7 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Mình chỉ nhập 200–300kg mỗi lần, không đủ container riêng. Vạn An vẫn nhận ghép, tính theo kg, không ép phải nhập số lượng lớn. Tiện cho người mới bắt đầu như mình, không bị cảm giác khách nhỏ thì bị coi thường."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/7a8d2907fd0fc2750eb6656887cd83e9.jpg" alt="Chị Thanh Nga" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Thanh Nga</p>
+              <p class="text-xs text-on-surface-variant">Seller TikTok Shop, Đà Nẵng</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T8 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★☆</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Cứ tưởng chính ngạch là đội chi phí hơn tiểu ngạch nhiều. Thực ra áp được Form E thì thuế còn về gần 0, lại có hóa đơn đỏ nên tổng chi phí không chênh mấy. Vạn An giải thích cái này khá rõ, không bị mù thông tin."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/3096e38d76a0591bcdf6d316d5b74982.jpg" alt="Anh Văn Hiếu" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Văn Hiếu</p>
+              <p class="text-xs text-on-surface-variant">Nhập khẩu hàng tiêu dùng, Hải Phòng</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T13 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Giao hàng về kho tận nơi, không phải ra bến tự nhận như mấy chỗ khác. Với mình là tiết kiệm được cả buổi chiều. Nhân viên giao hàng cũng nhiệt tình, gọi trước 30 phút, không phải ngồi chờ cả ngày."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/9e0dc0fad2f22ee180cf44fce8b04bd5.jpg" alt="Chị Kim Oanh" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Kim Oanh</p>
+              <p class="text-xs text-on-surface-variant">Nhà phân phối hàng tiêu dùng, TP.HCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T14 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Mình nhập hàng thể thao, mã HS khá phức tạp. Vạn An có người am hiểu hải quan, tư vấn khai báo đúng ngay từ đầu. Không bị mắc ở cửa khẩu, không phải nộp bổ sung thuế sau. Hai lô rồi đều trơn tru."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/466382dcd4a284d4d486dcf530814d05.jpg" alt="Anh Nam Hải" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Nam Hải</p>
+              <p class="text-xs text-on-surface-variant">Nhập khẩu dụng cụ thể thao, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T15 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Container đầu tiên mình gửi thử 1 tấn để test dịch vụ. Về đúng 4 ngày, nguyên seal, đúng trọng lượng, hóa đơn VAT gửi email trong ngày. Lô sau mình tăng lên 3 tấn ngay, không cần đắn đo thêm."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nam/c4a72643603f67e7275f03962ae6de63.jpg" alt="Anh Phong Lâm" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Anh Phong Lâm</p>
+              <p class="text-xs text-on-surface-variant">GĐ Cty nhập khẩu FMCG, TP.HCM</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T16 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★☆</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Lần đầu gửi hàng mẫu nhỏ, chưa chắc có hợp tác lâu dài không. Vẫn được chăm sóc đàng hoàng, không bị phân biệt khách lớn nhỏ. Sau đó mới mạnh dạn ký hợp đồng dài hạn — cảm giác tin tưởng được xây từ lần đầu tiên đó."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/a2ec6b45383960ed28ef26d7d6970bb8.jpg" alt="Chị Thùy Mai" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Thùy Mai</p>
+              <p class="text-xs text-on-surface-variant">Nhà nhập khẩu hàng trang trí, HN</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- T17 -->
+        <div class="w-[300px] flex-shrink-0 bg-surface-container-lowest rounded-[1.5rem] p-5 shadow-[0px_4px_16px_rgba(23,29,25,0.06)] flex flex-col gap-3">
+          <div class="text-amber-400 text-base leading-none">★★★★★</div>
+          <p class="text-on-surface-variant text-sm leading-relaxed flex-1">"Kinh doanh online nên cần hàng đều đặn, không thể để đứt stock. Vạn An cho đăng ký lịch cố định mỗi tuần, ưu tiên slot xe, không phải hỏi lại từ đầu mỗi lần. Làm việc với họ giống như có người lo phần logistics cho mình."</p>
+          <div class="flex items-center gap-3 pt-3 border-t border-outline-variant/15">
+            <img src="Avatar Testimonial/Avatar trang chủ/Nữ/c4fb88dacb64fe49650f50e2ea82e364.jpg" alt="Chị Diệu Linh" class="w-9 h-9 rounded-full object-cover flex-shrink-0">
+            <div>
+              <p class="font-bold text-sm text-on-surface">Chị Diệu Linh</p>
+              <p class="text-xs text-on-surface-variant">Seller Shopee / TikTok Shop, Cần Thơ</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FAQ
+     =================================================== -->
+<section id="faq" class="py-24 bg-surface">
+  <div class="max-w-3xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-12 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">FAQ</span>
+      <h2 class="text-3xl md:text-4xl font-extrabold text-center tracking-tight">Câu hỏi thường gặp</h2>
+    </div>
+    <div class="space-y-4">
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md reveal reveal-up">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Thời gian vận chuyển từ Bằng Tường về Hà Nội mất bao lâu?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Thời gian vận chuyển trung bình <span class="font-bold text-on-surface">3–5 ngày</span> tùy thời điểm thu gom và loại hàng hóa. Hàng về kho Bằng Tường được kiểm đếm, cân đo và sắp xếp lên xe chuyên dụng về Hà Nội theo lịch cố định.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md reveal reveal-up delay-100">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Vận chuyển chính ngạch là gì? Khác gì tiểu ngạch?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Chính ngạch là phương thức nhập khẩu <span class="font-bold text-on-surface">có khai báo hải quan đầy đủ</span>, nộp thuế minh bạch, có hóa đơn VAT và C/O hợp lệ. Tiểu ngạch (cũ) là hàng "bao thuế" không chứng từ — ngày càng rủi ro do siết chặt biên giới từ 2025.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md reveal reveal-up delay-200">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Thuế nhập khẩu được tính như thế nào? Có tối ưu được không?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Thuế phụ thuộc vào <span class="font-bold text-on-surface">mã HS Code</span> của hàng hóa. Vạn An tư vấn mã HS miễn phí và hỗ trợ xin C/O Form E theo Hiệp định ACFTA — giúp giảm thuế nhập khẩu từ mức thông thường xuống còn <span class="font-bold text-on-surface">0–5%</span> cho nhiều loại hàng.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md reveal reveal-up">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Nếu hàng hỏng hoặc thất lạc thì sao?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Vạn An hỗ trợ <span class="font-bold text-on-surface">bảo hiểm 100% giá trị hàng hóa</span> khi mua bảo hiểm (phí chỉ 3% giá trị đơn hàng). Mọi lô hàng đều được kiểm đếm và chụp ảnh trước khi xuất kho để làm căn cứ bồi thường.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Tôi có thể theo dõi hàng hóa bằng cách nào?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Qua <span class="font-bold text-on-surface">Zalo OA Vạn An Logistics</span>. Anh/chị nhận ảnh chụp hàng tại kho, thông báo khi hàng xuất kho, qua cửa khẩu và khi giao thành công. Không cần cài thêm app nào.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Thanh toán như thế nào? Có thanh toán COD không?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Chấp nhận chuyển khoản ngân hàng (VNĐ), thanh toán khi nhận hàng (COD) cho khách quen, và thanh toán qua ví điện tử. Hỗ trợ đổi tiền CNY/VNĐ với tỷ giá cạnh tranh.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Nhận hàng tối thiểu bao nhiêu kg? Có nhận hàng nhỏ lẻ không?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Vạn An nhận từ <span class="font-bold text-on-surface">150 kg hoặc 2 m³</span> trở lên theo dạng ghép container. Với hàng nhỏ hơn, vui lòng liên hệ để được tư vấn giải pháp phù hợp.</p>
+      </details>
+
+      <details class="group bg-surface-container-lowest rounded-2xl p-6 cursor-pointer transition-all duration-300 hover:shadow-md">
+        <summary class="flex justify-between items-center font-bold text-lg list-none">
+          Vạn An có kho tại Trung Quốc không?
+          <span class="material-symbols-outlined transition-transform group-open:rotate-180 text-primary flex-shrink-0 ml-4">expand_more</span>
+        </summary>
+        <p class="mt-4 text-on-surface-variant leading-relaxed">Có. Chúng tôi có kho tập kết tại <span class="font-bold text-on-surface">Bằng Tường (Quảng Tây)</span> và liên kết với các đối tác kho tại Quảng Châu. Hàng được thu gom, kiểm đếm cẩn thận trước khi đóng container về Việt Nam.</p>
+      </details>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===================================================
+     FINAL CTA
+     =================================================== -->
+<section class="py-24 px-6 lg:px-12 bg-surface">
+  <div class="max-w-7xl mx-auto">
+    <div class="hero-gradient rounded-[3rem] p-12 md:p-20 text-center text-on-primary shadow-2xl relative overflow-hidden reveal reveal-up">
+      <div class="absolute inset-0 opacity-[0.07] pointer-events-none"
+           style="background-image: url(&quot;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='80' height='80' viewBox='0 0 80 80'%3E%3Cg fill='none' stroke='%23ffffff' stroke-width='1'%3E%3Ccircle cx='40' cy='40' r='30'/%3E%3Cpath d='M40 10 L40 70 M10 40 L70 40'/%3E%3C/g%3E%3C/svg%3E&quot;); background-size: 80px;"></div>
+      <div class="absolute top-0 right-0 w-96 h-96 bg-white/5 rounded-full blur-3xl -mr-48 -mt-48"></div>
+      <div class="absolute bottom-0 left-0 w-64 h-64 bg-white/5 rounded-full blur-2xl -ml-32 -mb-32"></div>
+      <div class="relative z-10 max-w-4xl mx-auto">
+        <p class="text-xs font-bold tracking-widest uppercase mb-4 opacity-80">Tư vấn miễn phí HS Code trong 5 phút</p>
+        <h2 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight tracking-tight">
+          Sẵn sàng tối ưu chi phí<br/>nhập khẩu của bạn?
+        </h2>
+        <p class="text-lg md:text-xl opacity-90 mb-12">
+          Đừng để rủi ro pháp lý ảnh hưởng đến chuỗi cung ứng. Kết nối với chuyên gia Vạn An ngay hôm nay để nhận giải pháp vận chuyển chính ngạch an toàn và tiết kiệm nhất.
+        </p>
+        <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+          <a href="tel:0862341318"
+             class="w-full md:w-auto bg-white text-primary px-10 py-5 rounded-2xl font-black text-lg shadow-xl hover:scale-105 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3">
+            <span class="material-symbols-outlined text-2xl">call</span>
+            Hotline: 086.234.1318
+          </a>
+          <a href="https://zalo.me/0862341318" target="_blank"
+             class="w-full md:w-auto bg-transparent border-2 border-white/40 text-white px-10 py-5 rounded-2xl font-black text-lg hover:bg-white/10 active:scale-95 transition-all duration-300 flex items-center justify-center gap-3 group">
+            <div class="w-10 h-10 flex items-center justify-center">
+              <img alt="Zalo" class="w-full h-full object-contain transition-transform group-hover:scale-110" src="Icon_of_Zalo.svg.png"/>
+            </div>
+            Tư vấn qua Zalo
+          </a>
+        </div>
+        <!-- Trust signals below CTA -->
+        <div class="flex flex-wrap justify-center gap-6 mt-10 opacity-90">
+          <div class="flex items-center gap-2 text-sm">
+            <span class="material-symbols-outlined text-lg">check_circle</span>
+            <span>Tư vấn miễn phí</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="material-symbols-outlined text-lg">check_circle</span>
+            <span>Phản hồi trong 2 giờ</span>
+          </div>
+          <div class="flex items-center gap-2 text-sm">
+            <span class="material-symbols-outlined text-lg">check_circle</span>
+            <span>Không ràng buộc</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="components.js"></script>
+<script>
+  // Typing Animation
+  const textElement = document.getElementById('typing-text');
+  const words = ["Nhanh", "An Toàn", "Minh Bạch"];
+  let wordIndex = 0, charIndex = 0, isDeleting = false, typeSpeed = 150;
+
+  function type() {
+    if (!textElement) return;
+    const currentWord = words[wordIndex];
+    if (isDeleting) {
+      textElement.textContent = currentWord.substring(0, charIndex - 1);
+      charIndex--;
+      typeSpeed = 80;
+    } else {
+      textElement.textContent = currentWord.substring(0, charIndex + 1);
+      charIndex++;
+      typeSpeed = 150;
+    }
+    if (!isDeleting && charIndex === currentWord.length) { isDeleting = true; typeSpeed = 2000; }
+    else if (isDeleting && charIndex === 0) { isDeleting = false; wordIndex = (wordIndex + 1) % words.length; typeSpeed = 500; }
+    setTimeout(type, typeSpeed);
+  }
+
+  // Testimonial Marquee Setup
+  function setupTestimonialMarquees() {
+    [
+      { trackId: 't-track-1', setClass: 't-set-a' },
+      { trackId: 't-track-2', setClass: 't-set-b' }
+    ].forEach(({ trackId, setClass }) => {
+      const track = document.getElementById(trackId);
+      if (!track) return;
+      const sets = track.querySelectorAll('.' + setClass);
+      for (let i = 1; i < sets.length; i++) sets[i].remove();
+      const original = track.querySelector('.' + setClass);
+      if (!original) return;
+      const setWidth = original.offsetWidth;
+      const needed = Math.ceil((window.innerWidth * 2) / setWidth) + 2;
+      for (let i = 1; i < needed; i++) track.appendChild(original.cloneNode(true));
+      track.style.setProperty('--ticker-shift', setWidth + 'px');
+    });
+  }
+
+  // Ticker Setup
+  function setupTicker() {
+    const track = document.getElementById('ticker-track');
+    if (!track) return;
+    const sets = track.querySelectorAll('.ticker-set');
+    for (let i = 1; i < sets.length; i++) sets[i].remove();
+    const original = track.querySelector('.ticker-set');
+    if (!original) return;
+    const setWidth = original.offsetWidth;
+    const needed = Math.ceil((window.innerWidth * 2) / setWidth) + 1;
+    for (let i = 1; i < needed; i++) track.appendChild(original.cloneNode(true));
+    track.style.setProperty('--ticker-shift', setWidth + 'px');
+  }
+
+  document.addEventListener('DOMContentLoaded', () => {
+    setTimeout(type, 1000);
+    setupTicker();
+    setupTestimonialMarquees();
+
+    // Reveal on scroll
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('active'); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+    // Safety net fallback
+    setTimeout(() => {
+      document.querySelectorAll('.reveal:not(.active)').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight) el.classList.add('active');
+      });
+    }, 1500);
+  });
+
+  window.addEventListener('load', () => { setupTicker(); setupTestimonialMarquees(); });
+  let resizeTimer;
+  window.addEventListener('resize', () => {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(() => { setupTicker(); setupTestimonialMarquees(); }, 250);
+  });
+</script>
+</body>
+</html>

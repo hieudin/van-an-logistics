@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Chính Sách Nhập Khẩu Chính Ngạch Trung - Việt | Vạn An Logistics</title>
+<meta name="description" content="Chính sách vận chuyển, bồi thường, bảo hiểm, lưu kho và bảo mật thông tin tại Vạn An Logistics. Minh bạch, rõ ràng, bảo vệ quyền lợi khách hàng.">
+<meta property="og:title" content="Chính Sách Nhập Khẩu | Vạn An Logistics">
+<meta property="og:description" content="Chính sách vận chuyển, bồi thường, bảo hiểm, lưu kho tại Vạn An Logistics. Minh bạch, bảo vệ quyền lợi khách hàng.">
+<meta property="og:type" content="website">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="assets/brand/favicon-16.png">
+<link rel="apple-touch-icon" sizes="180x180" href="assets/brand/apple-touch-icon.png">
+<link rel="icon" href="assets/brand/favicon.ico">
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#67dca4", "tertiary-fixed": "#ffdad8",
+          "surface-container-highest": "#dee4dd", "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff", "primary-container": "#008558",
+          "surface": "#f5fbf4", "on-secondary-container": "#446d56",
+          "surface-variant": "#dee4dd", "secondary": "#3e6751",
+          "background": "#f5fbf4", "primary-fixed-dim": "#67dca4",
+          "on-surface": "#171d19", "surface-container-low": "#eff5ee",
+          "secondary-fixed-dim": "#a4d1b6", "outline-variant": "#bccabf",
+          "on-surface-variant": "#3d4a42", "on-primary": "#ffffff",
+          "primary-fixed": "#84f9be", "surface-tint": "#006c47",
+          "surface-dim": "#d5dcd5", "secondary-fixed": "#bfedd1",
+          "surface-container-high": "#e4eae3", "on-primary-fixed": "#002113",
+          "tertiary": "#9c3c3d", "outline": "#6d7a71",
+          "on-primary-container": "#f6fff6", "surface-container": "#e9f0e9",
+          "primary": "#055a42", "secondary-container": "#bfedd1"
+        },
+        borderRadius: { DEFAULT: "0.125rem", lg: "0.25rem", xl: "0.5rem", full: "0.75rem" },
+        fontFamily: { headline: ["Manrope"], body: ["Manrope"], label: ["Manrope"] }
+      }
+    }
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+  body { font-family: 'Manrope', sans-serif; }
+  .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+  .glass-nav { background: rgba(245, 251, 244, 0.8); backdrop-filter: blur(20px); }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%;
+    width: 20%; height: 200%;
+    background: rgba(255, 255, 255, 0.4);
+    transform: rotate(30deg); animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+  .animate-pulse-subtle { animation: pulse-subtle 2s infinite; }
+  @keyframes pulse-subtle {
+    0% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(14, 175, 117, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(14, 175, 117, 0); }
+  }
+  .reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform, opacity; }
+  .reveal-up { transform: translateY(50px); }
+  .reveal-left { transform: translateX(-50px); }
+  .reveal-right { transform: translateX(50px); }
+  .reveal.active { opacity: 1; transform: translate(0, 0); }
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+  .delay-400 { transition-delay: 400ms; }
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  .vietnam-pattern {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(132,249,190,0.02) 0%, transparent 80%);
+  }
+  .drum-center {
+    width: 100vw;
+    height: 100vw;
+    background: url("assets/decor/pattern/9.png") no-repeat center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    animation: rotate-slow 400s linear infinite;
+    pointer-events: none;
+  }
+  .lac-bird-decor {
+    position: absolute;
+    width: 120px;
+    height: 80px;
+    background: url("assets/decor/chim_hac.jpg") no-repeat center;
+    background-size: contain;
+    filter: blur(0.3px) brightness(1.5);
+    opacity: 0.5;
+    pointer-events: none;
+    z-index: 1;
+  }
+  .hero-glow {
+    background: radial-gradient(circle at 50% 50%, rgba(132,249,190,0.1) 0%, transparent 60%);
+  }
+  @keyframes rotate-slow {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+  }
+  @keyframes fly-across {
+    from { transform: translateX(-20vw) translateY(0); opacity: 0; }
+    15% { opacity: 0.5; }
+    85% { opacity: 0.5; }
+    to { transform: translateX(110vw) translateY(-40px); opacity: 0; }
+  }
+  @keyframes flap-subtle {
+    0%, 100% { transform: scaleY(1); }
+    50% { transform: scaleY(0.7); }
+  }
+  .animate-fly-1 { animation: fly-across 28s linear infinite; }
+  .animate-fly-2 { animation: fly-across 38s linear infinite -12s; }
+  .animate-flap { animation: flap-subtle 1.8s ease-in-out infinite; }
+  .policy-card:hover { transform: translateY(-4px); }
+
+  /* Dropdown Styles */
+  .dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 10px);
+    transition: all 0.3s ease;
+  }
+  .group:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+</style>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<div id="navbar-placeholder"></div>
+<div id="exchange-ticker-placeholder"></div>
+
+<!-- HERO -->
+<section class="relative pt-40 pb-24 overflow-hidden hero-gradient">
+  <div class="vietnam-pattern">
+    <div class="drum-center"></div>
+  </div>
+  <div class="absolute inset-0 dot-pattern opacity-20"></div>
+  <div class="absolute inset-0 hero-glow opacity-50"></div>
+
+  <!-- Flying birds -->
+  <div class="lac-bird-decor top-[20%] animate-fly-1"><div class="animate-flap w-full h-full"></div></div>
+  <div class="lac-bird-decor bottom-[25%] animate-fly-2" style="animation-direction: reverse;"><div class="animate-flap w-full h-full"></div></div>
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12 text-center z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Minh bạch &amp; Uy tín</span>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tighter mb-6 reveal reveal-up delay-100">
+      Chính Sách &amp; Quy Định<br>
+      <span class="text-primary-fixed">Vạn An Logistics</span>
+    </h1>
+    <p class="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed reveal reveal-up delay-200">
+      Cam kết bảo vệ quyền lợi khách hàng với các chính sách rõ ràng về bồi thường, bảo hiểm, lưu kho và bảo mật thông tin
+    </p>
+
+    <div class="flex flex-wrap items-center justify-center gap-3 mt-12 reveal reveal-up delay-300">
+      <a href="#khieu-nai" class="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">gavel</span>Khiếu nại &amp; Bồi thường
+      </a>
+      <a href="#bao-hiem" class="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">verified_user</span>Bảo hiểm hàng hóa
+      </a>
+      <a href="#luu-kho" class="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">warehouse</span>Lưu kho &amp; Xuất hàng
+      </a>
+      <a href="#bao-mat" class="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">lock</span>Bảo mật thông tin
+      </a>
+      <a href="#hang-cam" class="bg-white/10 hover:bg-white/20 text-white px-5 py-2.5 rounded-full text-sm font-semibold transition border border-white/20 backdrop-blur-sm flex items-center gap-2">
+        <span class="material-symbols-outlined text-base">block</span>Hàng hóa không nhận
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 1: KHIẾU NẠI & BỒI THƯỜNG -->
+<section id="khieu-nai" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Chính sách 01</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Khiếu Nại &amp; Bồi Thường</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Vạn An cam kết chịu trách nhiệm hoàn toàn với mọi vấn đề phát sinh trong quá trình vận chuyển từ kho Trung Quốc đến kho Việt Nam</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-10">
+      <!-- Thời hạn khiếu nại -->
+      <div class="reveal reveal-left policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-16 h-16 bg-secondary-container rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-primary text-3xl">schedule</span>
+        </div>
+        <h3 class="text-2xl font-extrabold text-on-surface mb-5 tracking-tight">Thời hạn khiếu nại</h3>
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary text-on-primary rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">3</div>
+            <div>
+              <p class="font-bold text-on-surface mb-1">3 ngày phản hồi</p>
+              <p class="text-on-surface-variant text-sm leading-relaxed">Khách hàng phản hồi tình trạng hàng hóa tối đa <strong>3 ngày</strong> kể từ khi nhận hàng</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 bg-primary text-on-primary rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">7</div>
+            <div>
+              <p class="font-bold text-on-surface mb-1">7 ngày xử lý</p>
+              <p class="text-on-surface-variant text-sm leading-relaxed">Vạn An tiếp nhận và xử lý khiếu nại trong vòng <strong>7 ngày</strong> kể từ khi nhận thông tin</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mức bồi thường -->
+      <div class="reveal reveal-right policy-card hero-gradient p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(5,90,66,0.2)] text-white">
+        <div class="w-16 h-16 bg-white/15 backdrop-blur-sm rounded-2xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined text-white text-3xl">shield</span>
+        </div>
+        <h3 class="text-2xl font-extrabold text-white mb-5 tracking-tight">Mức bồi thường</h3>
+        <div class="space-y-4">
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+            <p class="font-extrabold text-primary-fixed text-lg mb-1">Thất lạc hàng hóa</p>
+            <p class="text-white/90 text-sm leading-relaxed">Bồi thường <strong>100% giá trị lô hàng</strong> khi khách hàng có mua bảo hiểm hàng hóa</p>
+          </div>
+          <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+            <p class="font-extrabold text-primary-fixed text-lg mb-1">Hư hỏng hàng hóa</p>
+            <p class="text-white/90 text-sm leading-relaxed">Bồi thường theo <strong>thỏa thuận hai bên</strong> dựa trên mức độ hư hỏng thực tế và giá trị bảo hiểm</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phạm vi trách nhiệm -->
+    <div class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] p-8 md:p-10 shadow-[0px_8px_24px_rgba(23,29,25,0.04)]">
+      <h3 class="text-xl font-extrabold text-on-surface mb-6 flex items-center gap-3">
+        <span class="material-symbols-outlined text-primary">info</span>
+        Phạm vi trách nhiệm của Vạn An
+      </h3>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div>
+          <p class="font-extrabold text-primary text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">check_circle</span>Vạn An chịu trách nhiệm
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary flex-shrink-0 text-xl">check</span>
+              Mọi vấn đề phát sinh từ kho Trung Quốc đến kho Việt Nam
+            </li>
+            <li class="flex items-start gap-3 text-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary flex-shrink-0 text-xl">check</span>
+              Kiểm đếm, chụp ảnh ghi nhận hàng tại kho trước khi xuất
+            </li>
+            <li class="flex items-start gap-3 text-sm text-on-surface">
+              <span class="material-symbols-outlined text-primary flex-shrink-0 text-xl">check</span>
+              Thông quan chính ngạch đầy đủ hóa đơn, chứng từ
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p class="font-extrabold text-tertiary text-sm uppercase tracking-wider mb-4 flex items-center gap-2">
+            <span class="material-symbols-outlined text-lg">cancel</span>Vạn An không chịu trách nhiệm khi
+          </p>
+          <ul class="space-y-3">
+            <li class="flex items-start gap-3 text-sm text-on-surface">
+              <span class="material-symbols-outlined text-tertiary flex-shrink-0 text-xl">close</span>
+              Khách hàng cung cấp thông tin hàng hóa không chính xác
+            </li>
+            <li class="flex items-start gap-3 text-sm text-on-surface">
+              <span class="material-symbols-outlined text-tertiary flex-shrink-0 text-xl">close</span>
+              Hàng hóa thuộc danh mục cấm vận chuyển
+            </li>
+            <li class="flex items-start gap-3 text-sm text-on-surface">
+              <span class="material-symbols-outlined text-tertiary flex-shrink-0 text-xl">close</span>
+              Sự kiện bất khả kháng (thiên tai, dịch bệnh, lệnh cấm...)
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 2: BẢO HIỂM -->
+<section id="bao-hiem" class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Chính sách 02</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Bảo Hiểm Hàng Hóa</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">An tâm tuyệt đối với gói bảo hiểm toàn diện, bảo vệ 100% giá trị hàng hóa</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-6 mb-10">
+      <div class="reveal reveal-up delay-100 bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] text-center">
+        <p class="text-6xl font-extrabold text-primary mb-3 tracking-tighter">3%</p>
+        <p class="font-bold text-on-surface">Phí bảo hiểm</p>
+        <p class="text-xs text-on-surface-variant mt-1">trên giá trị đơn hàng</p>
+      </div>
+      <div class="reveal reveal-up delay-200 hero-gradient p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(5,90,66,0.2)] text-center text-white">
+        <p class="text-6xl font-extrabold text-primary-fixed mb-3 tracking-tighter">100%</p>
+        <p class="font-bold">Mức bồi thường</p>
+        <p class="text-xs text-white/70 mt-1">giá trị hàng hóa khi có sự cố</p>
+      </div>
+      <div class="reveal reveal-up delay-300 bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] text-center">
+        <p class="text-6xl font-extrabold text-primary mb-3 tracking-tighter">7</p>
+        <p class="font-bold text-on-surface">Ngày xử lý</p>
+        <p class="text-xs text-on-surface-variant mt-1">thời gian giải quyết bồi thường</p>
+      </div>
+    </div>
+
+    <div class="reveal reveal-up bg-surface-container-lowest rounded-[2rem] p-8 md:p-10 shadow-[0px_8px_24px_rgba(23,29,25,0.04)]">
+      <h3 class="text-2xl font-extrabold text-on-surface mb-8 tracking-tight text-center">Quy trình bồi thường bảo hiểm</h3>
+      <div class="grid md:grid-cols-4 gap-6">
+        <div class="text-center">
+          <div class="w-14 h-14 bg-primary text-on-primary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-extrabold">1</div>
+          <p class="text-sm text-on-surface font-semibold leading-relaxed">Phản hồi tình trạng hàng trong 3 ngày</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-primary text-on-primary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-extrabold">2</div>
+          <p class="text-sm text-on-surface font-semibold leading-relaxed">Cung cấp ảnh/video hàng hư hỏng</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-primary text-on-primary rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-extrabold">3</div>
+          <p class="text-sm text-on-surface font-semibold leading-relaxed">Vạn An xác minh và định giá thiệt hại</p>
+        </div>
+        <div class="text-center">
+          <div class="w-14 h-14 bg-tertiary text-white rounded-2xl flex items-center justify-center mx-auto mb-4 text-xl font-extrabold">4</div>
+          <p class="text-sm text-on-surface font-semibold leading-relaxed">Bồi thường trong 7 ngày làm việc</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 3: LƯU KHO -->
+<section id="luu-kho" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Chính sách 03</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Lưu Kho &amp; Xuất Hàng</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Quy định về thời gian lưu kho, cách thức xuất hàng và trách nhiệm các bên</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="reveal reveal-up delay-100 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">event</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Tính thời gian lưu kho</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Bắt đầu tính từ khi hàng về kho Vạn An tại Việt Nam và khách hàng được thông báo qua <strong>Zalo, Facebook hoặc điện thoại</strong>.</p>
+      </div>
+      <div class="reveal reveal-up delay-200 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">task_alt</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Miễn phí lưu kho 5 ngày</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Vạn An <strong>miễn phí lưu kho tối đa 5 ngày</strong> (không tính Chủ nhật và ngày lễ). Sau 5 ngày sẽ tính phí lưu kho theo quy định.</p>
+      </div>
+      <div class="reveal reveal-up delay-300 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">inventory_2</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Xuất hàng nguyên lô</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Vạn An xuất hàng và hóa đơn <strong>theo từng lô</strong>. Không hỗ trợ xuất tách lẻ từng phần trong cùng một lô hàng.</p>
+      </div>
+      <div class="reveal reveal-up delay-100 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">photo_camera</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Ghi nhận tình trạng hàng</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Mọi lô hàng đều được <strong>kiểm đếm, chụp ảnh</strong> và ghi nhận tình trạng trước khi nhập kho. Thông báo cho khách hàng ngay khi phát hiện bất thường.</p>
+      </div>
+      <div class="reveal reveal-up delay-200 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-tertiary-fixed rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-tertiary text-3xl">warning</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Trách nhiệm sau 5 ngày</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Sau 5 ngày lưu kho miễn phí, Vạn An <strong>không chịu trách nhiệm</strong> về hư hỏng hàng hóa do lưu kho quá hạn. Hàng sẽ được chuyển sang khu vực lưu trữ riêng.</p>
+      </div>
+      <div class="reveal reveal-up delay-300 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center mb-5">
+          <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+        </div>
+        <h3 class="text-lg font-extrabold text-on-surface mb-3 tracking-tight">Nhận hàng tại kho</h3>
+        <p class="text-on-surface-variant text-sm leading-relaxed">Khách đến <strong>nhận trực tiếp tại kho Hà Nội</strong> hoặc yêu cầu giao tận nơi (phát sinh thêm cước ship nội địa tùy khu vực).</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 4: BẢO MẬT -->
+<section id="bao-mat" class="py-24 bg-surface-container-low">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-5">Chính sách 04</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Bảo Mật Thông Tin Khách Hàng</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Vạn An cam kết bảo vệ tuyệt đối thông tin cá nhân và giao dịch của khách hàng</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 max-w-5xl mx-auto">
+      <div class="reveal reveal-left policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg flex items-start gap-5">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-3xl">lock</span>
+        </div>
+        <div>
+          <h4 class="text-lg font-extrabold text-on-surface mb-2 tracking-tight">Bảo mật tuyệt đối</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Thông tin khách hàng được giữ bí mật tuyệt đối, chỉ sử dụng cho mục đích bán hàng và chăm sóc khách hàng.</p>
+        </div>
+      </div>
+      <div class="reveal reveal-right policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg flex items-start gap-5">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-3xl">group_off</span>
+        </div>
+        <div>
+          <h4 class="text-lg font-extrabold text-on-surface mb-2 tracking-tight">Không chia sẻ cho bên thứ 3</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Không sao chép, chia sẻ bất kỳ phần nào thông tin khách hàng cho bên thứ 3 khi chưa có sự đồng ý bằng văn bản.</p>
+        </div>
+      </div>
+      <div class="reveal reveal-left delay-100 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg flex items-start gap-5">
+        <div class="w-14 h-14 bg-secondary-container rounded-2xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+        </div>
+        <div>
+          <h4 class="text-lg font-extrabold text-on-surface mb-2 tracking-tight">Bảo mật giao dịch</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Đảm bảo tuyệt đối bí mật thông tin giao dịch, bao gồm hóa đơn kế toán và các chứng từ số hóa liên quan.</p>
+        </div>
+      </div>
+      <div class="reveal reveal-right delay-100 policy-card bg-surface-container-lowest p-8 rounded-[2rem] shadow-[0px_8px_24px_rgba(23,29,25,0.04)] hover:shadow-lg flex items-start gap-5">
+        <div class="w-14 h-14 bg-tertiary-fixed rounded-2xl flex items-center justify-center flex-shrink-0">
+          <span class="material-symbols-outlined text-tertiary text-3xl">gavel</span>
+        </div>
+        <div>
+          <h4 class="text-lg font-extrabold text-on-surface mb-2 tracking-tight">Ngoại lệ theo quy định pháp luật</h4>
+          <p class="text-on-surface-variant text-sm leading-relaxed">Vạn An không chịu trách nhiệm khi phải cung cấp thông tin theo yêu cầu của cơ quan nhà nước có thẩm quyền, quyết định tòa án, hoặc khi chia sẻ với tư vấn pháp lý, nhân viên, đối tác để thực hiện hợp đồng.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 5: HÀNG CẤM -->
+<section id="hang-cam" class="py-24 bg-surface">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="text-center mb-16 reveal reveal-up">
+      <span class="inline-block px-4 py-1.5 rounded-full bg-tertiary-fixed text-tertiary text-xs font-bold tracking-widest uppercase mb-5">Lưu ý quan trọng</span>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-on-surface tracking-tight leading-tight mb-5">Hàng Hóa Không Nhận Vận Chuyển</h2>
+      <p class="text-on-surface-variant leading-relaxed max-w-2xl mx-auto">Vạn An Logistics nhận vận chuyển tất cả các mặt hàng từ Trung Quốc về Việt Nam, ngoại trừ các mặt hàng sau</p>
+    </div>
+
+    <div class="reveal reveal-up max-w-4xl mx-auto bg-surface-container-lowest rounded-[2rem] p-8 md:p-10 shadow-[0px_8px_24px_rgba(23,29,25,0.04)] border border-tertiary-fixed">
+      <ol class="space-y-5">
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">1</span>
+          <p class="text-on-surface leading-relaxed pt-1.5">Các <strong>chất ma túy và chất kích thích thần kinh</strong>. Các loại bột không rõ nguồn gốc.</p>
+        </li>
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">2</span>
+          <p class="text-on-surface leading-relaxed pt-1.5">Các mặt hàng <strong>thực phẩm chức năng</strong> (nước hoa, đồ ăn, thuốc, dung dịch...).</p>
+        </li>
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">3</span>
+          <p class="text-on-surface leading-relaxed pt-1.5"><strong>Vũ khí, đạn dược</strong>, trang thiết bị kỹ thuật quân sự (súng, dao, kiếm, dao kéo...).</p>
+        </li>
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">4</span>
+          <p class="text-on-surface leading-relaxed pt-1.5">Các loại <strong>văn hóa phẩm đồi trụy, phản động</strong>. Vật phẩm, ấn phẩm, tài liệu nhằm phá hoại trật tự công cộng chống lại Nhà nước CHXHCN Việt Nam.</p>
+        </li>
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">5</span>
+          <p class="text-on-surface leading-relaxed pt-1.5"><strong>Vật hoặc chất dễ nổ, dễ cháy</strong> và các chất gây nguy hiểm hoặc làm mất vệ sinh, gây ô nhiễm môi trường.</p>
+        </li>
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">6</span>
+          <p class="text-on-surface leading-relaxed pt-1.5">Các loại vật phẩm hàng hóa mà <strong>nhà nước cấm lưu thông</strong>, cấm kinh doanh, cấm xuất khẩu, nhập khẩu.</p>
+        </li>
+        <li class="flex items-start gap-5">
+          <span class="w-10 h-10 bg-tertiary text-white rounded-xl flex items-center justify-center flex-shrink-0 font-extrabold">7</span>
+          <p class="text-on-surface leading-relaxed pt-1.5"><strong>Sinh vật sống</strong>.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="py-24 hero-gradient relative overflow-hidden">
+  <div class="absolute inset-0 dot-pattern opacity-40"></div>
+  <div class="absolute top-10 left-10 w-64 h-64 bg-primary-fixed/20 rounded-full blur-3xl"></div>
+  <div class="absolute bottom-10 right-10 w-80 h-80 bg-inverse-primary/15 rounded-full blur-3xl"></div>
+
+  <div class="relative max-w-4xl mx-auto px-6 lg:px-12 text-center">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Hỗ trợ 24/7</span>
+    <h2 class="text-4xl md:text-5xl font-extrabold text-white mb-5 tracking-tight leading-tight reveal reveal-up delay-100">Cần Tư Vấn Thêm Về Chính Sách?</h2>
+    <p class="text-white/80 text-lg mb-12 max-w-2xl mx-auto leading-relaxed reveal reveal-up delay-200">Liên hệ Vạn An để được giải đáp mọi thắc mắc về chính sách vận chuyển, bảo hiểm và bồi thường</p>
+
+    <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12 reveal reveal-up delay-300">
+      <a href="https://zalo.me/0862341318" target="_blank" class="w-full sm:w-auto bg-white text-primary px-8 py-4 rounded-2xl text-base font-black uppercase tracking-wider transition hover:scale-105 active:scale-95 shadow-2xl btn-shine flex items-center justify-center gap-3">
+        <span class="material-symbols-outlined">chat</span>Chat Zalo Ngay
+      </a>
+      <a href="tel:0862341318" class="w-full sm:w-auto bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-2xl text-base font-bold transition border border-white/30 backdrop-blur-sm flex items-center justify-center gap-3">
+        <span class="material-symbols-outlined">call</span>086.234.1318
+      </a>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-4 max-w-3xl mx-auto reveal reveal-up delay-400">
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+        <span class="material-symbols-outlined text-primary-fixed mb-2">call</span>
+        <p class="text-white font-extrabold text-sm">Hotline</p>
+        <p class="text-white/70 text-sm mt-1">086.234.1318 | 0986.465.678</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+        <span class="material-symbols-outlined text-primary-fixed mb-2">mail</span>
+        <p class="text-white font-extrabold text-sm">Email</p>
+        <p class="text-white/70 text-sm mt-1">humansofvanan@gmail.com</p>
+      </div>
+      <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-5 border border-white/20">
+        <span class="material-symbols-outlined text-primary-fixed mb-2">location_on</span>
+        <p class="text-white font-extrabold text-sm">Địa chỉ</p>
+        <p class="text-white/70 text-sm mt-1">BT liền kề FLC Đại Mỗ, HN</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="components.js"></script>
+
+</body>
+</html>

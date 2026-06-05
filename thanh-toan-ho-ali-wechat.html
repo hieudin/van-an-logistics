@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html class="light" lang="vi">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Thanh toán hộ Alipay - WeChat Pay | Vạn An Logistics</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="icon" type="image/x-icon" href="assets/brand/favicon.ico">
+<script>
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "inverse-primary": "#67dca4",
+          "tertiary-fixed": "#ffdad8",
+          "surface-container-highest": "#dee4dd",
+          "on-secondary": "#ffffff",
+          "surface-container-lowest": "#ffffff",
+          "primary-container": "#008558",
+          "surface": "#f5fbf4",
+          "on-tertiary-fixed-variant": "#80272a",
+          "on-secondary-container": "#446d56",
+          "surface-variant": "#dee4dd",
+          "secondary": "#3e6751",
+          "on-secondary-fixed-variant": "#264f3a",
+          "background": "#f5fbf4",
+          "primary-fixed-dim": "#67dca4",
+          "on-tertiary": "#ffffff",
+          "on-surface": "#171d19",
+          "error": "#ba1a1a",
+          "surface-container-low": "#eff5ee",
+          "secondary-fixed-dim": "#a4d1b6",
+          "inverse-surface": "#2c322d",
+          "surface-bright": "#f5fbf4",
+          "outline-variant": "#bccabf",
+          "on-surface-variant": "#3d4a42",
+          "on-primary": "#ffffff",
+          "error-container": "#ffdad6",
+          "on-tertiary-fixed": "#410006",
+          "on-background": "#171d19",
+          "on-primary-fixed-variant": "#005234",
+          "primary-fixed": "#84f9be",
+          "tertiary-fixed-dim": "#ffb3b0",
+          "inverse-on-surface": "#ecf2eb",
+          "surface-tint": "#006c47",
+          "tertiary-container": "#bc5453",
+          "surface-dim": "#d5dcd5",
+          "secondary-fixed": "#bfedd1",
+          "surface-container-high": "#e4eae3",
+          "on-error": "#ffffff",
+          "on-primary-fixed": "#002113",
+          "primary": "#055a42",
+          "tertiary": "#9c3c3d",
+          "outline": "#6d7a71",
+          "on-primary-container": "#f6fff6",
+          "on-secondary-fixed": "#002113",
+          "on-tertiary-container": "#fffbff",
+          "surface-container": "#e9f0e9"
+        }
+      }
+    }
+  }
+</script>
+<style>
+  body { font-family: 'Manrope', sans-serif; }
+  .glass-nav { background: rgba(245, 251, 244, 0.8); backdrop-filter: blur(20px); }
+  .hero-gradient { background: linear-gradient(135deg, #055a42 0%, #0eaf75 100%); }
+  
+  .vietnam-pattern {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    background: radial-gradient(circle at center, rgba(132,249,190,0.02) 0%, transparent 80%);
+  }
+  .drum-center {
+    width: 100vw;
+    height: 100vw;
+    background: url("assets/decor/pattern/9.png") no-repeat center;
+    background-size: contain;
+    mix-blend-mode: multiply;
+    opacity: 0.1;
+    animation: rotate-slow 400s linear infinite;
+    pointer-events: none;
+  }
+
+  @keyframes rotate-slow { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+
+
+  .reveal { opacity: 0; transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: transform, opacity; }
+  .reveal-up { transform: translateY(50px); }
+  .reveal.active { opacity: 1; transform: translate(0, 0); }
+  .delay-100 { transition-delay: 100ms; }
+  .delay-200 { transition-delay: 200ms; }
+  .delay-300 { transition-delay: 300ms; }
+
+  .dot-pattern {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 24px 24px;
+  }
+  
+  .btn-shine { position: relative; overflow: hidden; }
+  .btn-shine::after {
+    content: ''; position: absolute; top: -50%; left: -60%; width: 20%; height: 200%;
+    background: rgba(255, 255, 255, 0.4); transform: rotate(30deg); animation: shine 3s infinite;
+  }
+  @keyframes shine { 0% { left: -60%; } 20% { left: 120%; } 100% { left: 120%; } }
+
+  /* Dropdown Styles */
+  .dropdown-content {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, 10px);
+    transition: all 0.3s ease;
+  }
+  .group:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+</style>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17083042179">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17083042179');
+  </script>
+</head>
+<body class="bg-surface text-on-surface overflow-x-hidden">
+
+<div id="navbar-placeholder"></div>
+<div id="exchange-ticker-placeholder"></div>
+
+<!-- HERO -->
+<section class="relative pt-40 pb-24 overflow-hidden hero-gradient">
+  <div class="vietnam-pattern">
+    <div class="drum-center"></div>
+  </div>
+  <div class="absolute inset-0 dot-pattern opacity-20"></div>
+  <div class="absolute inset-0 hero-glow opacity-50"></div>
+
+
+
+  <div class="relative max-w-7xl mx-auto px-6 lg:px-12 text-center z-10">
+    <span class="inline-block px-4 py-1.5 rounded-full bg-white/15 text-white text-xs font-bold tracking-widest uppercase mb-6 backdrop-blur-sm reveal reveal-up">Uy tín – Tốc độ – Bảo mật</span>
+    <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold text-white leading-[1.05] tracking-tighter mb-6 reveal reveal-up delay-100">
+      Thanh Toán Hộ<br>
+      <span class="text-primary-fixed">Alipay & WeChat Pay</span>
+    </h1>
+    <p class="text-white/80 text-lg md:text-xl max-w-3xl mx-auto leading-relaxed reveal reveal-up delay-200">
+      Giải pháp thanh toán tiền hàng Trung Quốc an toàn tuyệt đối, tỷ giá cạnh tranh, xử lý giao dịch thần tốc chỉ từ 5-15 phút.
+    </p>
+  </div>
+</section>
+
+<!-- MAIN CONTENT -->
+<section class="py-24 bg-surface relative overflow-hidden">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    
+    <!-- Problems Section -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center mb-32">
+        <div class="reveal reveal-up">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-8 tracking-tight text-primary">Rủi ro khi tự thanh toán<br>hoặc dùng "tệ bẩn"</h2>
+            <div class="space-y-6">
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">gpp_maybe</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Xác thực KYC phức tạp</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Alipay/WeChat yêu cầu hộ chiếu và thẻ ngân hàng Trung Quốc. Tỷ lệ khóa ví khi tự xác thực rất cao.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">block</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Hạn mức giao dịch thấp</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Ví cá nhân thường bị giới hạn hạn mức thanh toán, không đáp ứng được nhu cầu nhập sỉ số lượng lớn.</p>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <div class="w-10 h-10 bg-red-100 text-red-600 rounded-full flex items-center justify-center flex-shrink-0">
+                        <span class="material-symbols-outlined">ac_unit</span>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">Nguy cơ đóng băng ví vĩnh viễn</h4>
+                        <p class="text-on-surface-variant text-sm leading-relaxed">Sử dụng nguồn tệ trôi nổi (tệ bẩn) dễ khiến tài khoản mua hàng bị khóa và mất trắng số tiền hiện có.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bg-white p-2 rounded-[3rem] shadow-2xl reveal reveal-up delay-200 overflow-hidden group">
+            <div class="relative overflow-hidden rounded-[2.8rem]">
+                <img src="https://images.unsplash.com/photo-1556742044-3c52d6e88c62?q=80&w=2070" alt="Mobile Payment" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                <div class="absolute inset-0 bg-primary/20 mix-blend-multiply"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Pricing Section (Cards Style) -->
+    <div class="mb-32">
+        <div class="text-center mb-16 reveal reveal-up">
+            <span class="inline-block px-4 py-1.5 rounded-full bg-secondary-container text-on-secondary-container text-xs font-bold tracking-widest uppercase mb-4">Minh bạch - Không phí ẩn</span>
+            <h2 class="text-3xl md:text-5xl font-extrabold mb-4 tracking-tight">Biểu phí thanh toán hộ</h2>
+            <p class="text-on-surface-variant max-w-2xl mx-auto">Vạn An Logistics cam kết cung cấp tỷ giá sát thị trường và phí dịch vụ cạnh tranh nhất.</p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 reveal reveal-up delay-100">
+            <!-- Tier 1 -->
+            <div class="bg-white p-8 md:p-10 rounded-[2.5rem] border border-outline-variant/30 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group">
+                <div class="w-16 h-16 bg-surface-container-low rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary/10 transition-colors">
+                    <span class="material-symbols-outlined text-primary text-3xl">account_balance_wallet</span>
+                </div>
+                <h4 class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-2">Đơn hàng nhỏ</h4>
+                <p class="text-2xl font-black text-on-surface mb-6">Dưới 1.000 CNY</p>
+                <div class="pt-6 border-t border-outline-variant/10">
+                    <p class="text-xs text-on-surface-variant font-medium mb-1 uppercase tracking-wider">Phí trọn gói</p>
+                    <p class="text-4xl font-black text-primary tracking-tighter">50.000 đ</p>
+                </div>
+            </div>
+
+            <!-- Tier 2 -->
+            <div class="bg-secondary-container/30 p-8 md:p-10 rounded-[2.5rem] border border-primary/5 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-500 group relative overflow-hidden">
+                <div class="w-16 h-16 bg-white rounded-2xl flex items-center justify-center mb-8 group-hover:bg-primary/10 transition-colors">
+                    <span class="material-symbols-outlined text-primary text-3xl">payments</span>
+                </div>
+                <h4 class="text-xs font-bold text-on-surface-variant uppercase tracking-widest mb-2">Đơn hàng vừa</h4>
+                <p class="text-2xl font-black text-on-surface mb-6">1.000 – 50.000 CNY</p>
+                <div class="pt-6 border-t border-outline-variant/10">
+                    <p class="text-xs text-on-surface-variant font-medium mb-1 uppercase tracking-wider">Phí dịch vụ</p>
+                    <p class="text-5xl font-black text-primary tracking-tighter">1.5%</p>
+                </div>
+            </div>
+
+            <!-- Tier 3: Featured -->
+            <div class="hero-gradient p-8 md:p-10 rounded-[2.5rem] shadow-2xl hover:shadow-[0_20px_50px_rgba(5,90,66,0.3)] hover:-translate-y-2 transition-all duration-500 relative group scale-105 z-10">
+                <div class="absolute top-6 right-8 bg-white/20 backdrop-blur-md text-white text-[10px] font-black px-4 py-1.5 rounded-full uppercase tracking-widest">Ưu đãi nhất</div>
+                <div class="w-16 h-16 bg-white/10 backdrop-blur-md rounded-2xl flex items-center justify-center mb-8">
+                    <span class="material-symbols-outlined text-white text-3xl">workspace_premium</span>
+                </div>
+                <h4 class="text-xs font-bold text-white/70 uppercase tracking-widest mb-2">Đơn hàng lớn</h4>
+                <p class="text-2xl font-black text-white mb-6 italic">Trên 50.000 CNY</p>
+                <div class="pt-6 border-t border-white/10">
+                    <p class="text-xs text-white/70 font-medium mb-1 uppercase tracking-wider">Phí chỉ từ</p>
+                    <p class="text-6xl font-black text-white tracking-tighter">1.0%</p>
+                </div>
+            </div>
+        </div>
+        <p class="text-base text-on-surface-variant mt-12 text-center italic bg-surface-container-low p-6 rounded-2xl border border-outline-variant/10 max-w-3xl mx-auto reveal reveal-up">
+            * Tỷ giá Nhân dân tệ biến động theo giờ. Vui lòng liên hệ trực tiếp để chốt tỷ giá tại thời điểm thanh toán.<br>
+            * Cam kết nguồn tệ sạch 100%, có biên lai screenshot đầy đủ sau mỗi giao dịch thành công.
+        </p>
+    </div>
+
+    <!-- Process Section -->
+    <div class="mb-32">
+        <div class="text-center mb-16 reveal reveal-up">
+            <h2 class="text-3xl md:text-4xl font-extrabold mb-4 tracking-tight">Quy trình 5 bước đơn giản</h2>
+            <p class="text-on-surface-variant">Xử lý thần tốc, nhận biên lai ngay sau khi thanh toán thành công.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-5 gap-6 reveal reveal-up">
+            <!-- Step 1 -->
+            <div class="bg-white p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative">
+                <span class="text-4xl font-black text-primary/10 absolute top-4 right-4 group-hover:scale-110 transition-transform">01</span>
+                <div class="mt-8 text-center">
+                    <h4 class="font-bold mb-2">Gửi yêu cầu</h4>
+                    <p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Link đơn / Mã QR</p>
+                </div>
+            </div>
+            <!-- Step 2 -->
+            <div class="bg-white p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative">
+                <span class="text-4xl font-black text-primary/10 absolute top-4 right-4">02</span>
+                <div class="mt-8 text-center">
+                    <h4 class="font-bold mb-2">Báo giá</h4>
+                    <p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Chốt tỷ giá</p>
+                </div>
+            </div>
+            <!-- Step 3 -->
+            <div class="bg-white p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative text-primary bg-primary/5">
+                <span class="text-4xl font-black text-primary/20 absolute top-4 right-4">03</span>
+                <div class="mt-8 text-center">
+                    <h4 class="font-bold mb-2">Chuyển khoản</h4>
+                    <p class="text-[10px] text-primary/60 uppercase tracking-wider">Thanh toán VND</p>
+                </div>
+            </div>
+            <!-- Step 4 -->
+            <div class="bg-white p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative">
+                <span class="text-4xl font-black text-primary/10 absolute top-4 right-4">04</span>
+                <div class="mt-8 text-center">
+                    <h4 class="font-bold mb-2">Thực hiện</h4>
+                    <p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Vạn An chuyển tệ</p>
+                </div>
+            </div>
+            <!-- Step 5 -->
+            <div class="bg-white p-6 rounded-3xl border border-outline-variant/20 shadow-sm relative">
+                <span class="text-4xl font-black text-primary/10 absolute top-4 right-4">05</span>
+                <div class="mt-8 text-center">
+                    <h4 class="font-bold mb-2">Xác nhận</h4>
+                    <p class="text-[10px] text-on-surface-variant uppercase tracking-wider">Gửi Screenshot</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+<div id="contact-placeholder"></div>
+
+<script src="components.js"></script>
+</body>
+</html>
